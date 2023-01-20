@@ -2,8 +2,8 @@
 
 ## Contents
 
- - [0. Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals.md)
- - [1. Working Mode](#working-mode)
+ - [0. Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-fundamentals.md)
+ - [1. Working Mode](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/001-working-mode.md)
  - [2. Environment](#environment)
  - [3. Time Bookings](#time-bookings)
  - [4. Online Shop](#online-shop)
