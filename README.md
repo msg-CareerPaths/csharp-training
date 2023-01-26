@@ -7,7 +7,7 @@
 - [Environment](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/environment.md)
 - [Time Bookings](???)
 - [Online Shop](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/onlineshop.md)
-- [Chapters]()
+- Chapters
   * [0. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)
   * [1. WEB API](#1-web-api)
     * [1.1. Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-create-web-api-project.md)
@@ -19,7 +19,7 @@
     * [2.1. ADO.NET](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/201-adonet.md)
     * [2.2. Entity Framework](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/202-entity-framework.md)
     * [2.3. Non-relational database](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/203-nonrelationaldb-mongodb.md)
-  * [3. Create GUI](aici am ramas!!!!!!)
+  * 3. Create GUI
     * [3.1. Using Angluar vs. React vs. Vue](#31-using-angluar-vs-react-vs-vue)
     * [3.2. Using Windows Forms vs. WPF](#32-using-windows-forms-vs-wpf)
     * [3.3. Using Razor vs. Blazor](#33-using-razor-vs-blazor)
