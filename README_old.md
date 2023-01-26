@@ -404,6 +404,7 @@ C# security vulnerabilities includes topics such as :
 * [Regular expressions](https://docs.microsoft.com/en-us/archive/msdn-magazine/2010/may/security-briefs-regular-expression-denial-of-service-attacks-and-defenses)
 * [Concurrency](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/concurrency?view=aspnetcore-6.0)
 * [Other platform-related security issues](https://docs.microsoft.com/en-us/dotnet/standard/security/)
+
 ## 5. Exercises
 
 Goal: Group business logic into service classes and expose this logic through REST interfaces.
@@ -439,7 +440,7 @@ Further Resources:
  
 
 
-## OPT-1. ODBC
+## OPT-1. ODBC 
 
 ## OPT-2. MongoDB
 
