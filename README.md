@@ -9,7 +9,7 @@
 - [Online Shop](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/onlineshop.md)
 - Chapters
   * [0. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)
-  * [1. WEB API](#1-web-api)
+  * 1. WEB API
     * [1.1. Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-create-web-api-project.md)
     * [1.2. Test your app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/102-test-your-app.md)
     * [1.3. Local drive access](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-local-drive-access.md)
