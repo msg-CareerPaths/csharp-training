@@ -1,4 +1,4 @@
-## 5. Exercises
+## 6. Exercises
 
 Goal: Group business logic into service classes and expose this logic through REST interfaces.
 
@@ -26,6 +26,8 @@ Online Shop:
  > - Afterwards the order is persisted in the database and returned.
  > 
  > Create a Rest Controller for the "Create order" operation, which should have a `POST` mapping accepting a JSON request body and producing a JSON response body.
+ >
+ > Create 3 unit tests for any method from any controller from your project.
  
 Further Resources:
 
