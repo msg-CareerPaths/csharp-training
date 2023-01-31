@@ -4,7 +4,7 @@ Goal: Understand IO Operations and JSON Serialization
 
 Required Reading:
 
- - [Serialize JSON using System.Text.Json](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0)
+ - [Serialize JSON using System.Text.Json](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-7-0)
   
 	-it is the main JSON Serialization library in .Net 6 and recommended for new projects.
  - [How to create a file or folder](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-create-a-file-or-folder)
