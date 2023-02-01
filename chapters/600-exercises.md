@@ -8,7 +8,7 @@ Required Reading:
  
 
 Online Shop:
- > Create a simple API for exposing the products and product categories: 
+ > Create a simple backend web rest API for exposing the products and product categories: 
  >
  > - Define a DTO (data transfer object) POJO which combines the properties from a product and its respective category. 
  > - Create a service class which uses the repositories in order to: create, update, delete, read by ID and read all the product (as DTO instances).
