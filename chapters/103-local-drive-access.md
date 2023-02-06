@@ -13,15 +13,19 @@ Required Reading:
  - [How to read from a text file](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file)
 
 
-OnlineShop: Save product information and order information on local json files on disk.
+OnlineShop:
+  Create a new service that manages the file persistance operations.
+  Add methods in this service to save,get products on json files on disk.
+  You must take into consideration the followings:
+  - Products must be stored as json files.
 
   - Every time a product is created a file must be created on disk with information about the product. 
 
   - When a product is modified or deleted, this must reflect in the files saved on disk.
-
-  - Every time an order is created a file must be created containing the order information.
   
-  - You will have to come up with an apropiate folder structure for this task
+  - You will have to come up with an apropiate folder and file name for this task.
+
+  - The folder where the files are stored does not exists.The folder can be located where you want.
 
 Further Reading:
  - [An alternative for serialization is Newtonsoft.Json](https://www.youtube.com/watch?v=hLYHE1kIOpo)

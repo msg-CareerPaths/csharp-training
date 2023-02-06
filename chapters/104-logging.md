@@ -11,11 +11,11 @@ Required Reading:
    - [Nlog Configuration file](https://github.com/NLog/NLog/wiki/Configuration-file)
    - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
-Online Shop: Logging important actions (Order Product, Product create/edit/delete and so on) will greatly assist in the support and development of your application.
-   
-   - you need to identify and log all the important actions in your application
-   
-   - it is your decision how you structure and what information goes into those logs to be as comprehensive as possible
+Online Shop: 
+   Log some actions like : Product get/create/edit/delete as will greatly assist in the support and debug of your application.
+   It is your decision how you structure and what information goes into those logs to be as comprehensive as possible.
+   You can play a bit and add some other logging where you think it whould be more usefull.
+   Change the log files to be saved in  " logs/${shortdate} " , change the format(layout) of the log files, and rerun the application to check the new folder/file formats.
 
 Future Reading:
  - [Logging Best Practices](https://raygun.com/blog/c-sharp-logging-best-practices/)

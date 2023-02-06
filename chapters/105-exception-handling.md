@@ -4,13 +4,16 @@ Goal:
   - Logging Exception 
 
 Required Reading: 
-  - [Exceptions and Exception Handling](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
-  - [Logging exceptions in ASP.Net Core](https://csharp-video-tutorials.blogspot.com/2019/05/logging-exceptions-in-aspnet-core.html)
+   - [Exceptions and Exception Handling](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+   - [20 Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/exceptions)
+   - [Logging exceptions in ASP.Net Core](https://stackify.com/csharp-exception-handling-best-practices/)
+
+  Online Shop:
+  - Add exception handling in all product controller actions 
+  - Log some exceptioms in log files using the previous learned logging mechanism. 
+
 Optional best practicies: 
-  - [C# Exception Handling Best Practices](https://stackify.com/csharp-exception-handling-best-practices/)
-  - [How using try catch for exception handling is best practice](https://stackoverflow.com/questions/14973642/how-using-try-catch-for-exception-handling-is-best-practice)
- 
-Online Shop:
-  - Add exception handling in all controller actions 
-  - Log the exception in logger 
-  - Set the looger to write the exeption in the event viewer
+  - [Best practices for exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)
+  - [5 Good Practices for Error Handling in C#](https://dev.to/bytehide/5-good-practices-for-error-handling-in-c-4391)
+  - [Handle errors in ASP.NET Core 7.0](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-7.0)
+
