@@ -11,7 +11,7 @@ Required Reading:
    - [Nlog Configuration file](https://github.com/NLog/NLog/wiki/Configuration-file)
    - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
-Online Shop: 
+Products App: 
    Log some actions like : Product get/create/edit/delete as will greatly assist in the support and debug of your application.
    It is your decision how you structure and what information goes into those logs to be as comprehensive as possible.
    You can play a bit and add some other logging where you think it whould be more usefull.

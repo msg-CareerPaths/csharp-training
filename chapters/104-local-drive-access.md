@@ -1,4 +1,4 @@
-## 1.3. Local drive access 
+## 1.4. Local drive access 
 
 Goal: Understand IO Operations and JSON Serialization 
 
@@ -13,9 +13,9 @@ Required Reading:
  - [How to read from a text file](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file)
 
 
-OnlineShop:
-  Create a new service that manages the file persistance operations.
-  Add methods in this service to save,get products on json files on disk.
+Products App:
+  Create a new service class that manages the file persistance operations.
+  Add methods in this service to insert,update,get an delete products on json files from\to disk.
   You must take into consideration the followings:
   - Products must be stored as json files.
 

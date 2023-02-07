@@ -17,7 +17,7 @@ Required Reading:
  - [Build .NET applications with C#](https://docs.microsoft.com/en-us/learn/paths/build-dotnet-applications-csharp/?WT.mc_id=dotnet-35129-website)
  - [SOLID Principles in C#](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/)
 
-Online Shop: *nothing to do*.
+Products App: *nothing to do*.
 
 Further Resources:
 
@@ -26,4 +26,4 @@ Further Resources:
  - [Nuget in 5 minutes](https://Nuget.apache.org/guides/getting-started/Nuget-in-five-minutes.html)
  
 ## The APP
-During the course, we will create an application for online shopping. Each chapter will cover different aspects of the C# language. The final application will be a client-server application.
+During the course, we will create an app that will create,update and delete products. Each chapter will cover different aspects of the C# language. The final application will be a backend .net core rest api application.

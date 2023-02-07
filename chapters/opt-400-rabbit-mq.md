@@ -1,6 +1,5 @@
 ## OPT-4. RabbitMQ
 
-
 Goal: Asynchronously communicate with a background worker application.
 
 Required Reading:

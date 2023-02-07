@@ -21,7 +21,7 @@ You can view all methods from a controller :
 
 ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/2.jpg "Data Model")
 
-Online Shop:  
+Products App:  
   - complete the solution with the relation from the diagram. 
 
     ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/diagrams/Chapter2.png "Data Model")

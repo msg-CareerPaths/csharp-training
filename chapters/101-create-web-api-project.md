@@ -5,44 +5,35 @@
    and 
    ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter1/Startup_Chapter/OnlineOrder/Startup_Chapter/ScreenShots/2.jpg)
 
-   You can also use this link as helpm you can omit the
-   https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio
-
-
    As a default project you will you probably have a weather forecast example.
-   Here is a link where you 
-   Navigate all the files from the project and get familiar with the structure.
+   Check all the files from the project and get familiar with the structure and the classes.
    Check the WeatherForecastController from the Controllers folders.
    Open the Program.cs file to see how then application is created and started.
    Build and start the application.
-   A swagger interface will be opened, play a bit and call the GetWeatherForecast method.
 
    As a start-up sample, you have in the project created with one class implemented.
    [https://github.com/msg-CareerPaths/csharp-training/tree/main/Sources/Chapter1/Startup_Chapter/OnlineOrder/Startup_Chapter/OnlineOrder] 
    
-   Next you should update the project as follows :
-    1.Rename the WeatherForecastController.cs to ProductController.cs
-    2.Optionally you can delete tge WeatherForecast class .
-    1.Create a new folder called Model where you will have all data models.
-    2.Create a new controller called EmployeeController
+   For the moment the products  will be stored in a list in the productservice.
+   The same with the product category list, you will have a list defined in the product category service.
+   The lists will be repopulated each time you start the project, so it`s there is no persistance.
+   If you want you can initiate the lists to have some on the application startup.
 
-   
-   In the controller a list is created for the purpose of demonstration which is instantiated on the controller contructor.
-   The list will be repopulated each time you start the project, so there is no persistance.
-
-   Add methods to Getemployee ny id, update an employee and delete an employee from the employee list.
-   You should create the rest of the data models and controllers.
+   Add methods to cover all CRUD operation for the products.
+   You should create the rest of the data models and add a new controller for the product categeories.
    The classes structure are shown in below diagram: 
   ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/diagrams/Chapter1.png "Data Model")
-   
-   Location, ProductCategory collection should be implemented as a generic "HashTable". ?????????????????????? 
-   Add a controller class for Location and one controller for ProductCategory. 
-   Stock will not have a controller. ????????????????????????????
-
-Employee Application:
  
- > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
+Products App:
+   1. Add methods to cover all CRUD operation for the products.
+   2. Create a new class called ProducCategory in the model folder.
+   3. Add a new property of type ProducCategory to the product class.
+   4. Create a new product category controller and service.
+      The product category list will be stored in the service, similar with the product list.
+
+
+  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
  > to "Visual Studio" and generate a new project ASP.NET Core Web API:
  > 
- > Go- Project name: `employeeapp`,
+ > Go- Project name: `productsapp`,
  > - Solution: `ro.msg.learning`,
