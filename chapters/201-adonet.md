@@ -9,7 +9,8 @@ Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
 5. [Delete Records using ADO.NET in ASP.NET Core Application](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
 6. [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-Online Shop: Create an SQL database that mirrors the model from Chapter 1 based upon the example given in the previous tutorials and adapt and test given example to connect, control & manage and perform CRUD operations on the SQL DB.
+Products App: 
+Create an SQL database that mirrors the model from Chapter 1 based upon the example given in the previous tutorials and adapt and test given example to connect, control & manage and perform CRUD operations on the SQL DB.
 
 Further Reading:
 * [Compare and contrast ADO and Entity Framework](https://blog.devart.com/ado-net-vs-entity-framework.html)

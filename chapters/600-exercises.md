@@ -7,7 +7,7 @@ Required Reading:
  - [What is REST?](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f) - Parts 1 and 2
  
 
-Online Shop:
+Products App:
  > Create a simple backend web rest API for exposing the products and product categories: 
  >
  > - Define a DTO (data transfer object) POJO which combines the properties from a product and its respective category. 

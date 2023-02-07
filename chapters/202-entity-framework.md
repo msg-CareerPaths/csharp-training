@@ -3,7 +3,8 @@ Goal: Understanding how and why Entity Framework can be used to automate all typ
 
 Required Reading: [.NET 6.0 - Connect to SQL Server with Entity Framework Core](https://jasonwatmore.com/post/2022/03/18/net-6-connect-to-sql-server-with-entity-framework-core)
 
-Online Shop: Automatically create/update an SQL Server database from code using EF Core migrations that mirrors the model from Chapter 1 based upon the example given in the previous tutorial and adapt given example to connect, control & manage and perform CRUD operations on the SQL DB.
+Products App: 
+Automatically create/update an SQL Server database from code using EF Core migrations that mirrors the model from Chapter 1 based upon the example given in the previous tutorial and adapt given example to connect, control & manage and perform CRUD operations on the SQL DB.
 
 Further Reading:
 * [Entity Framework Core](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)

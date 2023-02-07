@@ -71,6 +71,7 @@ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/using
 
 - **Inheritance** enables you to create new classes that reuse, extend, and modify the behavior defined in other classes.
   https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance
+  https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance
 
 - **Polymorphism** is the ability of objects of different types to provide a unique interface for different implementations of methods
   https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism
