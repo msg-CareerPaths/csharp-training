@@ -3,15 +3,38 @@ Goal: Understanding how ADO.NET provides consistent access to data sources such 
 
 Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
 1. [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
-2. [Create Records using ADO.NET in ASP.NET Core Application](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
-3. [Read Records using ADO.NET in ASP.NET Core Application](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
-4. [Update Records using ADO.NET in ASP.NET Core Application](https://www.yogihosting.com/update-records-ado-net-aspnet-core/)
-5. [Delete Records using ADO.NET in ASP.NET Core Application](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
+2. [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
+3. [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
+4. [Update Records ...go to the Update method from HomeController](https://www.yogihosting.com/update-records-ado-net-aspnet-core/)
+5. [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
 6. [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-Products App: 
-Create an SQL database that mirrors the model from Chapter 1 based upon the example given in the previous tutorials and adapt and test given example to connect, control & manage and perform CRUD operations on the SQL DB.
+Prerequisites:
+If you do not have an sql server installed, you will need to install a local SQL Server instance on your machine.
+Here are 2 ways to install the SQL Server :
+1. You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
+and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+
+2. If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
+
+Products App:
+After installing the SQL Server create an new database with a table where you can save products.
+You can create a new table by running the following script in the Sql Server Management Studio.
+
+CREATE TABLE [dbo].[products_ado](
+	[ID] [int] IDENTITY(1,1) PRIMARY KEY,
+	[Name] [nvarchar](50) NULL,
+	[Description] [nvarchar](max) NULL,
+	[Price] [decimal](18, 0) NULL,
+	[Weight] [decimal](18, 0) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+Next you should update the application so that products are stored in SQL database using ADO.Net
+You can update the existing products controller and service or create new ones(as you wish).
+To set the SQL connection string and table name in the service class ,use the SqlSettings with the 2 properties ConnectionString and ProductTableName loaded from the appsettings.json file, which you already created in the exercise from [1.6 Chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-configurations.md).
+
+Build and run the application and call all methods from and check to see if the product table is updated accordingly on the sql server.
 
 Further Reading:
-* [Compare and contrast ADO and Entity Framework](https://blog.devart.com/ado-net-vs-entity-framework.html)
-* [How to Use ADO .NET in ASP MVC .NET 6 Core application?](https://www.youtube.com/watch?v=QN4gKyCEzHA)
+* [How to Use ADO .NET in ASP MVC .NET 6 Core application](https://www.youtube.com/watch?v=QN4gKyCEzHA)
+* [ADO.NET Tutorial For Beginners and Professionals](https://dotnettutorials.net/lesson/what-is-ado-net/)
