@@ -17,9 +17,7 @@ Goal:
 
 Required Reading: 
 - [Configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
-- [Options pattern in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-7.0)
 
-Products App:
-- Update the appsettings.json file and add a new section called ApplicationSettings which will contain the UseFileStoring boolean property.
-- Go to folder and add a new class called ApplicationSettings which will have a boolean property called UseFileStoring.
-- Update the Program.cs so that ApplicationSettings.UseFileStoring is loaded and from appsettings.json.
+Products Web API:
+- Update the appsettings.json file and add a new section called SqlSettings with 2 properties ConnectionString and ProductTableName which will be used in the next practices to connect to an sql server.
+- On Program.cs create a local SqlSettings variable where you will load the SqlSettings ConnectionString and ProductTableName the appsettings.json file.(https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-7.0).

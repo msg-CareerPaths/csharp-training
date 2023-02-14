@@ -11,13 +11,15 @@ Required Reading:
    - [Nlog Configuration file](https://github.com/NLog/NLog/wiki/Configuration-file)
    - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
-Products App: 
+Exercise:
+   Add a new nlog.config file to the application.
    Log some actions like : Product get/create/edit/delete as will greatly assist in the support and debug of your application.
    It is your decision how you structure and what information goes into those logs to be as comprehensive as possible.
    You can play a bit and add some other logging where you think it whould be more usefull.
-   Change the log files to be saved in  " logs/${shortdate} " , change the format(layout) of the log files, and rerun the application to check the new folder/file formats.
+   Update the nlog.config file so log files to be saved in " logs/${shortdate} " , change the format(layout) of the log files, and rerun the application to check the new folder/file formats.
 
 Future Reading:
  - [Logging Best Practices](https://raygun.com/blog/c-sharp-logging-best-practices/)
  - [How to use structured logging](https://github.com/nlog/nlog/wiki/How-to-use-structured-logging)
  - [Use NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)
+ - 

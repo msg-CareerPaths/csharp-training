@@ -5,7 +5,12 @@ Required Reading:
 * [Create a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio)
 
 Products App: 
-Create a MongoDB NoSQL database that mirrors the model from Chapter 1(WEB API) based upon the example given in the previous tutorial and adapt and test given example to connect, control & manage and perform CRUD operations on the DB.
+After installing the MongoDB ,create a database called productsdb and a collection named categories that saves the product categories in mongodb.
+The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.
+(You've allready made an similar exercise in [1.3 Chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-configurations.md).
+In the project add a new service,controller and interface that will be use to make CRUD operations on the mongo DB.
+Build, run,debug  and test the application.
+Check to see if operations made from the MongoDBController are persisted in the products collection from the mongodb.
 
 Further Reading:
 * [Install MongoDB Community Edition on Windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)

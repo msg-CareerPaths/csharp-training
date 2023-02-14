@@ -13,21 +13,18 @@ Required Reading:
  - [How to read from a text file](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file)
 
 
-Products App:
-  Create a new service class that manages the file persistance operations.
-  Add methods in this service to insert,update,get an delete products on json files from\to disk.
+Products Web API:
+  Update the application to save products as files.
+  Update the existing products controller and service or create new ones as you wish.
+  Add methods to create,update,get an delete products as json files from\to disk.
   You must take into consideration the followings:
   - Products must be stored as json files.
-
   - Every time a product is created a file must be created on disk with information about the product. 
-
   - When a product is modified or deleted, this must reflect in the files saved on disk.
-  
   - You will have to come up with an apropiate folder and file name for this task.
-
   - The folder where the files are stored does not exists.The folder can be located where you want.
-
-Further Reading:
+  
+ Further Reading:
  - [An alternative for serialization is Newtonsoft.Json](https://www.youtube.com/watch?v=hLYHE1kIOpo)
 
 	-it is important to know about Newtonsoft.Json, as it was the main library used for JSON serialization for C#, and it can be found in older projects
