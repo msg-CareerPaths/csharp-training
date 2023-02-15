@@ -21,7 +21,7 @@ You can view all methods from a controller :
 
 ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/2.jpg "Data Model")
 
-Products App:
+Exercise:
   You have a start-up sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/Sources/Chapter1/Startup_Chapter/OnlineOrder/Startup_Chapter/OnlineOrder), that you can use to build your ASP.NET Core Web API.
   
   Add new properties to the Product class like (decimal Price, string Description)
@@ -36,4 +36,4 @@ Products App:
   Don't forget to update the Program.cs and inject the new ProductCategoryService using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).
   At the end run, debug and  manual test the application with swagger.
 
- (Optional) You can use other tools like:Postman (https://www.postman.com/) or Curl (https://curl.se/docs/).
+  (Optional) for tetsing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).

@@ -18,12 +18,16 @@ __Why databases?__
 * Databases are concurrent; multiple users can use them at the same time without corrupting the data.
 * Databases scale well.
 
-Required reading: [File System vs. Database](https://dzone.com/articles/which-is-better-saving-files-in-database-or-in-fil)
+Required reading: 
+ - [File System vs. Database](https://dzone.com/articles/which-is-better-saving-files-in-database-or-in-fil)
 
 Ask yourself the following questions: 
-What happens if you want to update a numeric quantity into a very large products/orders data file that stores an online shop information? 
+What happens if you want to update a numeric quantity into a very large products/orders data file that stores for example an online shop information? 
 What happens if during the time spent with reading/searching a large file, other simultaneous requests come for writing or modifying or deleting the same quantities or entries and what happens if during that exact time there is a power shortage? 
 Can databases address some of these problems?
+There are many database out there where you can store your information.
+Further we will integrate our exercise app with SQL and MongoDB databases.
+
 
 Further reading: 
 [Why to use a database instead of saving data to disk?](https://arstechnica.com/information-technology/2013/05/why-use-a-database-instead-of-just-saving-your-data-to-disk/)

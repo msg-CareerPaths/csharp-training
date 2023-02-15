@@ -17,7 +17,7 @@ and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/
 
 2. If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
 
-Products App:
+Exercise:
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running the following script in the Sql Server Management Studio.
 
@@ -29,11 +29,11 @@ CREATE TABLE [dbo].[products_ado](
 	[Weight] [decimal](18, 0) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
-Next you should update the application so that products are stored in SQL database using ADO.Net
-You can update the existing products controller and service or create new ones(as you wish).
+Next you should update the application so that products are stored in SQL database using ADO.Net.
+Create a new products controller and service.(recommended)
 To set the SQL connection string and table name in the service class ,use the SqlSettings with the 2 properties ConnectionString and ProductTableName loaded from the appsettings.json file, which you already created in the exercise from [1.6 Chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-configurations.md).
 
-Build and run the application and call all methods from and check to see if the product table is updated accordingly on the sql server.
+Build and run the application, call all methods and check to see if the product table is updated accordingly on the sql server.
 
 Further Reading:
 * [How to Use ADO .NET in ASP MVC .NET 6 Core application](https://www.youtube.com/watch?v=QN4gKyCEzHA)

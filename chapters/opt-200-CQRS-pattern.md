@@ -1,12 +1,10 @@
 ## OPT-2. CQRS pattern
 
-Goal: Understand the CQRS pattaern.
+Goal: Understand the CQRS pattern.
 
 Required Reading:
 
  - [CQRS pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
-
-
 
 Further Resources:
 
