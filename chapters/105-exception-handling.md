@@ -8,9 +8,9 @@ Required Reading:
    - [20 Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/exceptions)
    - [Logging exceptions in ASP.Net Core](https://stackify.com/csharp-exception-handling-best-practices/)
 
-Products Web API:
+Exercise:
   - Add exception handling in all product controller actions 
-  - Log some exceptioms in log files using the previous learned logging mechanism. 
+  - Log some exceptioms from controllers in log files using the previous learned logging mechanism.
 
 Optional best practicies: 
   - [Best practices for exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)
