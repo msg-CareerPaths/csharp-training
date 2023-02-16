@@ -23,16 +23,15 @@ Here you have a list of fundamentals to read about:
   - [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
   - [Polimorpohism](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism)
 
+- [Difference Between Abstract Class And Interface In C#](https://unstop.com/blog/difference-between-abstract-class-and-interface-in-c-sharp)
+
+- [Language Integrated Query (LINQ)](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
+
 - [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
 
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-
-- What's new in C#
-  - [C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
-  - [C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
-  - [C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
 
 There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.
 So, considering this, Microsoft created [.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
@@ -40,3 +39,9 @@ So, considering this, Microsoft created [.NET Core](https://github.com/msg-Caree
 Further reading:
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
  - [Microsoft Free courses, tutorials, videos](https://dotnet.microsoft.com/en-us/learn/csharp)
+
+What's new in C#
+  - [C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
+  - [C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
+  - [C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
+
