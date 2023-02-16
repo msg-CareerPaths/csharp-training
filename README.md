@@ -7,7 +7,7 @@
 - [Working Mode](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/workingmode.md)
 - [Environment](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/environment.md)
 - [Time Bookings](???)
-- [Product app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/app.md)
+- [Exercises](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/exercises.md)
 - Chapters
   - [0. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)
   - 1.WEB API
@@ -27,8 +27,13 @@
     * [3.3. Using Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/303-using-razor-vs-blazor.md)
   - [4.Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/400-security.md)
   - [5.Unit tests](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-unit-tests.md)
-- [OPT-1. ODBC](#opt-1-odbc)
-- [OPT-2. MongoDB](#opt-2-mongodb)
-- [OPT-3. OAuth](#opt-3-oauth)
-- [OPT-4. RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-400-rabbit-mq.md)
-- [OPT-5. WebSocket](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-500-web-socket.md)
+- [OPT-1. Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
+- [OPT-2. CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
+- [OPT-3. Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
+- [OPT-4. Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
+- [OPT-5. RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
+- [OPT-6. WebSocket](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-web-socket.md)
+
+
+mai adaug ???????????
+[OPT-1. ODBC](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-ODBC.md)

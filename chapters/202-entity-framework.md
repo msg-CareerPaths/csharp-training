@@ -9,7 +9,7 @@ Required Reading:
 Exercise:
 
 [Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.
-Add to your project all Models from the video guide.
+Add to your project all models from the video guide.
 You should watch the video until minute 11:05 to create models,context and add\update migrations.
 Next step is to create a new controller ProductsEFController.
 Check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio) article's "Scaffold a controller" paragraph.
