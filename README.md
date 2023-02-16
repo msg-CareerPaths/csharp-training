@@ -27,13 +27,10 @@
     * [3.3. Using Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/303-using-razor-vs-blazor.md)
   - [4.Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/400-security.md)
   - [5.Unit tests](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-unit-tests.md)
-- [OPT-1. Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
-- [OPT-2. CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
-- [OPT-3. Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
-- [OPT-4. Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
-- [OPT-5. RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
-- [OPT-6. WebSocket](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-web-socket.md)
-
-
-mai adaug ???????????
-[OPT-1. ODBC](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-ODBC.md)
+- [OPT- Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
+- [OPT- CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
+- [OPT -Api Versioning](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-apiversioning.md)
+- [OPT- Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
+- [OPT- Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
+- [OPT- RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
+- [OPT- WebSocket](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-web-socket.md)

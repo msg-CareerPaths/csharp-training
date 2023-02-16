@@ -25,12 +25,12 @@ CREATE TABLE [dbo].[products_ado](
 	[ID] [int] IDENTITY(1,1) PRIMARY KEY,
 	[Name] [nvarchar](50) NULL,
 	[Description] [nvarchar](max) NULL,
-	[Price] [decimal](18, 0) NULL,
-	[Weight] [decimal](18, 0) NULL
+	[Price] [decimal](18, 2) NULL,
+	[Weight] [decimal](18, 2) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
 Next you should update the application so that products are stored in SQL database using ADO.Net.
-Create a new products controller and service.(recommended)
+Create a new products controller and service.
 To set the SQL connection string and table name in the service class ,use the SqlSettings with the 2 properties ConnectionString and ProductTableName loaded from the appsettings.json file, which you already created in the exercise from [1.6 Chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-configurations.md).
 
 Build and run the application, call all methods and check to see if the product table is updated accordingly on the sql server.
