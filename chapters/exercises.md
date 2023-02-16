@@ -15,7 +15,7 @@ ProductADOSqlController -  operations for the products to be saved in  a Sql Dat
 ProductsEFController - operations for the products to be saved in  a Sql Database using Entity Framework core.
 ProductCategoryMongoController - operations for the product categories which will be stored in MongoDb.
 
-A test project where you will have a couple of unit tests.
+A test project where you will implement a couple of unit tests.
 
 ???????!!!!!!!??????????
 
