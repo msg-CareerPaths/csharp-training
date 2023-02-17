@@ -1,4 +1,4 @@
-## 3.3. Using Razor vs. Blazor
+## 4.3. Using Razor vs. Blazor
 
 * [Razor](https://www.learnrazorpages.com/) is a templating engine that combines C# with HTML to build dynamic web content.
 
