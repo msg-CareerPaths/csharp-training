@@ -1,4 +1,4 @@
-## 4. Security
+## 5. Security
 
 * [Security] (https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-7.0) 
 Code access security is a mechanism that controls the access code to protect resources and operations. In NET Framework, code access security performs functions like defining permission, enabling administrators to configure security policy, allowing code to request the permissions it requires in order to run, granting permissions to each assembly that is loaded, based on the permissions requested by the code and it enables code to demand that its callers have specific permissions.
@@ -10,11 +10,9 @@ Exercise: *nothing to do*.
 C# security vulnerabilities includes topics such as :
  - [Authentication and authorization in ASP.NET](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api)
  - [Authentication](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/)
-* (Introduction to authorization in ASP.NET Core)(https://learn.microsoft.com/en-us/aspnet/core/security/authorization/introduction?view=aspnetcore-7.0)
+ - [Introduction to authorization in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/security/authorization/introduction?view=aspnetcore-7.0)
  - [XML vulnerabilities](https://pvs-studio.com/en/blog/posts/csharp/0918/)
  - [XSS basics of web security](https://learn.microsoft.com/en-us/aspnet/core/security/cross-site-scripting?view=aspnetcore-7.0)
-
  - [SQL injection](https://jonathancrozier.com/blog/preventing-sql-injection-in-c-sharp-applications)
  - [Regular expressions](https://docs.microsoft.com/en-us/archive/msdn-magazine/2010/may/security-briefs-regular-expression-denial-of-service-attacks-and-defenses)
- - [Concurrency](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/concurrency?view=aspnetcore-7.0)
  - [Other platform-related security issues](https://docs.microsoft.com/en-us/dotnet/standard/security/)

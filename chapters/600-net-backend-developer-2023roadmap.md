@@ -1,4 +1,4 @@
-## 5. NET backend developer roadmap (2023)
+## 6. NET backend developer roadmap (2023)
 
 The .Net ecosystem is big and has the capability to build anything and everywhere.
 This can be done with the help of third party libraries and the open source community.
