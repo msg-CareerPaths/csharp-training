@@ -44,5 +44,3 @@ What's new in C#
   - [C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
   - [C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
   - [C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
-
-[Next >>](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
