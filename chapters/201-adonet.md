@@ -2,20 +2,20 @@
 Goal: Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
 
 Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
-1. [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
-2. [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
-3. [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
-4. [Update Records ...go to the Update method from HomeController](https://www.yogihosting.com/update-records-ado-net-aspnet-core/)
-5. [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
-6. [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
+ - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
+ - [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
+ - [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
+ - [Update Records ...go to the Update method from HomeController](https://www.yogihosting.com/update-records-ado-net-aspnet-core/)
+ - [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
+ - [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
 Prerequisites:
 If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
-1. You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
+ - You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
 and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
-2. If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
+ - If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
 
 Exercise:
 After installing the SQL Server create an new database with a table where you can save products.
