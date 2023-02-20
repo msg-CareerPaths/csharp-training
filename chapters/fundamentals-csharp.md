@@ -1,6 +1,7 @@
 ## C#.Net Fundamentals
 
-Goal: understand concepts about c#.
+Goal: 
+Understand basic concepts about c#.
 
 C# is a modern, object-oriented and type-safe programming language.C# programs run on .NET framework, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard.
 Here you have a list of fundamentals to read about:
@@ -34,7 +35,7 @@ Here you have a list of fundamentals to read about:
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
 There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.
-So, considering this, Microsoft created [.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
+So, considering this, Microsoft built [.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
 
 Further reading:
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
