@@ -22,7 +22,7 @@ You can view all methods from a controller :
 ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger2.png "Data Model")
 
 Exercise:
-  You have a start-up sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), that you can use to build your ASP.NET Core Web API.
+  You have a start-up sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), that you can use to build your ASP.NET Core Web API.  
   Add new properties to the Product class like (decimal Price, string Description).  
   Products and product categories  will be stored each in a list, which will be repopulated each time you start the project  so there is no persistance.  
   If you want you can initiate the lists with some values on the classes contructors.  
