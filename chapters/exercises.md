@@ -3,9 +3,6 @@
 Goal: You should make exercises at the end of each chapter or subchapter where there is an Exercise indication.
 You should have enought articles and links in each chapter to implement each exercise.
 
-Advise: Group the logic into service classes which implement interfaces and expose service logic through controllers.
-Use the swagger helper page of the projects to test the API.
-
 At the end, ideally, you should have a solution with 2 projects.
 One project will be a web api rest api, which will expose more controllers and their coresponding services, for example:
  - ProductInMemoryController - operations for saving products in memory.
