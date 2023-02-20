@@ -1,6 +1,6 @@
 ## Prerequisites
 
-Goal: Getting familiar with the ecosystem around c#.
+Goal: Installing Visual Studio 2022 \ VS CODE
 
 Required Reading:
 
