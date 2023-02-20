@@ -1,7 +1,5 @@
 ## C#.Net Fundamentals
 
-Introduction
-
 C# (pronounced "C sharp") is a modern, general-purpose programming language that is designed for building a variety of applications for the Microsoft .NET platform. It was created by Microsoft in the early 2000s as part of the .NET initiative and is now one of the most widely used programming languages in the world.
 
 C# is a strongly typed language that supports object-oriented programming principles such as encapsulation, inheritance, and polymorphism. It also has features for functional programming, such as lambda expressions and LINQ (Language Integrated Query). C# is often used to build desktop applications, web applications, games, and mobile applications.
