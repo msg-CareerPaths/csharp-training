@@ -36,5 +36,5 @@ To set the SQL connection string and table name in the service class ,use the Sq
 Build and run the application, call all methods and check to see if the product table is updated accordingly on the sql server.
 
 Further Reading:
-* [How to Use ADO .NET in ASP MVC .NET 6 Core application](https://www.youtube.com/watch?v=QN4gKyCEzHA)
-* [ADO.NET Tutorial For Beginners and Professionals](https://dotnettutorials.net/lesson/what-is-ado-net/)
+ - [How to Use ADO .NET in ASP MVC .NET 6 Core application](https://www.youtube.com/watch?v=QN4gKyCEzHA)
+ - [ADO.NET Tutorial For Beginners and Professionals](https://dotnettutorials.net/lesson/what-is-ado-net/)
