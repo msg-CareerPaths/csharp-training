@@ -15,16 +15,15 @@ Here is a preview of how a backend api that uses swagger looks like.
 
 You can view all methods from a controller :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/1.jpg "Data Model")
+![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/swagger1.png "Data Model")
 
 , and you can test individual methods :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/2.jpg "Data Model")
+![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/swagger2.png "Data Model")
 
 Exercise:
-  You have a start-up sample [here] (https://github.com/msg-CareerPaths/csharp-training/tree/main/Sources/Chapter1/Startup_Chapter/OnlineOrder/Startup_Chapter/OnlineOrder), that you can use to build your ASP.NET Core Web API.
-  
-  Add new properties to the Product class like (decimal Price, string Description)
+  You have a start-up sample [here] (https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), that you can use to build your ASP.NET Core Web API.
+  Add new properties to the Product class like (decimal Price, string Description).
   Products and product categories  will be stored each in a list, which will be repopulated each time you start the project  so there is no persistance.
   If you want you can initiate the lists with some values on the classes contructors.
   Update the existing product controller to cover all CRUD operation for the products.
