@@ -6,7 +6,7 @@
 - [ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
 - [Working Mode](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/workingmode.md)
 - [Environment](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/environment.md)
-- [Time Bookings](???)
+- [Time Bookings](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/timebooking.md)
 - [Exercises](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/exercises.md)
 - Chapters
   - [0. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)
