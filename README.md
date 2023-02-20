@@ -16,7 +16,7 @@
     - [1.3. Local drive access](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/103-local-drive-access.md)
     - [1.4. Logging](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/104-logging.md)
     - [1.5. Exception Handling](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/105-exception-handling.md)
-    - [1.6. Configuration in ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configurations.md)
+    - [1.6. Configuration in ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configuration.md)
   - [2.Database access](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/200-database-access.md)
     - [2.1. ADO.NET](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/201-adonet.md)
     - [2.2. Entity Framework](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/202-entity-framework.md)
