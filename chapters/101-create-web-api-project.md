@@ -2,7 +2,7 @@
 
    __Goal__: Create your first web api asp net core project.
    
-   __Exercise__  
+   __Exercise :__  
    For the first chapter please create a new Web API using .Net Core.  
    To create the application open Visual Studio, choose a Create a New Project, Select ASP.NET Core Web API project and follow the steps.   
    Please check the following the images to select the right options:   
