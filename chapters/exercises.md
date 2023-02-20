@@ -1,4 +1,4 @@
-## 6. Exercises
+## Exercises
 
 Goal: You should make exercises at the end of each chapter or subchapter where there is an Exercise indication.
 You should have enought articles and links in each chapter to implement each exercise.
