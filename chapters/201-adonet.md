@@ -2,6 +2,14 @@
 Goal:   
 Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
 
+The main components of ADO.NET are:  
+ - Data Providers: A set of libraries that provide connectivity to specific databases. Examples include System.Data.SqlClient for SQL Server, System.Data.OracleClient for Oracle, and System.Data.OleDb for OLE DB-compliant data sources.  
+ - Connection: A connection is a link between a .NET application and a database. Developers use the Connection class to establish and manage connections.  
+ - Command: The Command class is used to execute SQL statements and stored procedures against a database.  
+ - DataReader: The DataReader class provides a fast, read-only stream of data from a database. It is useful for retrieving large amounts of data quickly.  
+ - DataSet: The DataSet class is an in-memory representation of a set of tables and relationships. It is useful for working with disconnected data, caching data, and updating data.  
+ - DataAdapter: The DataAdapter class is used to populate a DataSet from a database and to update changes made to the DataSet back to the database.
+
 Required Reading: 
  - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
  - [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
