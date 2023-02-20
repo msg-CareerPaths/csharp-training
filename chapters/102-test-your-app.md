@@ -29,7 +29,6 @@ Exercise:
   Update the existing product controller to cover all CRUD operation for the products.  
   Create a new class named ProductCategory with the following properties(string? Id,string Name,string description).  
   Create a new controller and service for the product categories where you will expose all CRUD methods.  
-  Product category service will implement an interface called IProductCategoryService.  
   At this stage you will have 2 controllers one for products and one for product categories.  
   Don't forget to update the Program.cs and inject the new ProductCategoryService using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
   At the end run, debug and  manual test the application with swagger.  
