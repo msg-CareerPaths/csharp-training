@@ -23,15 +23,15 @@ You can view all methods from a controller :
 
 Exercise:
   You have a start-up sample [here] (https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), that you can use to build your ASP.NET Core Web API.
-  Add new properties to the Product class like (decimal Price, string Description).
-  Products and product categories  will be stored each in a list, which will be repopulated each time you start the project  so there is no persistance.
-  If you want you can initiate the lists with some values on the classes contructors.
-  Update the existing product controller to cover all CRUD operation for the products.
-  Create a new class named ProductCategory with the following properties(string? Id,string Name,string description).
-  Create a new controller and service for the product categories where you will expose all CRUD methods.
-  Product category service will implement an interface called IProductCategoryService.
-  At this stage you will have 2 controllers one for products and one for product categories.
-  Don't forget to update the Program.cs and inject the new ProductCategoryService using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).
-  At the end run, debug and  manual test the application with swagger.
+  Add new properties to the Product class like (decimal Price, string Description).__
+  Products and product categories  will be stored each in a list, which will be repopulated each time you start the project  so there is no persistance.__
+  If you want you can initiate the lists with some values on the classes contructors.__
+  Update the existing product controller to cover all CRUD operation for the products.__
+  Create a new class named ProductCategory with the following properties(string? Id,string Name,string description).__
+  Create a new controller and service for the product categories where you will expose all CRUD methods.__
+  Product category service will implement an interface called IProductCategoryService.__
+  At this stage you will have 2 controllers one for products and one for product categories.__
+  Don't forget to update the Program.cs and inject the new ProductCategoryService using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).__
+  At the end run, debug and  manual test the application with swagger.__
 
   (Optional) for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
