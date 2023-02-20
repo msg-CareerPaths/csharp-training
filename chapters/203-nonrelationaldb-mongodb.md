@@ -1,7 +1,7 @@
 ## 2.3. Non-relational database
 
 Goal: 
-Understanding the __[difference between a relational and a non-relational](https://www.integrate.io/blog/the-sql-vs-nosql-difference/)
+Understanding the [difference between a relational and a non-relational](https://www.integrate.io/blog/the-sql-vs-nosql-difference/)
 
 A non-relational database, also known as NoSQL (Not Only SQL) database, is a type of database that stores and retrieves data using non-tabular structures. Unlike relational databases, which use tables with predefined columns and rows to store data, non-relational databases use a variety of data models, including key-value, document, graph, and column-family.
 
