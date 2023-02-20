@@ -1,4 +1,4 @@
-## 1.3. Configuration in ASP.NET Core
+## 1.6. Configuration in ASP.NET Core
 Goal: 
 - Understand how configurations can be made in .net
 
