@@ -15,11 +15,11 @@ Here is a preview of how a backend api that uses swagger looks like.
 
 You can view all methods from a controller :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/swagger1.png "Data Model")
+![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png "Data Model")\
 
 , and you can test individual methods :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/Sources/Chapter2/swagger2.png "Data Model")
+![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger2.png "Data Model")
 
 Exercise:
   You have a start-up sample [here] (https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), that you can use to build your ASP.NET Core Web API.
