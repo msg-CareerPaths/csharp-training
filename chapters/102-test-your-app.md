@@ -15,7 +15,7 @@ Here is a preview of how a backend api that uses swagger looks like.
 
 You can view all methods from a controller :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png "Data Model")\
+![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png "Data Model")
 
 , and you can test individual methods :
 
