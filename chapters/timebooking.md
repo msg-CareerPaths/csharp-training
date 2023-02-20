@@ -10,4 +10,4 @@ Use the following booking codes to track activities:
 
 In the booking description, please use the following format: `Chapter: Brief activity description`, for the regular calls, simply state the name of the meeting. 
 
-Examples: `1: Reading about dependency injection, spring basics`, `2: Setting up the project.`.
+Examples: `1: Reading about dependency injection, c# basics`, `2: Setting up the project.`.
