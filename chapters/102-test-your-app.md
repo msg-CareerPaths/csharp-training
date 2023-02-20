@@ -34,4 +34,4 @@ Exercise:
   Don't forget to update the Program.cs and inject the new ProductCategoryService using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).
   At the end run, debug and  manual test the application with swagger.
 
-  (Optional) for tetsing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
+  (Optional) for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
