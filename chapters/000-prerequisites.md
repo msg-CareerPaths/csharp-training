@@ -1,6 +1,6 @@
 ## Prerequisites
 
-Goal: Getting familiar with the ecosystem around c#. You can skip this chapter if you have already worked with C# and Git.
+Goal: Getting familiar with the ecosystem around c#.
 
 Required Reading:
 
@@ -23,4 +23,4 @@ Further Resources:
 
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
- - [Nuget in 5 minutes](https://Nuget.apache.org/guides/getting-started/Nuget-in-five-minutes.html)
+ - [Install and manage packages in Visual Studio using the NuGet Package Manager]([https://Nuget.apache.org/guides/getting-started/Nuget-in-five-minutes.html](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio)
