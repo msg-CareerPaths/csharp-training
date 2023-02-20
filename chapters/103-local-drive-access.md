@@ -1,4 +1,4 @@
-## 1.4. Local drive access 
+## 1.3. Local drive access 
 
 Goal: Understand IO Operations and JSON Serialization 
 
