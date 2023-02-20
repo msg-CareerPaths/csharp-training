@@ -1,6 +1,6 @@
 ## 1.1. Create Web API project
 
-   Goal: Create your first web api asp net core project.
+   __Goal__: Create your first web api asp net core project.
    
    __Exercise__  
    For the first chapter please create a new Web API using .Net Core.  
