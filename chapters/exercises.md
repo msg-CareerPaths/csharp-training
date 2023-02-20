@@ -2,8 +2,8 @@
 
 Goal: You should make exercises at the end of each chapter or subchapter where there is an Exercise indication.
 You should have enought articles and links in each chapter to implement each exercise.
-
-At the end, ideally, you should have a solution with 2 projects.
+You can make exercises, by adding the new functionality by creating new controllers to the application or by refactoring the old functionality.
+In case you consider the first approach ,at the end, ideally, you should have a solution with 2 projects.
 One project will be a web api rest api, which will expose more controllers and their coresponding services, for example:
  - ProductInMemoryController - operations for saving products in memory.
  - ProductCategoriesInMemoryController - operations for saving products categories in memory.
