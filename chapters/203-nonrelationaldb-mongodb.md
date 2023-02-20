@@ -26,8 +26,3 @@ The MongoDB connections details,database name and collection name will be loaded
 In the project add a new service,controller and interface that will be used to make CRUD operations on the mongo DB. 
 Build, run,debug  and test the application.  
 Check to see if operations are persisted in the products collection from the mongodb.  
-
-Further Reading:
- - [Build Your First .NET Core Application with MongoDB Atlas](https://www.mongodb.com/developer/languages/csharp/build-first-dotnet-core-application-mongodb-atlas/)
- - [Create a RESTful API with .NET Core and MongoDB](https://www.mongodb.com/developer/how-to/create-restful-api-dotnet-core-mongodb/)
- 
