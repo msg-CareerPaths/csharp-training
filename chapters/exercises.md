@@ -7,7 +7,7 @@ Advise: Group the logic into service classes which implement interfaces and expo
 Use the swagger helper page of the projects to test the API.
 
 At the end, ideally, you should have a solution with 2 projects.
-One project will be a web api rest api, which will expose more controllers, for example:
+One project will be a web api rest api, which will expose more controllers and their coresponding services, for example:
 ProductInMemoryController - operations for saving products in memory.
 ProductCategoriesInMemoryController - operations for saving products categories in memory.
 ProductFileController - operations to save products in files.
@@ -17,10 +17,5 @@ ProductCategoryMongoController - operations for the product categories which wil
 
 A test project where you will have a couple of unit tests.
 
-???????!!!!!!!??????????
-
-  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/qiaU7uWM). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
- > to "Visual Studio" and generate a new project ASP.NET Core Web API:
- > 
- > Go- Project name: `productsapp`,
- > - Solution: `ro.msg.learning_yourName`,
+  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/EqvB8FNL). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
+  > On this repo you will create you app from scratch.
