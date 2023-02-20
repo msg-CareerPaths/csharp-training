@@ -2,7 +2,7 @@
 Goal:   
 Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
 
-Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
+Required Reading: 
  - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
  - [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
  - [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
