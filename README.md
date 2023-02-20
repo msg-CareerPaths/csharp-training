@@ -27,7 +27,7 @@
     - [4.2. Using Windows Forms vs. WPF](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/402-using-windows-forms-vs-wpf.md)
     - [4.3. Using Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/403-using-razor-vs-blazor.md)
   - [5.Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-security.md)
-  - [6.Roadmap 2023](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-security.md)
+  - [6.Roadmap 2023](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/600-roadmap.md)
 - [OPT- Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
 - [OPT- CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
 - [OPT -Api Versioning](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-apiversioning.md)
