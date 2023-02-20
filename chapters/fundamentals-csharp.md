@@ -46,6 +46,7 @@ So, considering this, Microsoft built [.NET Core](https://github.com/msg-CareerP
 
 Further reading:
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
+ - [C# (c sharp)](https://www.tutorialspoint.com/csharp/index.htm)
  - [Microsoft Free courses, tutorials, videos](https://dotnet.microsoft.com/en-us/learn/csharp)
 
 What's new in C#
