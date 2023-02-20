@@ -1,5 +1,6 @@
 ## 2.1. ADO.NET
-Goal: Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
+Goal:   
+Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
 
 Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
  - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
@@ -9,7 +10,7 @@ Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
  - [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
  - [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-Prerequisites:
+Prerequisites:  
 If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
  - You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
