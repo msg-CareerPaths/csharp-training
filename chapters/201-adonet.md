@@ -10,7 +10,7 @@ Required Reading: ADO.NET by building CRUD features in ASP.NET Core Application
 6. [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
 Prerequisites:
-If you do not have an sql server installed, you will need to install a local SQL Server instance on your machine.
+If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
 1. You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
 and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
