@@ -6,9 +6,9 @@
 - [Environment](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/environment.md)
 - [Time Bookings](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/timebooking.md)
 - [Exercises](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/exercises.md)
-- [C#.Net Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-csharp.md)
-- [ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
 - Chapters
+  - [C#.Net Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-csharp.md)
+  - [ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
   - [0. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)
   - 1.WEB API
     - [1.1. Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-create-web-api-project.md)
