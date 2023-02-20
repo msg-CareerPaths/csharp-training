@@ -3,7 +3,7 @@
 Goal: 
 Understand basic concepts about c#.
 
-C# is a modern, object-oriented and type-safe programming language.C# programs run on .NET framework, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard.
+C# is a modern, object-oriented and type-safe programming language.C# programs run on .NET framework, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard.  
 Here you have a list of fundamentals to read about:
 
 - [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)
