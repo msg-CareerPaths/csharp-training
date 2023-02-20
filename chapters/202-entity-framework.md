@@ -1,7 +1,19 @@
 ## 2.2. Entity Framework
 
-Goal: 
+Goal:  
 Understanding how and why Entity Framework can be used to automate all types of SQL database-related activities for an application, and how using the frameowrk developers can work at a higher level of abstraction when they deal with data and can create and maintain the data-oriented application with less code and database-related knowledege.
+
+Entity Framework (EF) is an object-relational mapping (ORM) framework for .NET applications. It is a part of the ADO.NET family of technologies and provides a high-level abstraction for working with databases. With EF, developers can work with data in terms of entities and relationships, rather than tables and SQL statements.
+
+Entity Framework consists of several components:  
+ - ObjectContext: The ObjectContext is the primary entry point for working with data using EF. It represents a connection to a database and provides methods for querying, updating, and saving data.
+ - DbContext: DbContext is a simplified version of ObjectContext and provides a more intuitive and developer-friendly way to work with EF. It is the preferred way to work with EF in modern .NET applications.
+ - Entity Data Model: The Entity Data Model (EDM) is a conceptual model that represents the structure of data in a database. It includes entities, relationships, and mappings between entities and database tables.
+ - LINQ to Entities: EF supports Language-Integrated Query (LINQ) for querying data using a strongly-typed syntax.
+ - Code First: Code First is a way to create database schemas from C# classes. It allows developers to define their data model using classes, and EF automatically creates the database schema based on these classes.
+ - Database Migrations: EF allows developers to make changes to the database schema over time using database migrations. Migrations allow developers to update the database schema while preserving existing data.
+
+Entity Framework supports multiple database providers, including Microsoft SQL Server, Oracle, MySQL, PostgreSQL, and SQLite, among others. It is a powerful and flexible ORM that can significantly reduce the amount of code needed to work with databases in .NET applications.
 
 Required Reading: 
  - [Entity Framework Core](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
