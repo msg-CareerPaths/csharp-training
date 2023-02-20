@@ -1,9 +1,7 @@
 ## 1.1. Create Web API project
 
-   Required Reading:
-    - [ASP.NET Core fundamentals overview](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0&tabs=linux)
-    - [Dependency injection(services)](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0)
-
+   Goal:Create your first web api asp net core project.
+   
    Exercise:
    For the first chapter please create a new Web API using .Net Core.
    To create the application open Visual Studio, choose a Create a New Project, Select ASP.NET Core Web API project and follow the steps. Please check the following the images to select the right options: 
