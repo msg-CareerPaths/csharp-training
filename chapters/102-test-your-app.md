@@ -25,8 +25,7 @@ Exercise:
   You have a start-up sample [here] (https://github.com/msg-CareerPaths/csharp-training/tree/main/Sources/Chapter1/Startup_Chapter/OnlineOrder/Startup_Chapter/OnlineOrder), that you can use to build your ASP.NET Core Web API.
   
   Add new properties to the Product class like (decimal Price, string Description)
-  Products and product categories  will be stored each in a list, which will be repopulated each time you start the project,
-  so there is no persistance.
+  Products and product categories  will be stored each in a list, which will be repopulated each time you start the project  so there is no persistance.
   If you want you can initiate the lists with some values on the classes contructors.
   Update the existing product controller to cover all CRUD operation for the products.
   Create a new class named ProductCategory with the following properties(string? Id,string Name,string description).
