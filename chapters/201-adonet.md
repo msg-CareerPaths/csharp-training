@@ -13,15 +13,14 @@ The main components of ADO.NET are:
  - DataSet: The DataSet class is an in-memory representation of a set of tables and relationships. It is useful for working with disconnected data, caching data, and updating data.  
  - DataAdapter: The DataAdapter class is used to populate a DataSet from a database and to update changes made to the DataSet back to the database.
 
-Use the following link to check how to make CRUD operations on sql.
- - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
+Use the following links and checck how to use ado.net:
  - [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
  - [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
  - [Update Records ...go to the Update method from HomeController](https://www.yogihosting.com/update-records-ado-net-aspnet-core/)
  - [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
  - [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-**Prerequisites: **
+**Exercise: **
 
 If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
@@ -29,9 +28,7 @@ Here are 2 ways to install the SQL Server :
 and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
  - If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
-
-**Exercise: **
-
+ - 
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running the following script in the Sql Server Management Studio.
 
