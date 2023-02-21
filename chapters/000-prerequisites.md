@@ -19,6 +19,6 @@
 
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
- - [Install and manage packages in Visual Studio using the NuGet Package Manager]([https://Nuget.apache.org/guides/getting-started/Nuget-in-five-minutes.html](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio)
+ - [Install and manage packages in Visual Studio using the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio)
  - [Intro To The .NET CLI - How To Use It, Why We Need It, And More](https://www.youtube.com/watch?v=RQLzp2Z8-BE&ab_channel=IAmTimCorey)
  - [Build .NET applications with C#](https://docs.microsoft.com/en-us/learn/paths/build-dotnet-applications-csharp/?WT.mc_id=dotnet-35129-website)
