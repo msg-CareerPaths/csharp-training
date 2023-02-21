@@ -8,7 +8,7 @@ Docker uses a client-server architecture, where the Docker client communicates w
 
 Docker has become a popular tool for developers, operations teams, and organizations that want to build and deploy applications more efficiently and reliably.
 
-**Further Resources:**
+**Resources:**
 
  - [Introduction to Containers and Docker](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/)
  - [Introduction to .NET and Docker](https://learn.microsoft.com/en-us/dotnet/core/docker/introduction?source=recommendations)
