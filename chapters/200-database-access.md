@@ -35,4 +35,4 @@ Further we will integrate our exercise app with SQL and MongoDB databases.
 
  - [Why to use a database instead of saving data to disk?](https://arstechnica.com/information-technology/2013/05/why-use-a-database-instead-of-just-saving-your-data-to-disk/)
 
-**Exercise** *nothing to do*.
+**Exercise**:*nothing to do*.
