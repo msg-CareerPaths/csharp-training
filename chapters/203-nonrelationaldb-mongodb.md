@@ -23,7 +23,7 @@ You need to have a MongoDb install on your local machine.
 Check [this](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/) article for help.  
 After installing the MongoDB ,create a database called productsdb and a collection named categories that saves the product categories in mongodb.     
 The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.  
-(You've allready made an similar exercise in [1.6 chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configuration.md).    
+(You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configuration.md).    
 In the project add a new service,controller and interface that will be used to make CRUD operations on the mongo DB.   
 Build, run,debug  and test the application.    
 Check to see if operations are persisted in the products collection from the mongodb.    
