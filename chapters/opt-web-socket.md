@@ -1,6 +1,7 @@
 ## WebSocket
 
-WebSocket is a computer communications protocol that provides full-duplex communication channels over a single TCP connection. This means that two-way communication is possible between a client and a server, where both the client and the server can send messages to each other at any time, without the need for a request-response cycle.
+WebSocket is a computer communications protocol that provides full-duplex communication channels over a single TCP connection.   
+This means that two-way communication is possible between a client and a server, where both the client and the server can send messages to each other at any time, without the need for a request-response cycle.
 
 **Further Resources:**
 
