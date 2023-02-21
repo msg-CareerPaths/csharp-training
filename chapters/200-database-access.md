@@ -21,8 +21,6 @@ Why databases?
 * Databases are concurrent; multiple users can use them at the same time without corrupting the data.
 * Databases scale well.
 
-Check a comparison [File System vs. Database](https://dzone.com/articles/which-is-better-saving-files-in-database-or-in-fil)
-
 Ask yourself the following questions:  
  - What happens if you want to update a numeric quantity into a very large products/orders data file that stores for example an online shop information?   
  - What happens if during the time spent with reading/searching a large file, other simultaneous requests come for writing or modifying or deleting the same quantities or entries and what happens if during that exact time there is a power shortage?   
