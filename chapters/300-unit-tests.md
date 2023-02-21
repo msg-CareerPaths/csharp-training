@@ -43,7 +43,7 @@ Add a test class for the ProductCategoryController and test the following:
  - Test if the GetAsync(int id) method returns a NotFound result if the given id does not esists in the controller gategories list.  
  - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the controller gategories list.   
 
-Use [Mock](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0)package to mock repositories\services.  
+Use [Mock](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0) package to mock repositories\services.  
 
 **Further Resources:**
 
