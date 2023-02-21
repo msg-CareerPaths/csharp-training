@@ -12,7 +12,7 @@ Kafka's architecture is based on the following key components:
 Kafka is used to build real-time data pipelines, including companies such as LinkedIn, Uber, and Netflix. 
 Some of the common use cases for Kafka include: stream processing, data integration, message queuing and log aggregation.
 
-**Further Resources:**
+**Resources:**
 
  - [Kafka in 100 Seconds](https://www.youtube.com/watch?v=uvb00oaa3k8)
  - [Kafka .NET Client](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html#ak-dotnet)
