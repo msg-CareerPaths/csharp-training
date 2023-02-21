@@ -41,7 +41,13 @@ Following, there are some articles for you to read to get familiar with C# :
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
-- [SOLID Principles in C#](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/)  
+- [SOLID Principles in C#](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/)
+
+- [What's new in C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
+
+- [What's new in C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
+
+- [What's new in C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
 
 There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.
 So, considering this, Microsoft built [.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
@@ -50,8 +56,3 @@ Further reading:
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
  - [C# (c sharp)](https://www.tutorialspoint.com/csharp/index.htm)
  - [Microsoft Free courses, tutorials, videos](https://dotnet.microsoft.com/en-us/learn/csharp)
-
-What's new in C#
-  - [C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
-  - [C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
-  - [C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
