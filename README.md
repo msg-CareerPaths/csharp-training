@@ -10,7 +10,7 @@
   - 1.Fundamentals
     - [1.1. C#.Net Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-csharp.md)  
     - [1.2. ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)  
-  - [2. Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)  
+  - [2.Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/000-prerequisites.md)  
   - [3.WEB API](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/100-web-rest-api.md)
     - [3.1.Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-create-web-api-project.md)    
     - [3.2.Test your app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/102-test-your-app.md)  
