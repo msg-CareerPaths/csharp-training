@@ -5,13 +5,15 @@
    Exercise   
    For the first chapter please create a new Web API using .Net Core.  
    To create the application open Visual Studio, choose a Create a New Project, Select ASP.NET Core Web API project and follow the steps.   
-   Please check the following the images to select the right options:   
-
+   Please check the following the images to select the right options:
+   1.Create and select the type of the project from File -> NewProject
    ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi1.png)
-
-   and then 
-
+   
+   2.Configure project name and location:
    ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi2.png)
+   
+   3.Specify additional information :
+   ![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi3.png)
    
    As a default project you will probably have a weather forecast example.  
    Check all the files from the project and get familiar with the structure and the classes.  
