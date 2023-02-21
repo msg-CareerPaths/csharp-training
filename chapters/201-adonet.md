@@ -1,6 +1,9 @@
 ## 2.1. ADO.NET
-Goal:   
+
+**Goal:**   
 Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
+
+**Required Reading:**
 
 The main components of ADO.NET are:  
  - Data Providers: A set of libraries that provide connectivity to specific databases. Examples include System.Data.SqlClient for SQL Server, System.Data.OracleClient for Oracle, and System.Data.OleDb for OLE DB-compliant data sources.  
@@ -10,7 +13,7 @@ The main components of ADO.NET are:
  - DataSet: The DataSet class is an in-memory representation of a set of tables and relationships. It is useful for working with disconnected data, caching data, and updating data.  
  - DataAdapter: The DataAdapter class is used to populate a DataSet from a database and to update changes made to the DataSet back to the database.
 
-Required Reading: 
+Use the following link to check how to make CRUD operations on sql.
  - [Learn ADO.NET by building CRUD features in ASP.NET Core Application](https://www.yogihosting.com/ado-net-aspnet-core/)
  - [Create Records... go to the Create method from HomeController](https://www.yogihosting.com/create-records-ado-net-aspnet-core/)
  - [Read Records...go to the Index method from HomeController](https://www.yogihosting.com/read-records-ado-net-aspnet-core/)
@@ -18,7 +21,8 @@ Required Reading:
  - [Delete Records...go to the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
  - [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-Prerequisites:  
+**Prerequisites: **
+
 If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
  - You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
@@ -26,7 +30,8 @@ and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/
 
  - If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
 
-Exercise:  
+**Exercise: **
+
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running the following script in the Sql Server Management Studio.
 
@@ -40,10 +45,11 @@ CREATE TABLE [dbo].[products_ado](
   
 Next you should update the application so that products are stored in SQL database using ADO.Net.  
 Create a new products controller and service.  
-To set the SQL connection string and table name in the service class ,use the SqlSettings with the 2 properties ConnectionString and ProductTableName loaded from the appsettings.json file, which you already created in the exercise from [1.6 Chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configuration.md).  
+To set the SQL connection string and table name in the service class ,use the SqlSettings with the 2 properties ConnectionString and ProductTableName loaded from the appsettings.json file, which you already created in the exercise from a previous [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/206-configuration.md).    
 
 Build and run the application, call all methods and check to see if the product table is updated accordingly on the sql server.
 
-Further Reading:
+**Further Reading:**
+
  - [How to Use ADO .NET in ASP MVC .NET 6 Core application](https://www.youtube.com/watch?v=QN4gKyCEzHA)
  - [ADO.NET Tutorial For Beginners and Professionals](https://dotnettutorials.net/lesson/what-is-ado-net/)
