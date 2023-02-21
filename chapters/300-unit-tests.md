@@ -45,8 +45,8 @@ Add a test class for the ProductCategoryController and test the following:
 Use Mock package to mock repositories\services.Check this link for guidance: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0  
 **Further Resources:**
 
- - [Unit Testing with existing legacy code - using Mock](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/unit-testing-existing-code)   
- - [Use stubs to isolate parts of your application from each other for unit testing](https://learn.microsoft.com/en-us/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing?view=vs-2022&tabs=csharp)  
+ - [Unit Testing with existing legacy code - using Mock](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/unit-testing-existing-code)  
+ - [Use stubs to isolate parts of your application from each other for unit testing](https://learn.microsoft.com/en-us/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing?view=vs-2022&tabs=csharp)    
  - [Use shims to isolate your app for unit testing](https://learn.microsoft.com/en-us/visualstudio/test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing?view=vs-2022&tabs=csharp)  
  - [Fluent  Assertions](https://www.youtube.com/watch?v=MJhQCMnRggs)    
 
