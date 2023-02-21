@@ -6,7 +6,8 @@ RabbitMQ provides a rich set of features: queues , exchanges, bindings, message 
 
 RabbitMQ is used by many organizations to build distributed systems, including companies such as VMware, NASA, and Hulu. Some of the common use cases for RabbitMQ include: microservices, event-driven architectures, scalable web applications,IoT.
 
-Articles and videos:
+**Further Resources:**
+
  - [RabbitMQ in 100 Seconds](https://www.youtube.com/watch?v=NQ3fZtyXji0)
  - [RabbitMQ offficial site ](https://www.rabbitmq.com/)
  - [.NET/C# RabbitMQ Client Library](https://www.rabbitmq.com/dotnet.html)
