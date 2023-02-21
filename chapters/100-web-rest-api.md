@@ -1,4 +1,4 @@
-## 1.API, CRUD AND REST
+## 3.WEB API
 
 **Goal:** Understand basic concepts about API , CRUD and REST.
 
@@ -9,6 +9,8 @@ An application programming interface (API) is code that enables two software pro
 Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most.
 
 REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.
+
+**Required Reading:**
 
  - [What is Web API?](https://www.tutorialsteacher.com/webapi/what-is-web-api)
  - [What is CRUD](https://www.codecademy.com/article/what-is-crud)
