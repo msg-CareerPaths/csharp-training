@@ -27,7 +27,7 @@ Here are 2 ways to install the SQL Server :
  - You can use the [SQL Server 2022 Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads),
 and the [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
- - If you prefer docker desktop you can use this approach : https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083
+ - If you prefer docker desktop you can use [this](https://blog.devgenius.io/run-microsoft-sql-in-minutes-using-docker-desktop-4e31f5e23083) approach.
  
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running the following script in the Sql Server Management Studio.
