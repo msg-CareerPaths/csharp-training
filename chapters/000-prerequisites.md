@@ -1,8 +1,8 @@
 ## Prerequisites
 
-Goal: Installing Visual Studio 2022 \ VS CODE
+**Goal**: Installing Visual Studio 2022 \ VS CODE
 
-Required Reading:
+**Required Reading:**
 
  - [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics)  (skip this if you are already familiar with git commands)
  - [Install Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/community/)   - __recommended__
@@ -13,9 +13,9 @@ Required Reading:
  - [Intro to Visual Studio in 5 minutes](https://www.youtube.com/watch?v=5AOp8zFu4Vg&ab_channel=dotNET)
  - [Visual Studio 2022 Tips & Tricks](https://www.youtube.com/watch?v=etHfCFwH6MY&ab_channel=ClaudioBernasconi)
 
-Exercise: *nothing to do*.
+**Exercise:** *nothing to do*.
 
-Further Resources:
+**Further Resources:**
 
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
