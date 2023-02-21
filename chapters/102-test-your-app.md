@@ -23,7 +23,8 @@ Here is a preview of how a backend api that uses swagger looks like.
 You can view all methods from a controller :
 ![swagger](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png)
 
-, and you can test individual methods :
+, and you can test individual methods :  
+
 ![swagger](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger2.png)
 
 (Optional) for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
