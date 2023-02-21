@@ -33,7 +33,6 @@
 - [OPT - Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
 - [OPT - RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
 - [OPT - Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
+- [OPT - WebSocket](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-web-socket.md)
 - [OPT - CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
 - [OPT - API Versioning](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-apiversioning.md)
-
-
