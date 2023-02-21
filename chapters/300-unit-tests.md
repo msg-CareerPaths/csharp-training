@@ -42,11 +42,11 @@ The test project name and folder structure, the test class and method names shou
 Add a test class for the ProductCategoryController and test the following:  
  - Test if the GetAsync(int id) method returns a NotFound result if the given id does not esists in the controller gategories list.  
  - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the controller gategories list.  
-Use Mock package to mock repositories\services.Check this link for guidance: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0    
+Use [Mock](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0)package to mock repositories\services.  
+
 **Further Resources:**
 
  - [Unit Testing with existing legacy code - using Mock](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/unit-testing-existing-code)  
  - [Use stubs to isolate parts of your application from each other for unit testing](https://learn.microsoft.com/en-us/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing?view=vs-2022&tabs=csharp)    
  - [Use shims to isolate your app for unit testing](https://learn.microsoft.com/en-us/visualstudio/test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing?view=vs-2022&tabs=csharp)  
  - [Fluent  Assertions](https://www.youtube.com/watch?v=MJhQCMnRggs)    
-
