@@ -15,7 +15,7 @@ Application configuration in ASP.NET Core is performed using one or more configu
 - Directory files
 - In-memory .NET 
 
-Chek this link to lean more about [configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
+Check this link to lean more about [configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
 
 **Exercise:**
 For this exercise you will load settings from the appsettings.json file.
