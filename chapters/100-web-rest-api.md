@@ -9,7 +9,7 @@ REST is an acronym for Representational State Transfer and an architectural styl
 
 Required Reading:
  - [What is Web API?](https://www.tutorialsteacher.com/webapi/what-is-web-api)
- - [What is CRUD] (https://www.codecademy.com/article/what-is-crud)
+ - [What is CRUD](https://www.codecademy.com/article/what-is-crud)
  - [What is REST](https://www.codecademy.com/article/what-is-rest)
 
 Exercise: *nothing to do*.
