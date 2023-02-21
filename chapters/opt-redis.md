@@ -6,7 +6,8 @@ It stores data in memory, which makes it very fast, but also means that the data
 
 Redis supports a wide range of data structures, including strings, hashes, lists, sets, and sorted sets, as well as more advanced structures such as hyperloglogs and geospatial indexes. It also offers several features for manipulating and processing these data structures, including atomic operations, transactions, and Lua scripting.
 
-Articles and videos:
+**Further Resources:**
+
  - [Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
  - [Introduction to Redis](https://redis.io/docs/about/)
  - [Redis with .NET](https://docs.redis.com/latest/rs/references/client_references/client_csharp/)
