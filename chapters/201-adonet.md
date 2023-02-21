@@ -20,7 +20,7 @@ Use the following links and checck how to use ado.net:
  - [Delete Records...check the Delete method from HomeController](https://www.yogihosting.com/delete-records-ado-net-aspnet-core/)
  - [SqlBulkCopy class of ADO.NET](https://www.yogihosting.com/sqlbulkcopy-class-of-ado-net/)
 
-**Exercise: **
+**Exercise:**
 
 If you do not have an SQL Server installed, you will need to install it on your machine.
 Here are 2 ways to install the SQL Server :
