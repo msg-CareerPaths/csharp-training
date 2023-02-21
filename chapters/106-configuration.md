@@ -1,6 +1,6 @@
 ## 1.6. Configuration in ASP.NET Core
 
-**Goal:** Understand how configurations can be made in .net
+**Goal:** Understand how configurations can be made in .net.
 
 **Required Reading:**
 
