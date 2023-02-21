@@ -30,8 +30,10 @@
   - [7.Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-security.md)
   - [8.Roadmap 2023](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/600-roadmap.md)
 - [OPT - Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
+- [OPT - Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
+- [OPT - RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
+- [OPT - Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
 - [OPT - CQRS](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-CQRS.md)
 - [OPT - API Versioning](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-apiversioning.md)
-- [OPT - Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
-- [OPT - Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
-- [OPT - RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
+
+
