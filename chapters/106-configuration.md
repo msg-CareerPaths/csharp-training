@@ -1,7 +1,6 @@
 ## 1.6. Configuration in ASP.NET Core
 
-**Goal:** 
-Understand how configurations can be made in .net
+**Goal:** Understand how configurations can be made in .net
 
 **Required Reading:**
 
@@ -18,7 +17,9 @@ Application configuration in ASP.NET Core is performed using one or more configu
 Check this link to lean more about [configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
 
 **Exercise:**
-For this exercise you will load settings from the appsettings.json file.
-Update the appsettings.json file and add a new section called SqlSettings with 2 properties ConnectionString and ProductTableName which will be used in the next practices to connect to an sql server.  
-On Program.cs create a local SqlSettings variable where you will load the SqlSettings ConnectionString and ProductTableName the appsettings.json file.      
-Add a log information in the program.cs to log the SqlSettings settings.  
+
+For this exercise you will load settings from the appsettings.json file.  
+Update the appsettings.json file and add a new section called SqlSettings with 2 properties ConnectionString and ProductTableName which will be used in the next practices to connect to an sql server.
+Create a new class SqlSettings with 2 properties where to load the sql settings defined in the appsettings.json file. 
+In Program.cs create a local SqlSettings variable where and load there settings from appsettings.json file.       
+Add a log information in the program.cs to log ConnectionString and ProductTableName from SqlSettingssettings.  
