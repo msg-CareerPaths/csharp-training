@@ -20,7 +20,8 @@ At this stage you will have 2 controllers one for products and one for product c
 Don't forget to update the Program.cs and inject the new service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
 At the end run, debug and  manual test the application with swagger.
 Here is a preview of how a backend api that uses swagger looks like.
-You can view all methods from a controller :
+You can view all methods from a controller :  
+
 ![swagger](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png)
 
 , and you can test individual methods :  
