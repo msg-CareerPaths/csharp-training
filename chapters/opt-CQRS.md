@@ -8,7 +8,8 @@ Separating the processing of commands and queries has several benefits. For exam
 
 However, implementing a CQRS architecture can also introduce additional complexity, since it requires additional components and coordination between them. As such, CQRS is typically used in complex systems that require high scalability and performance, rather than in simpler applications.
 
-Reading:
+**Further Resources:**
+
  - [What is CQRS pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
  - [Combining Clean Architecture and CQRS Principles in a .NET Core Application: A Practical Example](https://www.apriorit.com/dev-blog/783-web-clean-architecture-and-cqrs-in-net-core-apps)
  - [How to structure a .NET Solution (project separation & architecture)](https://www.youtube.com/watch?v=YiVqwoFMieg)
