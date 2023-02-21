@@ -1,6 +1,6 @@
 ## 1.2. Update and test your api
 
-**Goal:** Debug and testing your aplication. 
+**Goal:** Update,debug and test your aplication. 
 
 **Required Reading:**
 
@@ -18,7 +18,8 @@ Create a new class named ProductCategory with the following properties(string? I
 Create a new controller and service for the product categories where you will expose all CRUD methods.  
 At this stage you will have 2 controllers one for products and one for product categories.  
 Don't forget to update the Program.cs and inject the new service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
-At the end run, debug and  manual test the application with swagger.  
+At the end run, debug and  insert a breakpoint to test the application.
+Use swagger to call methods exposed by the controllers.  
 Here is a preview of how a backend api that uses swagger looks like.  
 You can view all methods from a controller :  
 
