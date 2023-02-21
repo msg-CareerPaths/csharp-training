@@ -1,4 +1,4 @@
-## .NET Core fundamentals
+## 1.2. NET Core fundamentals
 
 NET Core is a new version of .NET Framework, which is a free, open-source, general-purpose development platform maintained by Microsoft. It is a cross-platform framework that runs on Windows, macOS, and Linux operating systems.
 

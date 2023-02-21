@@ -1,7 +1,6 @@
-## 2.1. ADO.NET
+## 4.1. ADO.NET
 
-**Goal:**   
-Understanding how ADO.NET provides consistent access to data sources such as SQL Server and how data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.
+**Goal:** Understanding how to use ADO.NET to connect and make CRUD operation to an SQL Server database.
 
 **Required Reading:**
 

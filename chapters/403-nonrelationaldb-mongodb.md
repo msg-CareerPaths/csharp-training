@@ -1,8 +1,6 @@
-## 2.3. Non-relational database
+## 4.3. Non-relational database
 
-**Goal:** 
-
-Understanding the [difference between a relational and a non-relational](https://www.integrate.io/blog/the-sql-vs-nosql-difference/)
+**Goal:** Understanding the concept of a non-relational database and update project to integrate with MongoDB.
 
 **Required Reading:** 
 
@@ -27,3 +25,7 @@ The MongoDB connections details,database name and collection name will be loaded
 In the project add a new service,controller and interface that will be used to make CRUD operations on the mongo DB.   
 Build, run,debug  and test the application.    
 Check to see if operations are persisted in the products collection from the mongodb.    
+
+**Further Resources:**
+
+ - [Difference between a relational and a non-relational](https://www.integrate.io/blog/the-sql-vs-nosql-difference/).
