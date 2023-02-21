@@ -53,6 +53,7 @@ There are some limitations with the .NET Framework. For example, it only runs on
 So, considering this, Microsoft built [.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/fundamentals-netcore.md)
 
 **Further Resources:**
+
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
  - [C# (c sharp)](https://www.tutorialspoint.com/csharp/index.htm)
  - [Microsoft Free courses, tutorials, videos](https://dotnet.microsoft.com/en-us/learn/csharp)
