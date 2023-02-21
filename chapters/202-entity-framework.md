@@ -20,13 +20,12 @@ Entity Framework consists of several components:
 
 **Exercise:**
 
-[Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.
-Add to your project all models from the video guide.
-You should watch the video until minute 11:05 to create models,context and add\update migrations.
-Next step is to create a new controller ProductsEFController.
-Check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio) article's "Scaffold a controller" paragraph.
-Use the SqlSConnectionString property from the SqlSettings class to configure the EF sql connection in the product context.
-
+[Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.  
+Add to your project all models from the video guide.  
+You should watch the video until minute 11:05 to create models,context and add\update migrations.  
+Next step is to create a new controller ProductsEFController.  
+Check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio) article's "Scaffold a controller" paragraph. 
+Use the SqlSConnectionString property from the SqlSettings class to configure the EF sql connection in the product context.  
 Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.
 
 **Further Resources:**
