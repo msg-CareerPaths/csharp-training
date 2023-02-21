@@ -1,6 +1,6 @@
 ## 2.2. Entity Framework
 
-**Goal: **
+**Goal:**
 
 Understanding how and why Entity Framework can be used to automate all types of SQL database-related activities for an application, and how using the frameowrk developers can work at a higher level of abstraction when they deal with data and can create and maintain the data-oriented application with less code and database-related knowledege.
 
