@@ -1,4 +1,4 @@
-## 1.2. Update and test your api
+## 3.2. Update and test your api
 
 **Goal:** Update,debug and test your aplication. 
 

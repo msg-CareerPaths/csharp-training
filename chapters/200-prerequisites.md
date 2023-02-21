@@ -1,4 +1,4 @@
-## Prerequisites
+## 2.Prerequisites
 
 **Goal**: Installing Visual Studio 2022 \ VS CODE
 

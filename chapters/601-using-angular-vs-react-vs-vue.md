@@ -1,4 +1,4 @@
-## 4.1. Using Angular vs. React vs. Vue
+## 6.1. Using Angular vs. React vs. Vue
 
 There are three main frameworks for building web applications that every frontend developer has heard about: React, Vue, and Angular.  
 React is a UI library, Angular is a fully-fledged front-end framework, while Vue.js is a progressive framework.  

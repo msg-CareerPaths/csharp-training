@@ -1,6 +1,7 @@
-## 2. Database access
+## 4. Database access
 
 **Goals:** 
+
  - Understanding the need and advantages of databases compared to the file system.
  - Principles of databases.
  - Understanding, comparing, contrasting, using and integrating different database frameworks into a web application.

@@ -1,4 +1,4 @@
-## C#.Net Fundamentals
+## 1.1. C#.Net Fundamentals
 
 C# (pronounced "C sharp") is a modern, general-purpose programming language that is designed for building a variety of applications for the Microsoft .NET platform. It was created by Microsoft in the early 2000s as part of the .NET initiative and is now one of the most widely used programming languages in the world.
 

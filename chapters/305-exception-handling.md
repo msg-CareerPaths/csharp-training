@@ -1,4 +1,4 @@
-## 1.5. Exception Handling
+## 3.5. Exception Handling
 
 **Goal:** Understand exceptions,exception handling and error logging
 

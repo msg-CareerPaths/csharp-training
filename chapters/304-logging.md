@@ -1,4 +1,4 @@
-## 1.4. Logging
+## 3.4. Logging
 
 **Goal:** Understand how logging libraries work and how to log the necessary information from your application.
 
