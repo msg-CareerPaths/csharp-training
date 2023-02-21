@@ -25,6 +25,6 @@
  **Further Resources:**
  
  - [An alternative for serialization is Newtonsoft.Json](https://www.youtube.com/watch?v=hLYHE1kIOpo)  
- - [Comparison of System.Text.Json and Newtonsoft.Json(Newtonsoft.Json is a library used for JSON serialization for C#, and it can be found in older projects)](https://inspiration.nlogic.ca/en/a-comparison-of-newtonsoft.json-and-system.text.json)  
+ - [Comparison of System.Text.Json and Newtonsoft.Json(Newtonsoft.Json is a library used for JSON serialization in older projects)](https://inspiration.nlogic.ca/en/a-comparison-of-newtonsoft.json-and-system.text.json)  
  - [More about File system can be found here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/)  
  - [File and Stream I/O](https://docs.microsoft.com/en-us/dotnet/standard/io/)  
