@@ -15,7 +15,7 @@ Here are some examples of popular non-relational databases:
  - Neo4j: A graph database that is optimized for storing and querying graph data. It is commonly used for social networks, recommendation engines, and fraud detection.
  - Amazon DynamoDB: A fully managed NoSQL database that is designed for scalability and high availability. It is used by many companies to store and retrieve large amounts of data.
 
-Use thos link to see how to [create a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio)
+Use this link to see how to [create a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio) (you don't need to add authentication support to the web API).
 
 **Exercise:**
 
