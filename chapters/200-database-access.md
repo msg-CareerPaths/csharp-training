@@ -1,25 +1,25 @@
 ## 2. Database access
 
-**Goals:**  
-a) Understanding the need and advantages of databases compared to the file system.
-b) Principles of databases.
-c) Understanding, comparing, contrasting, using and integrating different database frameworks into a web application.
-e) Choosing and using relational and non-relational databases.
+**Goals:** 
+ - Understanding the need and advantages of databases compared to the file system.
+ - Principles of databases.
+ - Understanding, comparing, contrasting, using and integrating different database frameworks into a web application.
+ - Choosing and using relational and non-relational databases.
 
 **Required reading:**  
 
 Why databases?
-* You can query data in a database (ask it questions).
-* You can look up data from a database relatively rapidly.
-* You can relate data from two different tables together using JOINs.
-* You can create meaningful reports from data in a database.
-* Your data has a built-in structure to it.
-* Information of a given type is always stored only once.
-* Databases are ACID.
-* Databases are fault-tolerant.
-* Databases can handle very large data sets.
-* Databases are concurrent; multiple users can use them at the same time without corrupting the data.
-* Databases scale well.
+ - You can query data in a database (ask it questions).
+ - You can look up data from a database relatively rapidly.
+ - You can relate data from two different tables together using JOINs.
+ - You can create meaningful reports from data in a database.
+ - Your data has a built-in structure to it.
+ - Information of a given type is always stored only once.
+ - Databases are ACID.
+ - Databases are fault-tolerant.
+ - Databases can handle very large data sets.
+ - Databases are concurrent; multiple users can use them at the same time without corrupting the data.
+ - Databases scale well.
 
 Ask yourself the following questions:  
  - What happens if you want to update a numeric quantity into a very large products/orders data file that stores for example an online shop information?   
