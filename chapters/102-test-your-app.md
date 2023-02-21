@@ -4,7 +4,7 @@
 
 **Required Reading:**
 
-The .net core web api you've created in the has included the [Swagger](https://swagger.io/) middleware. 
+The .net core web api you've created in the previous chapter is using [Swagger](https://swagger.io/) middleware.
 
 Swagger can help you design, document your APIs at scale and will  generate a starting test page for your application. 
 This is a good starting point to do manual testing of your application.
