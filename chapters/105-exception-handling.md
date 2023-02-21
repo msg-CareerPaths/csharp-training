@@ -10,8 +10,8 @@
 
 **Exercise:**
 
-Add exception handling in all layers for one of the controllers.
-Log some exceptioms from controllers in log files using the previous learned logging mechanism.
+Add exception handling in all layers for one of the controllers.  
+Log some exceptioms from controllers in log files using the previous learned logging mechanism.  
 
 **Further Resources:**
 
