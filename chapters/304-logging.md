@@ -11,10 +11,10 @@ The logging informations are vast so don't go to deep in the articles, just try 
  - [Nlog Configuration file](https://github.com/NLog/NLog/wiki/Configuration-file)
  - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
-**Exercise:**
-   Add the NLog.Web.AspNetCore package to the solution.
-   Add a new nlog.config file to the project.
-   Update program.cs to add logging.
+**Exercise:**  
+   Add the NLog.Web.AspNetCore package to the solution.  
+   Add a new nlog.config file to the project.  
+   Update program.cs to add logging.  
 
    Use [this](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6#2-create-a-nlogconfig-file) link for guidance.
 
@@ -28,8 +28,8 @@ The logging informations are vast so don't go to deep in the articles, just try 
 
 **Further Resources:**
 
- - [Elastic Stack - Log Management System](https://www.elastic.co/what-is/elk-stack)
  - [Logging Best Practices](https://raygun.com/blog/c-sharp-logging-best-practices/)
  - [How to use structured logging](https://github.com/nlog/nlog/wiki/How-to-use-structured-logging)
  - [Use NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)
+ - [Elastic Stack - Log Management System](https://www.elastic.co/what-is/elk-stack)
  
