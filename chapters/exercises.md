@@ -14,5 +14,8 @@ One project will be a web api rest api, which will expose more controllers and t
 
 A second test project where you will have a couple of unit tests.  
 
-  > Register an account on GitHub and accept the training [GitHub Classroom Assignment](https://classroom.github.com/a/EqvB8FNL). This will create a new GitHub repository for you. Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.
-  > On this repo you will create you app from scratch.
+GitHub guidelines:
+  > Register an account on GitHub or use an existing one.  
+  > Create a new GitHub repository.   
+  > Clone this repository locally and checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.  
+  > On this repo you will create you app from scratch.  
