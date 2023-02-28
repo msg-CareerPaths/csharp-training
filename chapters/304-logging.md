@@ -28,8 +28,8 @@ The logging informations are vast so don't go to deep in the articles, just try 
 
 **Further Resources:**
 
- - [Elastic Stack - Log Management System](https://www.elastic.co/what-is/elk-stack)
  - [Logging Best Practices](https://raygun.com/blog/c-sharp-logging-best-practices/)
  - [How to use structured logging](https://github.com/nlog/nlog/wiki/How-to-use-structured-logging)
  - [Use NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)
+ - [Elastic Stack - Log Management System](https://www.elastic.co/what-is/elk-stack)
  
