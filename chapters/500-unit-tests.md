@@ -10,7 +10,7 @@ Testing is an essential part of the software development process, and .NET provi
 - UI Testing: UI testing is the process of testing the user interface of an application. The most popular UI testing framework for .NET is Selenium, which allows developers to write automated tests that simulate user interactions with a web browser.
 - Performance Testing: Performance testing is the process of testing an application's performance under different conditions, such as high traffic or large data sets. The most popular performance testing tool for .NET is Apache JMeter, which allows developers to test web applications, web services, and databases.
 - Load Testing: Load testing is the process of testing an application's performance under different loads. The most popular load testing tool for .NET is LoadRunner, which allows developers to simulate user traffic and measure the application's response time and throughput.
- - Code Analysis: Code analysis tools such as ReSharper and SonarQube help developers identify potential issues in their code and ensure that it adheres to best practices and coding standards.
+- Code Analysis: Code analysis tools such as ReSharper and SonarQube help developers identify potential issues in their code and ensure that it adheres to best practices and coding standards.
 
 .NET also provides built-in testing tools such as Visual Studio Test Explorer and MSTest, which allow developers to run and debug tests directly from within the IDE. Overall, testing is an essential part of the software development process, and .NET provides a variety of tools and frameworks to support different types of testing.
 
@@ -27,7 +27,7 @@ The AAA(Arrange-Act-Assert) pattern is the most used pattern. to divide a test m
  	//assert  
  	//here you should check the result and that the expectations were met  
 
-Read more :
+**Required Reading:**
   - [Testing in .NET](https://learn.microsoft.com/en-us/dotnet/core/testing/)
   - [Unit test basics](https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022)
   - [Install unit test frameworks](https://learn.microsoft.com/en-us/visualstudio/test/install-third-party-unit-test-frameworks?view=vs-2022)
