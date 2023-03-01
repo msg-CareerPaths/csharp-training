@@ -4,4 +4,4 @@ You can work using your local environment:
  - You need to install VS2022 [Visual Studio 2022 - Community Edition](https://visualstudio.microsoft.com/vs/community/)
  - You can install [.NET 6.0 SDK \ .NET 7.0 SDK (Recommended)](https://dotnet.microsoft.com/en-us/download) - this could be allready installed with VS2022.
  - or you can install [Visual Code](https://code.visualstudio.com/), if you like to work with .NET core under Linux (but also in Windows) using bash or command line/power shell
- - Later you will need to instal SQL Server and Mondo Db, but we will get back to that.
+ - Later you will need to install SQL Server and MongoDb, but we will get back to that on the corresponding chapter.
