@@ -39,10 +39,11 @@ The AAA(Arrange-Act-Assert) pattern is the most used pattern. to divide a test m
 Create a xUnit test project for the previous application that you worked on, by adding a new tests project in the same solution.  
 The test project name and folder structure,test class and method names should respect the recomended naming conventions.  
 Add a test class for the ProductCategoryController and test the following:   
- - Test if the GetAsync(int id) method returns a NotFound result if the given id does not esists in the controller gategories list.  
- - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the controller gategories list.     
+ - Test if the GetAsync(int id) method returns a NotFound result if the given id does not exists in the categories list.  
+ - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the categories list.     
 
-Use [Mock](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0) package to mock repositories\services.  
+Use [Mock](https://softchris.github.io/pages/dotnet-moq.html#creating-our-first-mock) package to mock repositories\services.
+
 
 **Further Resources:**
 

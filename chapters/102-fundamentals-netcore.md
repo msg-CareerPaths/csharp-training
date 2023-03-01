@@ -1,6 +1,6 @@
 ## 1.2. NET Core fundamentals
 
-NET Core is a new version of .NET Framework, which is a free, open-source, general-purpose development platform maintained by Microsoft. It is a cross-platform framework that runs on Windows, macOS, and Linux operating systems.
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new implementation of .NET kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.
 
 [Here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) you can check the c# language version related to the each .Net framework.
 
