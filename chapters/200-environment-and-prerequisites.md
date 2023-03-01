@@ -1,11 +1,11 @@
 ## 2.Environment and prerequisites
 
-You can work using your local environment:
-You will need to install VS2022 Visual Studio 2022 - Community Edition.
-Next, install NET 7.0 SDK - this should be allready installed with VS2022.
-Besides VS2022-Community edition, you can install Visual Code, if you like to work with .NET core under Linux (but also in Windows) using bash or command line/power shell.
-Later you will need to install SQL Server and MongoDb, but we will get back to that on the corresponding chapter.
-You should also get familiar wit Git basic commands, and you should have a basic Visual Studio know how.
+You can work using your local environment.  
+You will need to install VS2022 Visual Studio 2022 - Community Edition.  
+Next, install NET 7.0 SDK - this should be allready installed with VS2022.  
+Besides VS2022-Community edition, you can install Visual Code, if you like to work with .NET core under Linux (but also in Windows) using bash or command line/power shell.  
+Later you will need to install SQL Server and MongoDb, but we will get back to that on the corresponding chapter.  
+You should also get familiar wit Git basic commands, and you should have a basic Visual Studio know how.  
 
 **Required Reading:**
 
@@ -18,7 +18,18 @@ You should also get familiar wit Git basic commands, and you should have a basic
  - [Visual Studio 2022 Tips & Tricks](https://www.youtube.com/watch?v=etHfCFwH6MY&ab_channel=ClaudioBernasconi)
  - [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics) (skip this if you are already familiar with git commands)
 
-**Exercise:** *nothing to do*.
+**Exercise:**
+
+You should create a repository where you will save your work.
+
+GitHub guidelines:
+  > Register an account on GitHub or use an existing one.  
+  > [Create a new repository](https://docs.github.com/en/get-started/quickstart/create-a-repo).  
+  > [Clone](https://learn.microsoft.com/en-us/visualstudio/version-control/git-clone-repository?view=vs-2022) this repository locally using Visual Studio.  
+  > [Create a branch ](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-branch?view=vs-2022) called develop_your_name.  
+  > Checkout the `develop` branch. During the course of the training, you will commit and push your work on this branch.  
+  > [Push](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022) the `develop_` branch.
+  > In order to request a code review from the trainers, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `main` branch.  
 
 **Further Resources:**
 
