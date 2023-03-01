@@ -4,12 +4,12 @@ You should make exercises at the end of each chapter or subchapter where there i
 
 You can make exercises, by adding the new functionality by creating new controllers to the application or by refactoring the old functionality.  
 In case you consider the first approach ,at the end, ideally, you should have a solution with 2 projects.  
-One project will be a web api rest api, which will expose more controllers and their coresponding services, for example:  
+One project will be a backend rest web api, which will expose more controllers and their corresponding services, for example:  
  - ProductInMemoryController - operations for saving products in memory.  
  - ProductCategoriesInMemoryController - operations for saving products categories in memory.  
- - ProductFileController - operations to save products in files.  
- - ProductADOSqlController -  operations for the products to be saved in  a Sql Database using ADO.Net  
- - ProductsEFController - operations for the products to be saved in  a Sql Database using Entity Framework core.  
+ - ProductFileController - operations for saving products in files.  
+ - ProductADOSqlController -  operations for the products to be saved in a Sql Database using ADO.Net .
+ - ProductsEFController - operations for the products to be saved in a Sql Database using Entity Framework core.  
  - ProductCategoryMongoController - operations for the product categories which will be stored in MongoDb.  
 
 A second test project where you will have a couple of unit tests.  
