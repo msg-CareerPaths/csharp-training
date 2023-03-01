@@ -3,14 +3,13 @@
 ## Contents
 
 - [Working Mode](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/workingmode.md)
-- [Environment](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/environment.md)
 - [Time Bookings](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/timebooking.md)
 - [Exercises](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/exercises.md)
 - Chapters
   - 1.Fundamentals
     - [1.1. C#.Net Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-fundamentals-csharp.md)  
     - [1.2. ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/102-fundamentals-netcore.md)  
-  - [2.Prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/200-prerequisites.md)  
+  - [2.Environment and prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/200-environment-and-prerequisites.md)  
   - [3.WEB API](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/300-web-rest-api.md)
     - [3.1.Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/301-create-web-api-project.md)    
     - [3.2.Test your app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/302-test-your-app.md)  
