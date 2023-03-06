@@ -2,7 +2,7 @@
 
 namespace Products.Services
 {
-    public interface IProductService
+    public interface IProductInMemoryService
     {
         IEnumerable<Product> Get();
     }

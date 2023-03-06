@@ -12,7 +12,7 @@
   - [2.Environment and prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/200-environment-and-prerequisites.md)  
   - [3.WEB API](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/300-web-rest-api.md)
     - [3.1.Create Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/301-create-web-api-project.md)    
-    - [3.2.Test your app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/302-test-your-app.md)  
+    - [3.2.Update and debug your app](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/302-test-your-app.md)  
     - [3.3.Local drive access](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/303-local-drive-access.md)  
     - [3.4.Logging](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/304-logging.md)  
     - [3.5.Exception Handling](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/305-exception-handling.md)  
@@ -28,6 +28,8 @@
     - [6.3.Using Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/603-using-razor-vs-blazor.md)
   - [7.Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/700-security.md)
   - [8.Roadmap 2023](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/800-roadmap.md)
+  
+- [OPT-Microservices](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-microservices.md)
 - [OPT-Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
 - [OPT-Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
 - [OPT-RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)

@@ -1,5 +1,9 @@
 ## 1.1. C#.Net Fundamentals
 
+Goal: Learn C# / .Net basic concepts
+
+**Required Reading:**
+
 C# (pronounced "C sharp") is a modern, general-purpose programming language that is designed for building a variety of applications for the Microsoft .NET platform. It was created by Microsoft in the early 2000s as part of the .NET initiative and is now one of the most widely used programming languages in the world.
 
 C# is a strongly typed language that supports object-oriented programming principles such as encapsulation, inheritance, and polymorphism. It also has features for functional programming, such as lambda expressions and LINQ (Language Integrated Query). C# is often used to build desktop applications, web applications, games, and mobile applications.
@@ -35,7 +39,7 @@ Following, there are some articles for you to read to get familiar with C# :
 
 - [Language Integrated Query (LINQ)](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
 
-- [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+- [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)[label](https://github.com/msg-CareerPaths/csharp-training)
 
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)

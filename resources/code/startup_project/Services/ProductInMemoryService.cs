@@ -4,12 +4,12 @@ using System.Collections.Concurrent;
 
 namespace Products.Services
 {
-    public class ProductInMemoryService : IProductService
+    public class ProductInMemoryService : IProductInMemoryService
     {
-        private List<Product> _products = new();
-        private readonly ILogger<IProductService> _logger;
+        private List<Product> _products;
+        private readonly ILogger<IProductInMemoryService> _logger;
 
-        public ProductInMemoryService(ILogger<IProductService> logger)
+        public ProductInMemoryService(ILogger<IProductInMemoryService> logger)
         {
             _logger = logger;
         }

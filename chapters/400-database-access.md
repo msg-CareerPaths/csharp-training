@@ -7,7 +7,7 @@
  - Understanding, comparing, contrasting, using and integrating different database frameworks into a web application.
  - Choosing and using relational and non-relational databases.
 
-**Required reading:**  
+**Required Reading:**  
 
 Why databases?
  - You can query data in a database (ask it questions).

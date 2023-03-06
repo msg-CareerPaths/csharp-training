@@ -11,6 +11,9 @@ Docker has become a popular tool for developers, operations teams, and organizat
 **Resources:**
 
  - [Introduction to Containers and Docker](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/)
+ - [What is Docker?](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/docker-defined)
  - [Introduction to .NET and Docker](https://learn.microsoft.com/en-us/dotnet/core/docker/introduction?source=recommendations)
  - [Docker images for ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-7.0)
+  - [Create and deploy a cloud-native ASP.NET Core microservice](https://learn.microsoft.com/ro-ro/training/modules/microservices-aspnet-core/?WT.mc_id=dotnet-35129-website)
+  - [.NET Tutorial - Your First Microservice](https://dotnet.microsoft.com/en-us/learn/aspnet/microservice-tutorial/intro)
 
