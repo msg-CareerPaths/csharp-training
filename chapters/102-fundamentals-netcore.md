@@ -1,12 +1,17 @@
 ## 1.2. NET Core fundamentals
 
-In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new implementation of .NET kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.
+Goal: Learn .Net Core basic concepts.
 
-[Here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) you can check the c# language version related to the each .Net framework.
+**Required Reading**
 
-**Required Reading:**
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new implementation of .NET kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.  
+You can find [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) the c# language version related to the each .Net framework.
 
+Check the following links to learn about .net core:  
  - [ASP.NET Core fundamentals overview](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0&tabs=linux)
  - [App startup in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-7.0)
  - [Dependency injection](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0)
+
+ **Further Resources:**
+
  - [Check the ASP.NET Core Best Practices](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/best-practices?view=aspnetcore-7.0)

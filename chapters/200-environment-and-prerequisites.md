@@ -11,7 +11,7 @@ You should also get familiar wit Git basic commands, and you should have a basic
 
  - [Install Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/community/)   - __recommended__
  - [Install .NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-   this part may be optional as when installing the latest Visual Studio Community 2022 you should get the latest .net 7.
+   this part may be optional as when installing the latest Visual Studio Community 2022 you should get the latest .net .
  - [Install Visual Code](https://code.visualstudio.com/) - As stated previously,Visual Studio Community 2022 is recommended, as most of the examples and help links are using visual studio as integrated development environment (IDE).
  - [Starting with Visual Studio](https://www.youtube.com/watch?v=iC3CJcYxkl0&t=107s&ab_channel=MicrosoftVisualStudio)
  - [Intro to Visual Studio in 5 minutes](https://www.youtube.com/watch?v=5AOp8zFu4Vg&ab_channel=dotNET)

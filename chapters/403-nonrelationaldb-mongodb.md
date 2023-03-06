@@ -13,18 +13,21 @@ Here are some examples of popular non-relational databases:
  - Neo4j: A graph database that is optimized for storing and querying graph data. It is commonly used for social networks, recommendation engines, and fraud detection.
  - Amazon DynamoDB: A fully managed NoSQL database that is designed for scalability and high availability. It is used by many companies to store and retrieve large amounts of data.
 
-Use this link to see how to [create a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio) (you don't need to add authentication support to the web API).
 
 **Exercise:**
 
-You need to have a MongoDb install on your local machine.
+You need to have a MongoDb installed on your local machine.
 Check [this](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/) article for help.  
-After installing the MongoDB ,create a database called productsdb and a collection named categories that saves the product categories in mongodb.     
+Next, create a new class named ProductCategory with the following properties(string? Id,string Name,string description).  
+Create a database called productsdb and a collection named categories that saves the product categories in mongodb.
+Create a new controller and service for the product categories.(Don't forget, the service must implement an interface).
+Update the project and to add CRUD operations to the new controller.
 The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.  
-(You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/106-configuration.md).    
-In the project add a new service,controller and interface that will be used to make CRUD operations on the mongo DB.   
+You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/306-configuration.md).    
 Build, run,debug  and test the application.    
-Check to see if operations are persisted in the products collection from the mongodb.    
+Check to see if data is persisted in the products collection from the mongodb.    
+
+Use can use this link to see how to save data to [use a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio) (ignore the authentication part).
 
 **Further Resources:**
 

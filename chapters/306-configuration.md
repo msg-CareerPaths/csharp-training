@@ -19,7 +19,15 @@ Check this link to lean more about [configuration in ASP.NET Core](https://learn
 **Exercise:**
 
 For this exercise you will load settings from the appsettings.json file.  
-Update the appsettings.json file and add a new section called SqlSettings with 2 properties ConnectionString and ProductTableName which will be used in the next practices to connect to an sql server.
-Create a new class SqlSettings with 2 properties where to load the sql settings defined in the appsettings.json file. 
-In Program.cs create a local SqlSettings variable where and load there settings from appsettings.json file.       
-Add a log information in the program.cs to log ConnectionString and ProductTableName from SqlSettingssettings.  
+Update the appsettings.json by adding a new section called SqlSettings with 2 properties ConnectionString and ProductTableName, which you will be used later in the next chapters to connect to an sql server.  
+Create the coresponding SqlSettings class were you will load the settings from the appsettings.json file.  
+Update the Program.cs to load the SqlSettings from appsettings.json file, and log this information in log file.
+
+
+**Further Resources:**
+
+ - [How to Read AppSettings Values From a JSON File in .NET Core](https://code-maze.com/aspnetcore-read-appsettings-values-from-a-json-file/)
+
+
+
+

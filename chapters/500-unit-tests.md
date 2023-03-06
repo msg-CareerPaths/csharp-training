@@ -27,7 +27,7 @@ The AAA(Arrange-Act-Assert) pattern is the most used pattern. to divide a test m
  	//assert  
  	//here you should check the result and that the expectations were met  
 
-**Required Reading:**
+Cotinue by reading the following articles:
   - [Testing in .NET](https://learn.microsoft.com/en-us/dotnet/core/testing/)
   - [Unit test basics](https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022)
   - [Install unit test frameworks](https://learn.microsoft.com/en-us/visualstudio/test/install-third-party-unit-test-frameworks?view=vs-2022)
@@ -37,8 +37,8 @@ The AAA(Arrange-Act-Assert) pattern is the most used pattern. to divide a test m
 **Exercices:**
 
 Create a xUnit test project for the previous application that you worked on, by adding a new tests project in the same solution.  
-The test project name and folder structure,test class and method names should respect the recomended naming conventions.  
-Add a test class for the ProductCategoryController and test the following:   
+The test project name, folder structure,test class and method names should respect the best practice naming conventions.  
+Add a test class for the product category controller and test the following:   
  - Test if the GetAsync(int id) method returns a NotFound result if the given id does not exists in the categories list.  
  - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the categories list.     
 

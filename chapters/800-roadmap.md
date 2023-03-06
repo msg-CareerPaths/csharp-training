@@ -9,6 +9,7 @@ I added this image that is taken from the links below, just to show you how many
 
 [Here](https://www.youtube.com/watch?v=gw-6lKrKlp0) is a very interesting video from someone I follow on youtube, that is presenting you what you could learn next.
 
-Related links:
+**Resources :**
+
  - [Nick's .NET Backend Developer Roadmap for 2022](https://github.com/Elfocrash/.NET-Backend-Developer-Roadmap)
  - [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)

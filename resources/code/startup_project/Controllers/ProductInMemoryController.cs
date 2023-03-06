@@ -11,10 +11,10 @@ namespace Products.Controllers
     [ApiController]
     public class ProductInMemoryController : ControllerBase
     {
-        private readonly IProductService _productService;
+        private readonly IProductInMemoryService _productService;
         private readonly ILogger<ProductInMemoryController> _logger;
 
-        public ProductInMemoryController(ILogger<ProductInMemoryController> logger,IProductService productService)
+        public ProductInMemoryController(ILogger<ProductInMemoryController> logger,IProductInMemoryService productService)
         {
             _logger = logger;
             _productService = productService;
