@@ -27,7 +27,7 @@ The AAA(Arrange-Act-Assert) pattern is the most used pattern. to divide a test m
  	//assert  
  	//here you should check the result and that the expectations were met  
 
-Cotinue by reading the following articles:
+Continue by reading the following articles:
   - [Testing in .NET](https://learn.microsoft.com/en-us/dotnet/core/testing/)
   - [Unit test basics](https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022)
   - [Install unit test frameworks](https://learn.microsoft.com/en-us/visualstudio/test/install-third-party-unit-test-frameworks?view=vs-2022)
