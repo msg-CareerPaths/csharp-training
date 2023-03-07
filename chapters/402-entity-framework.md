@@ -22,9 +22,8 @@ Entity Framework consists of several components:
 Add and adapt to your project all models from the video guide.    
 You should watch the video until minute 11:05 to create models,context and add\update migrations.  
 Next,check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller) article's "Scaffold a controller" paragraph.
-At this point, you will now have a product controller whick calls the product context directly.
-Add a new service and update the controller so that you respect the following flow: controller -> service -> context.
-Use the SqlSConnectionString property from the SqlSettings class to configure the sql connection.
+At this point, you will now have a new product controller whick calls the product context for all CRUD operations.
+Use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the product order db context.
 Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.  
 
 **Further Resources:**
