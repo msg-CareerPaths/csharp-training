@@ -36,7 +36,6 @@ To keep your local branch synchronized with your remote branch [use git fetch, p
 
 **Further Resources:**
 
- - [Use git fetch, pull, push and sync for version control](https://learn.microsoft.com/en-us/visualstudio/version-control/git-fetch-pull-sync?view=vs-2022)
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
 
