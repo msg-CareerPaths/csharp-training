@@ -19,7 +19,7 @@
   - Products must be stored as json files.  
   - Every time a product is created a file must be created on disk with the serialized information about the product.     
   - When a product is modified or deleted, this must be reflected to the files on the disk.   
-  - You will have to come up with an apropiate folder and file name for this task.  
+  - You will have to come up with an appropiate file and folder name for this task.  
   - The folder where the files are stored does not exists, must be created from the app.   
   
  **Further Resources:**
