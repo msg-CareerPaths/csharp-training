@@ -11,5 +11,5 @@ I added this image that is taken from the links below, just to show you how many
 
 **Resources :**
 
- - [Nick's .NET Backend Developer Roadmap for 2022](https://github.com/Elfocrash/.NET-Backend-Developer-Roadmap)
- - [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
+ - [Nick's .NET Backend Developer Roadmap for 2023](https://github.com/Elfocrash/.NET-Backend-Developer-Roadmap)
+ - [ASP.NET Core Developer Roadmap 2023](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
