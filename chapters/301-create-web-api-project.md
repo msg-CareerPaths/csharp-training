@@ -41,7 +41,7 @@ At the end, run, debug and  insert a breakpoint to test the application.
 Test you app using swagger and then use postman to do the same tests.  
 You can also use [Curl](https://curl.se/docs/), for testing a REST API.
 
-Use the following links and check how to compile, run,test and debug your application:  
+Use the following links and check how to compile, run, test and debug your application:  
 - [How to build your applicantion](https://learn.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2022)   
 - [How to run you application](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#run-the-app)  
 - [How to debug code](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#debug-the-app)  
