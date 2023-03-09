@@ -9,7 +9,7 @@ Besides VS2022-Community edition, you can install Visual Code, if you like to wo
 Later you will need to install SQL Server and MongoDb, but we will get back to that on the corresponding chapter.  
 You should also get familiar wit Git basics.
 
-Check this links to install prerequisites and leaarn some basics:  
+Check this links to install prerequisites and learn some basics:  
  - [Install Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/community/)   - __recommended__
  - [Install .NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
    this part may be optional as when installing the latest Visual Studio Community 2022 you should get the latest .net .
