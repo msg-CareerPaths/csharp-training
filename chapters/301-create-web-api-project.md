@@ -39,12 +39,14 @@ Check the WeatherForecastController from the Controllers folders.
 Open the Program.cs file to see how then application is created and started.  
 At the end, run, debug and  insert a breakpoint to test the application. 
 Test you app using swagger and then use postman to do the same tests.  
-Another app that you can use for testing is [Curl](https://curl.se/docs/).
+You can also use [Curl](https://curl.se/docs/), for testing a REST API.
 
 You can use the following links and check how to compile, run and debug your application:  
 - [How to build your applicantion](https://learn.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2022)   
 - [How to run you application](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#run-the-app)  
 - [How to debug code](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#debug-the-app)  
+- [Postman- Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
+- [Test a REST API with curl](https://www.baeldung.com/curl-rest)  
 
 **Further Resources:**
 
