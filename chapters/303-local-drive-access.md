@@ -13,7 +13,7 @@
 **Exercise:**
 
   Create a new controller and service to save products in files.    
-  Add methods to create,update,get an delete products as json files from\to disk.  
+  Add methods to create,update,get and delete products as\from json files from\to disk.  
   You must take into consideration the followings:  
   - use System.Text.Json package for serialization and deserialization.   
   - Products must be stored as json files.  
