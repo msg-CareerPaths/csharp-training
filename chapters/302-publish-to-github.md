@@ -13,7 +13,7 @@ Read some basics about Githib if neccessary:
 
 **Exercise**:
 
-You can use using this sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), as starting point for your project, or
+You can use this sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), as starting point for your project, or
 you can use the project you've made in the previuos chapter and import files from the sample.
 From Visual Studio, follow this steps : 
 
