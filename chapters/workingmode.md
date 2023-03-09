@@ -6,6 +6,5 @@ A simple application will be built with the learned concepts: a *Products* appli
 After the learning material for a given step was sufficiently explored, either some new functionality will be added to this application or old functionality will be refactored.  
 The application will have no user interface. 
 Developers are expected to perform developer tests with Postman once the REST APIs are implemented or by using Swagger.  
-
 All the code written must be published on GitHub. Commits must be pushed when each individual chapter is finished. 
 In order to request a code review from the trainers, you must open a pull request from the develop to the master branch.

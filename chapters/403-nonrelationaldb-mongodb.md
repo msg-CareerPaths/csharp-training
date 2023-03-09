@@ -18,13 +18,13 @@ Here are some examples of popular non-relational databases:
 
 You need to have a MongoDb installed on your local machine.
 Check [this](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/) article for help.  
-Next, create a new class named ProductCategory with the following properties(string? Id,string Name,string description).  
-Create a database called productsdb and a collection named categories that saves the product categories in mongodb.
-Create a new controller and service for the product categories.(Don't forget, the service must implement an interface).
-Update the project and to add CRUD operations to the new controller.
+Next, create a new class named ProductCategory with the following properties(string? Id,string Name,string description).   
+Create a database called productsdb and a collection named categories that saves the product categories in mongodb.  
+Create a new controller and service for the product categories.(Don't forget, the service must implement an interface).  
+Update the project and to add CRUD operations to the new controller.  
 The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.  
 You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/306-configuration.md).    
-Build, run,debug  and test the application.    
+Build, run, debug and test the application.    
 Check to see if data is persisted in the products collection from the mongodb.    
 
 Use can use this link to see how to save data to [use a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio) (ignore the authentication part).

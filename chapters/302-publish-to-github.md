@@ -13,7 +13,7 @@ Read some basics about Githib if neccessary:
 
 **Exercise**:
 
-You can use using this sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), as starting point for your project, or
+You can use this sample [here](https://github.com/msg-CareerPaths/csharp-training/tree/main/resources/code/startup_project), as starting point for your project, or
 you can use the project you've made in the previuos chapter and import files from the sample.
 From Visual Studio, follow this steps : 
 
@@ -27,7 +27,7 @@ Don't forget to update the Program.cs and inject the new product category servic
 
 After you've tested that everything is working, you should commit your work, so do the followings:
  >  [Make a commit](https://learn.microsoft.com/en-us/visualstudio/version-control/git-make-commit?view=vs-2022)  
- >  [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022)  
+ >  [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022),  
  >  [Create pull request](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=visual-studio) to merge changes from your branch to main(master) branch.  
  
  You will use these 3 steps each time you finish the exercise from each chapter.
@@ -36,7 +36,6 @@ To keep your local branch synchronized with your remote branch [use git fetch, p
 
 **Further Resources:**
 
- - [Use git fetch, pull, push and sync for version control](https://learn.microsoft.com/en-us/visualstudio/version-control/git-fetch-pull-sync?view=vs-2022)
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
 

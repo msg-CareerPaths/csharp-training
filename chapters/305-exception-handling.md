@@ -10,11 +10,11 @@
 
 **Exercise:**
 
-Add exception handling in all layers for one of the controllers.  
-Log some exceptioms from controllers in log files using the previous learned logging mechanism.  
+Add try catch exception handling for the product in memory controller and service.  
+Log exceptions using the previously learned logging mechanism(nlog). 
 
 **Further Resources:**
 
   - [Best practices for exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)
   - [5 Good Practices for Error Handling in C#](https://dev.to/bytehide/5-good-practices-for-error-handling-in-c-4391)
-  - [The Complete Guide to the ELK Stack](https://logz.io/learn/complete-guide-elk-stack/#intro)
+  - [Exception Handling In .NET Core Web API - middleware or filters ?](https://thecodeblogger.com/2021/05/30/exception-handling-middleware-in-net-core-web-api/)
