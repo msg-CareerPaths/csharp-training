@@ -37,8 +37,9 @@ You can view all methods from a controller :
 Check all the files from the project and get familiar with the structure and the classes.  
 Check the WeatherForecastController from the Controllers folders.  
 Open the Program.cs file to see how then application is created and started.  
-At the end, run, debug and  insert a breakpoint to test the application.  
-Optionally, for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
+At the end, run, debug and  insert a breakpoint to test the application. 
+Test you app using swagger and then use postman to do the same tests.  
+Another app that you can use for testing is [Curl](https://curl.se/docs/).
 
 You can use the following links and check how to compile, run and debug your application:  
 - [How to build your applicantion](https://learn.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2022)   
