@@ -37,7 +37,7 @@ Continue by reading the following articles:
 **Exercices:**
 
 Create a xUnit test project for the previous application that you worked on, by adding a new tests project in the same solution.  
-The test project name, folder structure,test class and method names should respect the best practice naming conventions.  
+The test project name, folder structure, test class and method names should respect the best practice naming conventions.  
 Add a test class for the product category controller and test the following:   
  - Test if the GetAsync(int id) method returns a NotFound result if the given id does not exists in the categories list.  
  - Test if the GetAsync(int id) method returns a product category result if a given input id param exists in the categories list.     
