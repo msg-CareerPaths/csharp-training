@@ -26,9 +26,9 @@ Update the existing product controller to cover all CRUD operation for the produ
 Don't forget to update the Program.cs and inject the new product category service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
 
 After you've tested that everything is working, you should commit your work, so do the followings:
- >  [Make a commit](https://learn.microsoft.com/en-us/visualstudio/version-control/git-make-commit?view=vs-2022)
- >  [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022),
- >  [Create pull request](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=visual-studio) to merge changes from your branch to main(master) branch.
+ >  [Make a commit](https://learn.microsoft.com/en-us/visualstudio/version-control/git-make-commit?view=vs-2022)  
+ >  [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022)  
+ >  [Create pull request](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=visual-studio) to merge changes from your branch to main(master) branch.  
  
  You will use these 3 steps each time you finish the exercise from each chapter.
 
