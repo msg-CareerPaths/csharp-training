@@ -5,8 +5,7 @@
 **Exercise:**
 
 First, create a new Web API using .Net Core.  
-To create the application open Visual Studio, choose a Create a New Project, Select ASP.NET Core Web API project and follow the steps.   
-Please check the following the images to select the right options:  
+To create the application open Visual Studio, choose Create a New Project, select ASP.NET Core Web API project and follow the steps:
 
  1.Create and select the type of the project from File -> NewProject  
 
@@ -38,8 +37,8 @@ You can view all methods from a controller :
 Check all the files from the project and get familiar with the structure and the classes.  
 Check the WeatherForecastController from the Controllers folders.  
 Open the Program.cs file to see how then application is created and started.  
-At the end run, debug and  insert a breakpoint to test the application.  
-(Optional) for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
+At the end, run, debug and  insert a breakpoint to test the application.  
+Optionally, for testing you can use other tools like : [Postman](https://www.postman.com/) or [Curl](https://curl.se/docs/).
 
 You can use the following links and check how to compile, run and debug your application:  
 - [How to build your applicantion](https://learn.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2022)   
@@ -48,4 +47,4 @@ You can use the following links and check how to compile, run and debug your app
 
 **Further Resources:**
 
- - [create a web API with ASP.NET Core controllers in VSCode](https://learn.microsoft.com/ro-ro/training/modules/build-web-api-aspnet-core/?WT.mc_id=dotnet-35129-website)
+ - [Create a web API with ASP.NET Core controllers in VSCode](https://learn.microsoft.com/ro-ro/training/modules/build-web-api-aspnet-core/?WT.mc_id=dotnet-35129-website)
