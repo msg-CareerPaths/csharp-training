@@ -5,7 +5,7 @@
 - [Working Mode](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/workingmode.md)
 - [Time Bookings](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/timebooking.md)
 - [Exercises](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/exercises.md)
-- Chapters  
+- Chapters
   - 1. Fundamentals()  
     - [1.1. C#.Net Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/101-fundamentals-csharp.md)  
     - [1.2. ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/102-fundamentals-netcore.md)  
