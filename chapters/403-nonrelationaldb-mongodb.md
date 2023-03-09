@@ -24,7 +24,7 @@ Create a new controller and service for the product categories.(Don't forget, th
 Update the project and to add CRUD operations to the new controller.  
 The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.  
 You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/306-configuration.md).    
-Build, run,debug  and test the application.    
+Build, run, debug and test the application.    
 Check to see if data is persisted in the products collection from the mongodb.    
 
 Use can use this link to see how to save data to [use a web API with ASP.NET Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio) (ignore the authentication part).
