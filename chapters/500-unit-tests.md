@@ -1,4 +1,4 @@
-## 5. Testing in .NET
+## 5. Testing
 
 **Goal:** Understand unit tests,create and implement unit tests.
  
