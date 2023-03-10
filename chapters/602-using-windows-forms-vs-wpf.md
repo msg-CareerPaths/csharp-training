@@ -1,4 +1,4 @@
-## 6.2. Using Windows Forms vs. WPF
+## 6.2. Windows Forms vs. WPF
 
 * [WinForms](https://www.guru99.com/c-sharp-windows-forms-application.html)  Windows Form Application : WinForms, as the name suggests, is basically a GUI-based approach introduced to the .NET framework. Prior to WPF and Silverlight, it was the main API for .NET that is being used to build GUI. It does not require any type of support other than runtime and OS for developing a standalone application. 
 One can develop apps that are easy to deploy, update, manage, and work offline while connected to the Internet. The development of WinForms is very simple as it is only based on the drag and drop placement of UI controls on canvas. It is the old platform for developing desktop applications.  
