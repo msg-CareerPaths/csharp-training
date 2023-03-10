@@ -1,4 +1,4 @@
-## 3.2. Publish project to GitHub
+## 3.2. Publish to GitHub
 
 **Goal:** Create github account, repository and make you first commit.
 
