@@ -22,7 +22,7 @@
     - [4.2. Entity Framework](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/402-entity-framework.md)  
     - [4.3. Non-relational database](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/403-nonrelationaldb-mongodb.md)  
   - [5. Testing](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-unit-tests.md)
-  - [6. Create GUI](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/600-gui.md)  
+  - [6. GUI](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/600-gui.md)  
     - [6.1. Using Angular vs. React vs. Vue](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/601-using-angular-vs-react-vs-vue.md)
     - [6.2. Using Windows Forms vs. WPF](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/602-using-windows-forms-vs-wpf.md)
     - [6.3. Using Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/603-using-razor-vs-blazor.md)
