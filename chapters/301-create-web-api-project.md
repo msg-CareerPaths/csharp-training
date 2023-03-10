@@ -1,4 +1,4 @@
-## 3.1. Create and test you first .net core Web API project
+## 3.1.Net core Web API project
 
 **Goal:** Create your first asp net core web api project.
 
