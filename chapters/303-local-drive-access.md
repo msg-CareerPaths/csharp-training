@@ -1,4 +1,4 @@
-## 3.3. Local drive access 
+## 3.3. Working with files
 
 **Goal:** Understand IO Operations and JSON Serialization 
 
