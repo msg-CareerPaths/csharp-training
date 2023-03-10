@@ -30,7 +30,7 @@
   - [8. Roadmap 2023](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/800-roadmap.md)
   
 - [OPT-Microservices](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-microservices.md)
-- [OPT-Docker with ASP.NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
+- [OPT-Docker with .NET Core](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-docker.md)
 - [OPT-Redis](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-redis.md)
 - [OPT-RabbitMQ](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-rabbit-mq.md)
 - [OPT-Kafka](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/opt-kafka.md)
