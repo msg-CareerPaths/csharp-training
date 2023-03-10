@@ -1,4 +1,4 @@
-## Host .NET in Docker containers
+## Docker with .NET Core
 
 Docker is an open-source platform that provides an efficient way to create, deploy, and run applications within containers. Containers are lightweight, standalone executable packages that contain everything needed to run an application, including the code, runtime, system tools, libraries, and settings.
 
