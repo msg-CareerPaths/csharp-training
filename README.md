@@ -11,7 +11,7 @@
     - [1.2. ASP.NET Core Fundamentals](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/102-fundamentals-netcore.md)  
   - [2. Environment and prerequisites](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/200-environment-and-prerequisites.md)  
   - [3. WEB API](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/300-web-rest-api.md)
-    - [3.1. Net core Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/301-create-web-api-project.md)   
+    - [3.1. Net Core Web API project](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/301-create-web-api-project.md)   
     - [3.2. Publish to Github repository](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/302-publish-to-github.md)  
     - [3.3. Local drive access](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/303-local-drive-access.md)  
     - [3.4. Logging](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/304-logging.md)  
