@@ -5,7 +5,6 @@
 **Required Reading:** 
 
 - [Exceptions and Exception Handling](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
-- [20 Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/exceptions)
 - [Logging exceptions in ASP.Net Core](https://stackify.com/csharp-exception-handling-best-practices/)
 
 **Exercise:**
