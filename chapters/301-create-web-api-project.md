@@ -28,11 +28,11 @@ This is a good starting point to do manual testing of your application.
 Here is a preview of how an api that uses swagger looks like.
 You can view all methods from a controller :
 
-![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger1.png "Swagger")
+![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger1.png)
 
 , and you can test individual methods :
 
-![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger2.png "Swagger")
+![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger2.png)
 
 Check all the files from the project and get familiar with the structure and the classes.  
 Check the WeatherForecastController from the Controllers folders.  
