@@ -13,8 +13,8 @@ Application configuration in ASP.NET Core is performed using one or more configu
 - Custom providers, installed or created
 - Directory files
 - In-memory .NET 
-
-Check this link to lean more about [configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
+ 
+ [Learn more about configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0)
 
 **Exercise:**
 
