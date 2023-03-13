@@ -41,16 +41,16 @@ Following, there are some articles for you to read to get familiar with C# :
 
 - [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
 
+- SOLID Principles in C#
+  - [Single Responsibility Principle](https://www.tutorialsteacher.com/csharp/single-responsibility-principle)
+  - [Open-Closed Principle](https://www.tutorialsteacher.com/csharp/open-closed-principle)
+  - [Liskov Substitution Principle](https://www.tutorialsteacher.com/csharp/liskov-substitution-principle)
+  - [Interface Segregation Principle](https://www.tutorialsteacher.com/csharp/interface-segregation-principle)
+  - [Dependency Inversion](https://www.tutorialsteacher.com/csharp/dependency-inversion-principle)
+
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-
-- SOLID Principles in C#
-  - [**S**ingle Responsibility Principle](https://www.dotnetcurry.com/software-gardening/1148/solid-single-responsibility-principle)
-  - [**O**pen-Closed Principle](https://www.dotnetcurry.com/software-gardening/1176/solid-open-closed-principle)
-  - [**L**iskov Substitution Principle](https://www.dotnetcurry.com/software-gardening/1235/liskov-substitution-principle-lsp-solid-patterns)
-  - [**I**nterface Segregation Principle](https://www.dotnetcurry.com/software-gardening/1257/interface-segregation-principle-isp-solid-principle)
-  - [**D**ependency Injection](https://www.dotnetcurry.com/software-gardening/1284/dependency-injection-solid-principles)
 
 - [What's new in C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
 
