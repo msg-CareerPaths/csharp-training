@@ -14,4 +14,5 @@ REST is an acronym for Representational State Transfer and an architectural styl
  - [What is CRUD](https://www.codecademy.com/article/what-is-crud)  
  - [What is REST](https://www.codecademy.com/article/what-is-rest)  
 
+
 **Exercise:** *nothing to do*.
