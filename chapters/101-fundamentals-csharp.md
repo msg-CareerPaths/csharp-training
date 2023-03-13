@@ -1,6 +1,6 @@
 ## 1.1. C#.Net Fundamentals
 
-Goal: Learn C# / .Net basic concepts.
+**Goal:** Learn C# / .Net basic concepts.
 
 **Required Reading:**
 
