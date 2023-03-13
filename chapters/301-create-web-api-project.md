@@ -13,11 +13,11 @@ To create the application open Visual Studio, choose Create a New Project, selec
    
  2.Configure a project name and location:  
 
-     ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi2.png)
+   ![WEBAPI2](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi2.png)
    
  3.Specify additional information :  
  
-     ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi3.png)
+   ![WEBAPI3](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi3.png)
    
 As a default project you will have a weather forecast example.  
 
