@@ -21,7 +21,7 @@ Check [this](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-win
 Next, create a new class named ProductCategory with the following properties(string? Id,string Name,string description).   
 Create a database called productsdb and a collection named categories that saves the product categories in mongodb.  
 Create a new controller and service for the product categories.(Don't forget, the service must implement an interface).  
-Update the project and to add CRUD operations to the new controller.  
+Update the project and add CRUD operations to the new controller.  
 The MongoDB connections details,database name and collection name will be loaded from a new setting from the appsettings.json.  
 You've allready made an similar exercise in this [chapter](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/306-configuration.md).    
 Build, run, debug and test the application.    
