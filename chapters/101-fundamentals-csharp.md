@@ -61,6 +61,8 @@ Following, there are some articles for you to read to get familiar with C# :
  There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.  
 So, considering this, Microsoft built .NET Core.
 
+**Exercise:** nothing to do.
+
 **Further Resources:**
 
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
