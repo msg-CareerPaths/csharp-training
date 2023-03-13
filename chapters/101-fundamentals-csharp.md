@@ -39,7 +39,7 @@ Following, there are some articles for you to read to get familiar with C# :
 
 - [Language Integrated Query (LINQ)](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
 
-- [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)[label](https://github.com/msg-CareerPaths/csharp-training)
+- [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
 
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
