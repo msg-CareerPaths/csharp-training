@@ -29,13 +29,13 @@ Here are 2 ways to install the SQL Server :
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running this sql code in the preferred sql management tool:
 
-CREATE TABLE [dbo].[products_ado](  
-	[ID] [int] IDENTITY(1,1) PRIMARY KEY,  
-	[Name] [nvarchar](50) NULL,  
-	[Description] [nvarchar](max) NULL,  
-	[Price] [decimal](18, 2) NULL,  
-	[Weight] [decimal](18, 2) NULL  
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]  
+	CREATE TABLE [dbo].[products_ado](  
+		[ID] [int] IDENTITY(1,1) PRIMARY KEY,  
+		[Name] [nvarchar](50) NULL,  
+		[Description] [nvarchar](max) NULL,  
+		[Price] [decimal](18, 2) NULL,  
+		[Weight] [decimal](18, 2) NULL  
+	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]  
   
 Next you should update the application so that products are stored in SQL database using ADO.Net.  
 Create a new products controller and service.  
