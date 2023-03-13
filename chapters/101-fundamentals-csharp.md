@@ -8,28 +8,28 @@ C# (pronounced "C sharp") is a modern, general-purpose programming language that
 
 C# is a strongly typed language that supports object-oriented programming principles such as encapsulation, inheritance, and polymorphism. It also has features for functional programming, such as lambda expressions and LINQ (Language Integrated Query). C# is often used to build desktop applications, web applications, games, and mobile applications.
 
-Some of the key features of C# include: 
+Some of the key features of C# include:   
  - Garbage collection: C# includes a garbage collector that automatically manages memory allocation and deallocation, making it easier for developers to write applications without worrying about memory management.  
  - Type safety: C# is a strongly typed language, which means that all variables must be declared with a specific data type. This helps prevent common programming errors and makes code easier to read and maintain.  
  - Cross-platform development: With the release of .NET Core, C# can now be used to build applications that run on multiple platforms, including Windows, Linux, and macOS.  
- - Integrated development environment (IDE): Microsoft provides a free IDE called Visual Studio for C# development, which includes a wide range of features for debugging, testing, and deploying applications.
+ - Integrated development environment (IDE): Microsoft provides a free IDE called Visual Studio for C# development, which includes a wide range of features for debugging, testing, and deploying applications.  
 Overall, C# is a versatile and powerful programming language that is widely used in the software development industry.  
 
-Following, there are some articles for you to read to get familiar with C# :
+Following, there are some articles for you to read to get familiar with C# :  
 
-- [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)
+- [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)  
 
-- [Program building blocks](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks)
+- [Program building blocks](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks)  
 
-- [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
+- [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)  
 
-- [Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+- [Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)  
 
-- [Types and variables](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/#types-and-variables)
+- [Types and variables](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/#types-and-variables)  
 
-- [Major language areas](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/features)
+- [Major language areas](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/features)  
 
-- Object Oriented programming 
+- Object Oriented programming  
   - [Overview of classes, structs, and records in C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/)
   - [Objects](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
   - [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
@@ -58,7 +58,7 @@ Following, there are some articles for you to read to get familiar with C# :
 
 - [What's new in C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
 
-There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.  
+ There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.  
 So, considering this, Microsoft built .NET Core.
 
 **Further Resources:**
