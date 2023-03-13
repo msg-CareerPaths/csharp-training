@@ -16,13 +16,12 @@ Check this links to install prerequisites and learn some basics:
  - [Intro to Visual Studio in 5 minutes](https://www.youtube.com/watch?v=5AOp8zFu4Vg&ab_channel=dotNET)
  - [Visual Studio 2022 Tips & Tricks](https://www.youtube.com/watch?v=etHfCFwH6MY&ab_channel=ClaudioBernasconi)
  
- - [What is Version Control] (https://git-scm.com/video/what-is-version-control)  
+ - [What is Version Control](https://git-scm.com/video/what-is-version-control)  
  - [What is Git](https://git-scm.com/video/what-is-git)  
  - [Get Going with Git](https://git-scm.com/video/get-going)  
  - [Quick wins with Git](https://git-scm.com/video/quick-wins)  
  
- - Install Postman [https://www.postman.com/downloads/]
-
+ - [Install Postman](https://www.postman.com/downloads/])
  - [Install Visual Code - optional](https://code.visualstudio.com/) - As stated previously,Visual Studio Community 2022 is recommended, as most of the examples and help links are using visual studio as integrated development environment (IDE).
 
 **Further Resources:**
