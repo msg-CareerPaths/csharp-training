@@ -12,7 +12,7 @@ Entity Framework consists of several components:
  - Entity Data Model: The Entity Data Model (EDM) is a conceptual model that represents the structure of data in a database. It includes entities, relationships, and mappings between entities and database tables.
  - LINQ to Entities: EF supports Language-Integrated Query (LINQ) for querying data using a strongly-typed syntax.
  - Code First: Code First is a way to create database schemas from C# classes. It allows developers to define their data model using classes, and EF automatically creates the database schema based on these classes.
- - Database Migrations: EF allows developers to make changes to the database schema over time using database migrations. Migrations allow developers to update the database schema while preserving existing data.
+ - Database Migrations: EF allows developers to make changes to the database schema over time using database migrations. Migrations allow developers to update the database schema while preserving existing data.  
 
 [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) supports multiple database providers, including Microsoft SQL Server, Oracle, MySQL, PostgreSQL, and SQLite, among others. It is a powerful and flexible ORM that can significantly reduce the amount of code needed to work with databases in .NET applications.
 
