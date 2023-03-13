@@ -29,7 +29,7 @@ Check this links to install prerequisites and learn some basics.
    - [Install Postman](https://www.postman.com/downloads/])  
    - [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
  
- - [Visual Code - optional](https://code.visualstudio.com/)
+ - [Visual Code - optional](https://code.visualstudio.com/) 
 
 **Further Resources:**
 
