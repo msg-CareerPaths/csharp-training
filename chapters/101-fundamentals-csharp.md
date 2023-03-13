@@ -45,7 +45,7 @@ Following, there are some articles for you to read to get familiar with C# :
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
-- [SOLID Principles in C#]
+- SOLID Principles in C# 
   - [**S**ingle Responsibility Principle](https://www.dotnetcurry.com/software-gardening/1148/solid-single-responsibility-principle)
   - [**O**pen-Closed Principle](https://www.dotnetcurry.com/software-gardening/1176/solid-open-closed-principle)
   - [**L**iskov Substitution Principle](https://www.dotnetcurry.com/software-gardening/1235/liskov-substitution-principle-lsp-solid-patterns)
