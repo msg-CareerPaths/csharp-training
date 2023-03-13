@@ -11,8 +11,7 @@ Create, Read, Update, and Delete (CRUD) are the four basic functions that models
 REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.  
 
  - [What is Web API?](https://www.tutorialsteacher.com/webapi/what-is-web-api)  
- - [What is CRUD](https://www.codecademy.com/article/what-is-crud)  
- - [What is REST](https://www.codecademy.com/article/what-is-rest)  
-
+ - [What is CRUD](https://www.codecademy.com/article/what-is-crud)    
+ - [What is REST](https://www.codecademy.com/article/what-is-rest)   
 
 **Exercise:** *nothing to do*.
