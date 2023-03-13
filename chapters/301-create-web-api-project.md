@@ -9,15 +9,15 @@ To create the application open Visual Studio, choose Create a New Project, selec
 
  1.Create and select the type of the project from File -> NewProject  
 
-   ![WEBAPI](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi1.png)  
+   ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi1.png)
    
  2.Configure a project name and location:  
 
-   ![WEBAPI](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi2.png)  
+     ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi2.png)
    
  3.Specify additional information :  
  
-   ![WEBAPI](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/webapi3.png)  
+     ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi3.png)
    
 As a default project you will have a weather forecast example.  
 
@@ -28,11 +28,11 @@ This is a good starting point to do manual testing of your application.
 Here is a preview of how an api that uses swagger looks like.
 You can view all methods from a controller :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger1.png "Data Model")
+![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger1.png "Swagger")
 
 , and you can test individual methods :
 
-![Data Model](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/images/swagger2.png "Data Model")
+![SWAGGER](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/swagger2.png "Swagger")
 
 Check all the files from the project and get familiar with the structure and the classes.  
 Check the WeatherForecastController from the Controllers folders.  
