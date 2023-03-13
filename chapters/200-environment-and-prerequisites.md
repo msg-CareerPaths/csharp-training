@@ -1,13 +1,15 @@
 ## 2.Environment and prerequisites
 
+**Goal:** Install prerequisites and understanding hot to use them.
+
 **Required Reading:**
 
 You will work using your local environment.  
 You will need to install VS2022 Visual Studio 2022 - Community Edition, and get a basic Visual Studio know how.  
 Next, install NET 7.0 SDK - this is optional as it should be allready installed with VS2022.  
 Later you will need to install SQL Server and MongoDb, but we will get back to that on the corresponding chapter.  
-You should also learn the fundamentals of Git.  
-Besides VS2022-Community edition, you can install Visual Code, if you like to work with.NET core under Linux (but also in Windows) using bash or command line/power shell.  
+You should also know how the basics of how to use Git, Postman.  
+Besides VS2022-Community edition, you can use Visual Code in parallel, if you like to work with.NET core under Linux (but also in Windows) using bash or command line/power shell.  
 
 Check this links to install prerequisites and learn some basics:  
  - [Install Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/community/)   - __recommended__
@@ -22,6 +24,7 @@ Check this links to install prerequisites and learn some basics:
  - [Quick wins with Git](https://git-scm.com/video/quick-wins)  
  
  - [Install Postman](https://www.postman.com/downloads/])
+ 
  - [Install Visual Code - optional](https://code.visualstudio.com/) - As stated previously,Visual Studio Community 2022 is recommended, as most of the examples and help links are using visual studio as integrated development environment (IDE).
 
 **Further Resources:**
