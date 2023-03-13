@@ -29,7 +29,7 @@ Here are 2 ways to install the SQL Server :
 After installing the SQL Server create an new database with a table where you can save products.
 You can create a new table by running this sql code in the preferred sql management tool:
 
-	CREATE TABLE [dbo].[products_ado](  
+	CREATE TABLE [dbo].[products](  
 		[ID] [int] IDENTITY(1,1) PRIMARY KEY,  
 		[Name] [nvarchar](50) NULL,  
 		[Description] [nvarchar](max) NULL,  
