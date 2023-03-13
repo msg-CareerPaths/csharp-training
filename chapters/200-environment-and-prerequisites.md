@@ -1,6 +1,6 @@
 ## 2.Environment and prerequisites
 
-**Goal:** Install prerequisites and understanding hot to use them.
+**Goal:** Install prerequisites and get basic understanding of how to use them.
 
 **Required Reading:**
 
