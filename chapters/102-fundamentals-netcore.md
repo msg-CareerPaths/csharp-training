@@ -1,6 +1,6 @@
 ## 1.2. NET Core fundamentals
 
-Goal: Learn .Net Core basic concepts.
+**Goal:** Learn .Net Core basic concepts.
 
 **Required Reading**
 
@@ -17,6 +17,8 @@ Check the following links to learn about .net core:
  - [ASP.NET Core fundamentals overview](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0&tabs=linux)
  - [App startup in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-7.0)
  - [Dependency injection](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0)
+
+**Exercise:** *nothing to do*.
 
  **Further Resources:**
 
