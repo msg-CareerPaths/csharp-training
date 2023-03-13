@@ -29,7 +29,7 @@ Check this links to install prerequisites and learn some basics.
    - [Install Postman](https://www.postman.com/downloads/])  
    - [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
  
- - [Visual Code - optional](https://code.visualstudio.com/) - As stated previously,Visual Studio Community 2022 is recommended, as most of the examples and help links are using visual studio as integrated development environment (IDE).  
+ - [Visual Code - optional](https://code.visualstudio.com/)
 
 **Further Resources:**
 
