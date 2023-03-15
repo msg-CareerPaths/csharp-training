@@ -33,7 +33,7 @@ Following, there are some articles for you to read to get familiar with C# :
   - [Overview of classes, structs, and records in C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/)
   - [Objects](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
   - [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
-  - [Polimorpohism](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism)
+  - [Polymorphism](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism)
 
 - [Difference Between Abstract Class And Interface In C#](https://unstop.com/blog/difference-between-abstract-class-and-interface-in-c-sharp)
 
