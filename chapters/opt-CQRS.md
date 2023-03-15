@@ -11,5 +11,5 @@ However, implementing a CQRS architecture can also introduce additional complexi
 **Resources:**
 
  - [What is CQRS pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+ - [CQRS Pattern Using MediatR](https://www.c-sharpcorner.com/article/cqrs-pattern-using-mediatr-in-net-5/)
  - [Combining Clean Architecture and CQRS Principles in a .NET Core Application: A Practical Example](https://www.apriorit.com/dev-blog/783-web-clean-architecture-and-cqrs-in-net-core-apps)
- - [How to structure a .NET Solution (project separation & architecture)](https://www.youtube.com/watch?v=YiVqwoFMieg)
