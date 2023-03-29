@@ -569,7 +569,8 @@ Example:
 
 
 **Flyweight** lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
-Example:
+Here is an example of minimizing memory usage in a application, since we don't need to create a new Policy object for every policy number that is requested. Instead, we can reuse existing objects and only create new ones when necessary.  
+Example :  
 
     public class PolicyFactory
     {
@@ -602,24 +603,9 @@ Example:
             PolicyType = policyType;
         }
     }
+    
 
-    public class Claim
-    {
-        public Policy Policy { get; private set; }
-        public DateTime DateOfLoss { get; private set; }
-        public decimal Amount { get; private set; }
-
-        public Claim(Policy policy, DateTime dateOfLoss, decimal amount)
-        {
-            Policy = policy;
-            DateOfLoss = dateOfLoss;
-            Amount = amount;
-        }
-    }
-
-
-
-**Proxy** 
+**Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
 
 
 
