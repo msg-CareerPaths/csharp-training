@@ -122,8 +122,83 @@ Example:
     PolicyApplication application = factory.CreateApplication("John Smith", "Home");
     PolicyDocument document = factory.CreateDocument(application);
 
-**Prototype** pattern lets you copy existing objects without making your code dependent on their classes.
+**Prototype** pattern allows cloning objects, even complex ones, without coupling to their specific classes.
+ 
+  - Example :  
+    
+    // Define the prototype interface
+    interface ICloneable
+    {
+        public ICloneable Clone();
+    }
 
+    // Concrete prototype class
+    class Person : ICloneable
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public Address Address { get; set; }
+
+        // Constructor
+        public Person(string name, int age, Address address)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Address = address;
+        }
+
+        // Implement the Clone method
+        public ICloneable Clone()
+        {
+            return new Person(this.Name, this.Age, this.Address.Clone() as Address);
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, Age: {Age}, Address: {Address}";
+        }
+    }
+
+    // Another concrete prototype class
+    class Address : ICloneable
+    {
+        public string Street { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+
+        // Constructor
+        public Address(string street, string city, string country)
+        {
+            this.Street = street;
+            this.City = city;
+            this.Country = country;
+        }
+
+        // Implement the Clone method
+        public ICloneable Clone()
+        {
+            return new Address(this.Street, this.City, this.Country);
+        }
+
+        public override string ToString()
+        {
+            return $"{Street}, {City}, {Country}";
+        }
+    }
+        
+        // Create a person object
+        var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
+        
+        // Clone the person object
+        var person2 = person1.Clone() as Person;
+
+        // Modify the cloned object's address
+        person2.Address.City = "New York";
+
+        // Print the original and cloned objects
+
+     
+     
 **Resources:**
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
