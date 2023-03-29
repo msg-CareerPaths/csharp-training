@@ -40,45 +40,45 @@ The Factory Method is a creational design pattern that provides an interface for
  
 Example:
 
-public interface IInsurancePolicy {
-    void CalculatePremium();
-}
+  public interface IInsurancePolicy {
+      void CalculatePremium();
+  }
 
-public class CarInsurancePolicy : IInsurancePolicy {
-    public void CalculatePremium() {
-        Console.WriteLine("Calculating premium for car insurance policy...");
-    }
-}
+  public class CarInsurancePolicy : IInsurancePolicy {
+      public void CalculatePremium() {
+          Console.WriteLine("Calculating premium for car insurance policy...");
+      }
+  }
 
-public class HomeInsurancePolicy : IInsurancePolicy {
-    public void CalculatePremium() {
-        Console.WriteLine("Calculating premium for home insurance policy...");
-    }
-}
+  public class HomeInsurancePolicy : IInsurancePolicy {
+      public void CalculatePremium() {
+          Console.WriteLine("Calculating premium for home insurance policy...");
+      }
+  }
 
-public abstract class InsurancePolicyFactory {
-    public abstract IInsurancePolicy CreatePolicy();
-}
+  public abstract class InsurancePolicyFactory {
+      public abstract IInsurancePolicy CreatePolicy();
+  }
 
-public class CarInsurancePolicyFactory : InsurancePolicyFactory {
-    public override IInsurancePolicy CreatePolicy() {
-        return new CarInsurancePolicy();
-    }
-}
+  public class CarInsurancePolicyFactory : InsurancePolicyFactory {
+      public override IInsurancePolicy CreatePolicy() {
+          return new CarInsurancePolicy();
+      }
+  }
 
-public class HomeInsurancePolicyFactory : InsurancePolicyFactory {
-    public override IInsurancePolicy CreatePolicy() {
-        return new HomeInsurancePolicy();
-    }
-}
+  public class HomeInsurancePolicyFactory : InsurancePolicyFactory {
+      public override IInsurancePolicy CreatePolicy() {
+          return new HomeInsurancePolicy();
+      }
+  }
 
-InsurancePolicyFactory factory = new CarInsurancePolicyFactory();
-IInsurancePolicy policy = factory.CreatePolicy();
-policy.CalculatePremium(); // Output: "Calculating premium for car insurance policy..."
+  InsurancePolicyFactory factory = new CarInsurancePolicyFactory();
+  IInsurancePolicy policy = factory.CreatePolicy();
+  policy.CalculatePremium(); // Output: "Calculating premium for car insurance policy..."
 
-factory = new HomeInsurancePolicyFactory();
-policy = factory.CreatePolicy();
-policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
+  factory = new HomeInsurancePolicyFactory();
+  policy = factory.CreatePolicy();
+  policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
 
 **Abtract Factory**
 Is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
