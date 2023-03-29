@@ -396,6 +396,70 @@ Example :
     Vehicle truck = new Truck(new ElectricEngine());
     truck.Drive(); // Driving a truck... Electric engine started.
     
+**Composite** is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.  Example:  
+
+    // Component
+    public abstract class Employee
+    {
+        public string Name { get; set; }
+
+        public Employee(string name)
+        {
+            Name = name;
+        }
+
+        public abstract void Display(int depth);
+    }
+
+    // Leaf
+    public class Developer : Employee
+    {
+        public Developer(string name) : base(name)
+        {
+        }
+
+        public override void Display(int depth)
+        {
+            Console.WriteLine(new string('-', depth) + Name);
+        }
+    }
+
+    // Composite
+    public class Manager : Employee
+    {
+        private List<Employee> _employees = new List<Employee>();
+
+        public Manager(string name) : base(name)
+        {
+        }
+
+        public void AddEmployee(Employee employee)
+        {
+            _employees.Add(employee);
+        }
+
+        public override void Display(int depth)
+        {
+            Console.WriteLine(new string('-', depth) + Name);
+
+            foreach (Employee employee in _employees)
+            {
+                employee.Display(depth + 2);
+            }
+        }
+    }
+
+    // Create leaf employees
+    Developer developer1 = new Developer("John Doe");
+    Developer developer2 = new Developer("Jane Doe");
+
+    // Create composite manager and add leaf employees to it
+    Manager manager = new Manager("Bob Smith");
+    manager.AddEmployee(developer1);
+    manager.AddEmployee(developer2);
+
+    // Display the hierarchy
+    manager.Display(0);
 
 
 **Resources:**
