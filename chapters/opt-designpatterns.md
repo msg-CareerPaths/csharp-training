@@ -84,7 +84,6 @@ policy.CalculatePremium(); // Output: "Calculating premium for home insurance po
 Is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
 
-
 **Resources:**
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
