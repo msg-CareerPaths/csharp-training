@@ -462,7 +462,8 @@ Example :
     manager.Display(0);
 
 **Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.  
-Example:
+Example:  
+
     // The base interface for an insurance policy.
     public interface IInsurancePolicy
     {
