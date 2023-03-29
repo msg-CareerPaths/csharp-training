@@ -312,6 +312,11 @@ Example:
             return json;
         }
     }
+    // Usage example:
+    IXmlConverter xmlConverter = new XmlConverter();
+    IJsonConverter jsonConverter = new XmlToJsonAdapter(xmlConverter);
+    string json = jsonConverter.ConvertToJson();
+    Console.WriteLine(json);
 
 
 **Resources:**
