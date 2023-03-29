@@ -126,18 +126,18 @@ Example:
  
   - Example:  
 
-    // Define the prototype interface
-    interface ICloneable
+    // Define the prototype interface  
+    interface ICloneable  
     {
-        public ICloneable Clone();
+        public ICloneable Clone();  
     }
 
-    // Concrete prototype class
-    class Person : ICloneable
+    // Concrete prototype class  
+    class Person : ICloneable  
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public Address Address { get; set; }
+        public string Name { get; set; }  
+        public int Age { get; set; }  
+        public Address Address { get; set; }  
 
         // Constructor
         public Person(string name, int age, Address address)
@@ -147,20 +147,20 @@ Example:
             this.Address = address;
         }
 
-        // Implement the Clone method
-        public ICloneable Clone()
+        // Implement the Clone method  
+        public ICloneable Clone()  
         {
             return new Person(this.Name, this.Age, this.Address.Clone() as Address);
         }
 
-        public override string ToString()
+        public override string ToString()  
         {
-            return $"Name: {Name}, Age: {Age}, Address: {Address}";
-        }
-    }
+            return $"Name: {Name}, Age: {Age}, Address: {Address}";  
+        }  
+    }  
 
-    // Another concrete prototype class
-    class Address : ICloneable
+    //Another concrete prototype class  
+    class Address : ICloneable  
     {
         public string Street { get; set; }
         public string City { get; set; }
@@ -190,18 +190,18 @@ Example:
     {
         static void Main(string[] args)
         {
-            // Create a person object
-            var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
+            // Create a person object  
+            var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));  
 
-            // Clone the person object
-            var person2 = person1.Clone() as Person;
+            // Clone the person object  
+            var person2 = person1.Clone() as Person;  
 
-            // Modify the cloned object's address
-            person2.Address.City = "New York";
+            // Modify the cloned object's address  
+            person2.Address.City = "New York";  
 
             // Print the original and cloned objects
-            }
-      }
+            }  
+      }  
 
 
 **Resources:**
