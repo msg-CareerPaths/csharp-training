@@ -263,6 +263,56 @@ Example:
         .AddSection("Sales by Region")
         .Build();
 
+**Structural Patterns:**    
+Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.  
+
+**Adapter**
+Using this pattern you will allow objects with incompatible interfaces to collaborate.
+Example:  
+
+    // Define the Target interface
+    interface IJsonConverter
+    {
+        string ConvertToJson();
+    }
+
+    // Define the Adaptee interface
+    interface IXmlConverter
+    {
+        string ConvertToXml();
+    }
+
+    // Implement the Adaptee interface
+    class XmlConverter : IXmlConverter
+    {
+        public string ConvertToXml()
+        {
+            // Implementation to convert XML to string
+            return "<root><element>value</element></root>";
+        }
+    }
+
+    // Implement the Adapter interface
+    class XmlToJsonAdapter : IJsonConverter
+    {
+        private readonly IXmlConverter xmlConverter;
+
+        public XmlToJsonAdapter(IXmlConverter xmlConverter)
+        {
+            this.xmlConverter = xmlConverter;
+        }
+
+        public string ConvertToJson()
+        {
+            // Implementation to convert XML to JSON using a third-party library
+            string xmlString = xmlConverter.ConvertToXml();
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(xmlString);
+            string json = JsonConvert.SerializeXmlNode(xmlDoc);
+            return json;
+        }
+    }
+
 
 **Resources:**
 
