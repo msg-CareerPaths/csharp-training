@@ -318,6 +318,85 @@ Example:
     string json = jsonConverter.ConvertToJson();
     Console.WriteLine(json);
 
+**Bridge**  
+Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.  
+Example :
+
+    // Abstraction
+    public abstract class Vehicle
+    {
+        protected IEngine engine;
+
+        public Vehicle(IEngine engine)
+        {
+            this.engine = engine;
+        }
+
+        public abstract void Drive();
+    }
+
+    // Implementor
+    public interface IEngine
+    {
+        void Start();
+    }
+
+    // Concrete Implementor
+    public class GasolineEngine : IEngine
+    {
+        public void Start()
+        {
+            Console.WriteLine("Gasoline engine started.");
+        }
+    }
+
+    // Concrete Implementor
+    public class ElectricEngine : IEngine
+    {
+        public void Start()
+        {
+            Console.WriteLine("Electric engine started.");
+        }
+    }
+
+    // Refined Abstraction
+    public class Car : Vehicle
+    {
+        public Car(IEngine engine) : base(engine)
+        {
+        }
+
+        public override void Drive()
+        {
+            Console.Write("Driving a car... ");
+            engine.Start();
+        }
+    }
+
+    // Refined Abstraction
+    public class Truck : Vehicle
+    {
+        public Truck(IEngine engine) : base(engine)
+        {
+        }
+
+        public override void Drive()
+        {
+            Console.Write("Driving a truck... ");
+            engine.Start();
+        }
+    }
+
+    // Usage example:
+    // Create a car with a gasoline engine
+    Vehicle car = new Car(new GasolineEngine());
+    car.Drive(); // Driving a car... Gasoline engine started.
+
+    // Create a truck with an electric engine
+    Vehicle truck = new Truck(new ElectricEngine());
+    truck.Drive(); // Driving a truck... Electric engine started.
+    
+
 
 **Resources:**
 
