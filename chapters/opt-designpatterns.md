@@ -172,7 +172,96 @@ Example:
         //call example
         var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
         var person2 = person1.Clone() as Person;
-   
+
+**BuilderPattern:**
+Example:  
+
+    public class Report
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public DateTime Date { get; set; }
+        public List<string> Sections { get; set; }
+
+        public Report()
+        {
+            Sections = new List<string>();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Title: ").AppendLine(Title);
+            sb.Append("Author: ").AppendLine(Author);
+            sb.Append("Date: ").AppendLine(Date.ToString());
+            sb.Append("Sections:").AppendLine();
+            foreach (string section in Sections)
+            {
+                sb.Append("\t- ").AppendLine(section);
+            }
+            return sb.ToString();
+        }
+    }
+
+    public interface IReportBuilder
+    {
+        IReportBuilder SetTitle(string title);
+        IReportBuilder SetAuthor(string author);
+        IReportBuilder SetDate(DateTime date);
+        IReportBuilder AddSection(string section);
+        Report Build();
+    }
+
+    public class ReportBuilder : IReportBuilder
+    {
+        private Report report;
+
+        public ReportBuilder()
+        {
+            report = new Report();
+        }
+
+        public IReportBuilder SetTitle(string title)
+        {
+            report.Title = title;
+            return this;
+        }
+
+        public IReportBuilder SetAuthor(string author)
+        {
+            report.Author = author;
+            return this;
+        }
+
+        public IReportBuilder SetDate(DateTime date)
+        {
+            report.Date = date;
+            return this;
+        }
+
+        public IReportBuilder AddSection(string section)
+        {
+            report.Sections.Add(section);
+            return this;
+        }
+
+        public Report Build()
+        {
+            return report;
+        }
+    }
+
+    // Usage example:
+    var reportBuilder = new ReportBuilder();
+    var report = reportBuilder
+        .SetTitle("Sales Report")
+        .SetAuthor("John Doe")
+        .SetDate(DateTime.Now)
+        .AddSection("Summary")
+        .AddSection("Sales by Region")
+        .Build();
+
+
 **Resources:**
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
