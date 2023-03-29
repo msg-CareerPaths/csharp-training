@@ -173,7 +173,11 @@ Example:
         var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
         var person2 = person1.Clone() as Person;
 
-**BuilderPattern:**
+
+**BuilderPattern:** 
+The pattern allows you to produce different types and representations of an object using the same construction code.  
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.
+
 Example:  
 
     public class Report
