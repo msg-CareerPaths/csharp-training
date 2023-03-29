@@ -80,9 +80,49 @@ Example:
     policy = factory.CreatePolicy();
     policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
 
-**Abtract Factory**
-Is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+**Abtract Factory** pattern lets you produce families of related objects without specifying their concrete classes.
 
+Example:
+
+public interface IInsuranceFactory
+{
+    PolicyApplication CreateApplication(string customerName, string policyType);
+    PolicyDocument CreateDocument(PolicyApplication application);
+}
+
+public class HomeInsuranceFactory : IInsuranceFactory
+{
+    public PolicyApplication CreateApplication(string customerName, string policyType)
+    {
+        return new HomeInsurancePolicyApplication(customerName);
+    }
+    public PolicyDocument CreateDocument(PolicyApplication application, PolicyQuote quote, PolicyPolicyholder policyholder, PolicyBeneficiary beneficiary)
+    {
+        return new AutoPolicyDocument(application);
+    }
+}
+
+public class AutoInsuranceFactory : IInsuranceFactory
+{
+    public PolicyApplication CreateApplication(string customerName, string policyType)
+    {
+        return new AutoPolicyApplication(customerName);
+    }
+    public PolicyDocument CreateDocument(PolicyApplication application)
+    {
+        return new AutoPolicyDocument(application);
+    }
+}
+
+IPolicyFactory factory = new AutoInsuranceFactory();
+PolicyApplication application = factory.CreateApplication("John Smith", "Auto");
+PolicyDocument document = factory.CreateDocument(application);
+
+IPolicyFactory factory = new HomeInsuranceFactory();
+PolicyApplication application = factory.CreateApplication("John Smith", "Home");
+PolicyDocument document = factory.CreateDocument(application);
+
+**Prototype** pattern lets you copy existing objects without making your code dependent on their classes.
 
 **Resources:**
 
