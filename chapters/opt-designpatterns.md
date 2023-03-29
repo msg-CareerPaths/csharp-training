@@ -509,9 +509,117 @@ Example:
 **Facade** is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.  
 Example:  
 
-**Flyweight**ets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
-Example:  
+    public class InsuranceFacade
+    {
+        private readonly CustomerRepository _customerRepository;
+        private readonly PolicyRepository _policyRepository;
+        private readonly ClaimRepository _claimRepository;
 
+        public InsuranceFacade()
+        {
+            _customerRepository = new CustomerRepository();
+            _policyRepository = new PolicyRepository();
+            _claimRepository = new ClaimRepository();
+        }
+
+        public void CreateNewCustomer(string name, string address, string phone)
+        {
+            var customer = new Customer { Name = name, Address = address, Phone = phone };
+            _customerRepository.Save(customer);
+        }
+
+        public void CreateNewPolicy(string policyNumber, string policyType, string customerId)
+        {
+            var policy = new Policy { PolicyNumber = policyNumber, PolicyType = policyType, CustomerId = customerId };
+            _policyRepository.Save(policy);
+        }
+
+        public void CreateNewClaim(string claimNumber, string policyNumber, DateTime dateOfLoss, decimal amount)
+        {
+            var claim = new Claim { ClaimNumber = claimNumber, PolicyNumber = policyNumber, DateOfLoss = dateOfLoss, Amount = amount };
+            _claimRepository.Save(claim);
+        }
+    }
+
+    public class CustomerService
+    {
+        public void Save(Customer customer)
+        {
+            // Code to save customer to database
+        }
+    }
+
+    public class PolicyService
+    {
+        public void Save(Policy policy)
+        {
+            // Code to save policy to database
+        }
+    }
+
+    public class ClaimService
+    {
+        public void Save(Claim claim)
+        {
+            // Code to save claim to database
+        }
+    }
+
+    // to use clients can simply use the InsuranceFacade methods to perform the necessary actions. 
+
+
+**Flyweight** lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
+Example:
+
+    public class PolicyFactory
+    {
+        private readonly Dictionary<string, Policy> _policies = new Dictionary<string, Policy>();
+
+        public Policy GetPolicy(string policyNumber, string policyType)
+        {
+            var key = policyNumber + policyType;
+            if (_policies.ContainsKey(key))
+            {
+                return _policies[key];
+            }
+            else
+            {
+                var policy = new Policy(policyNumber, policyType);
+                _policies.Add(key, policy);
+                return policy;
+            }
+        }
+    }
+
+    public class Policy
+    {
+        public string PolicyNumber { get; private set; }
+        public string PolicyType { get; private set; }
+
+        public Policy(string policyNumber, string policyType)
+        {
+            PolicyNumber = policyNumber;
+            PolicyType = policyType;
+        }
+    }
+
+    public class Claim
+    {
+        public Policy Policy { get; private set; }
+        public DateTime DateOfLoss { get; private set; }
+        public decimal Amount { get; private set; }
+
+        public Claim(Policy policy, DateTime dateOfLoss, decimal amount)
+        {
+            Policy = policy;
+            DateOfLoss = dateOfLoss;
+            Amount = amount;
+        }
+    }
+
+
+
+**Proxy** 
 
 
 
