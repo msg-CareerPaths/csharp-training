@@ -461,6 +461,58 @@ Example :
     // Display the hierarchy
     manager.Display(0);
 
+**Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.  
+Example:
+    // The base interface for an insurance policy.
+    public interface IInsurancePolicy
+    {
+        decimal CalculatePremium();
+    }
+
+    // The base implementation of an insurance policy.
+    public class BaseInsurancePolicy : IInsurancePolicy
+    {
+        public decimal CalculatePremium()
+        {
+            // Calculate the premium for the base policy.
+            decimal premium = /* some calculation */;
+            return premium;
+        }
+    }
+
+    // A decorator that adds theft coverage to an insurance policy.
+    public class TheftCoverageDecorator : IInsurancePolicy
+    {
+        private readonly IInsurancePolicy _basePolicy;
+
+        public TheftCoverageDecorator(IInsurancePolicy basePolicy)
+        {
+            _basePolicy = basePolicy;
+        }
+
+        public decimal CalculatePremium()
+        {
+            // Calculate the premium for the base policy with theft coverage added.
+            decimal premium = _basePolicy.CalculatePremium() + /* some calculation */;
+            return premium;
+        }
+    }
+
+    // Example usage:
+    IInsurancePolicy basePolicy = new BaseInsurancePolicy();
+    IInsurancePolicy policyWithTheftCoverage = new TheftCoverageDecorator(basePolicy);
+    IInsurancePolicy policyWithFireAndTheftCoverage = new FireCoverageDecorator(policyWithTheftCoverage);
+    decimal premium = policyWithFireAndTheftCoverage.CalculatePremium();
+
+
+**Facade** is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.  
+Example:  
+
+**Flyweight**ets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
+Example:  
+
+
+
 
 **Resources:**
 
