@@ -5,30 +5,29 @@ design problem in your code.
 
 **Creational Patterns:**  
 
-**Singleton**
+**Singleton**  
  This pattern ensures that a class has just a single instance and provides a global access point to that instance.
  
  Example:  
- 
-   public sealed class Singleton {
-      private static volatile Singleton instance;
-      private static object syncRoot = new Object();
+    public sealed class Singleton {
+       private static volatile Singleton instance;
+       private static object syncRoot = new Object();
 
-      private Singleton() { }
+       private Singleton() { }
 
-      public static Singleton Instance {
-          get {
-              if (instance == null) {
-                  lock (syncRoot) {
-                      if (instance == null) {
-                          instance = new Singleton();
-                      }
-                  }
-              }
-              return instance;
-          }
-      }
-  }
+       public static Singleton Instance {
+           get {
+               if (instance == null) {
+                   lock (syncRoot) {
+                       if (instance == null) {
+                           instance = new Singleton();
+                       }
+                   }
+               }
+               return instance;
+           }
+       }
+   }
  
  Singleton s1 = Singleton.Instance;
  Singleton s2 = Singleton.Instance;
@@ -79,8 +78,8 @@ Example:
     policy = factory.CreatePolicy();
     policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
 
-**Abtract Factory** 
-This pattern lets you produce families of related objects without specifying their concrete classes.
+**Abtract Factory**   
+This pattern lets you produce families of related objects without specifying their concrete classes.  
 Example:  
 
     public interface IInsuranceFactory
@@ -122,8 +121,8 @@ Example:
     PolicyDocument document = factory.CreateDocument(application);
 
 
-**Prototype** 
-Is a pattern that allows cloning objects, even complex ones, without coupling to their specific classes.
+**Prototype**  
+Is a pattern that allows cloning objects, even complex ones, without coupling to their specific classes.  
 Example:  
   
         interface ICloneable
