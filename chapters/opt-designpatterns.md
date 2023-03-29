@@ -82,7 +82,8 @@ Example:
 
 **Abtract Factory** pattern lets you produce families of related objects without specifying their concrete classes.
 
-Example:
+Example:  
+
     public interface IInsuranceFactory
     {
         PolicyApplication CreateApplication(string customerName, string policyType);
