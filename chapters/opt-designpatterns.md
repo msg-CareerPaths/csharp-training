@@ -124,8 +124,8 @@ Example:
 
 **Prototype** pattern allows cloning objects, even complex ones, without coupling to their specific classes.
  
-  - Example :  
-    
+  - Example:  
+
     // Define the prototype interface
     interface ICloneable
     {
@@ -185,20 +185,25 @@ Example:
             return $"{Street}, {City}, {Country}";
         }
     }
-        
-        // Create a person object
-        var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
-        
-        // Clone the person object
-        var person2 = person1.Clone() as Person;
 
-        // Modify the cloned object's address
-        person2.Address.City = "New York";
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create a person object
+            var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
 
-        // Print the original and cloned objects
+            // Clone the person object
+            var person2 = person1.Clone() as Person;
 
-     
-     
+            // Modify the cloned object's address
+            person2.Address.City = "New York";
+
+            // Print the original and cloned objects
+            }
+      }
+
+
 **Resources:**
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
