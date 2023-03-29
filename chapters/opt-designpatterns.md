@@ -124,11 +124,12 @@ Example:
 
 **Prototype** pattern allows cloning objects, even complex ones, without coupling to their specific classes.
  
-  - Example:
-    interface ICloneable
-        {
-            public ICloneable Clone();
-        }
+  - Example:  
+  
+        interface ICloneable
+            {
+                public ICloneable Clone();
+            }
 
         class Person : ICloneable
         {
