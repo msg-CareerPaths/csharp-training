@@ -173,9 +173,9 @@ Example:
         var person2 = person1.Clone() as Person;
 
 
-**BuilderPattern:** 
-The pattern allows you to produce different types and representations of an object using the same construction code.  
-The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.
+**BuilderPattern:**  
+The pattern allows you to produce different types and representations of an object using the same construction code.    
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.  
 Example:  
 
     public class Report
@@ -266,9 +266,9 @@ Example:
 **Structural Patterns:**    
 Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.  
 
-**Adapter**
-Using this pattern you will allow objects with incompatible interfaces to collaborate.
-Example:  
+**Adapter**  
+Using this pattern you will allow objects with incompatible interfaces to collaborate.  
+Example:    
 
     // Define the Target interface
     interface IJsonConverter
