@@ -8,7 +8,7 @@ design problem in your code.
 **Singleton**
  This pattern ensures that a class has just a single instance and provides a global access point to that instance.
  
- Example of singleton class and how to use it.
+ Example:  
  
    public sealed class Singleton {
       private static volatile Singleton instance;
@@ -35,7 +35,6 @@ design problem in your code.
  Console.WriteLine(s1 == s2); // Output: True
 
 **Factory Method**
-
 The Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. It is useful when you need to create an object, but you don't know the exact type of the object until runtime.
  
 Example:
@@ -80,8 +79,8 @@ Example:
     policy = factory.CreatePolicy();
     policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
 
-**Abtract Factory** pattern lets you produce families of related objects without specifying their concrete classes.
-
+**Abtract Factory** 
+This pattern lets you produce families of related objects without specifying their concrete classes.
 Example:  
 
     public interface IInsuranceFactory
@@ -96,7 +95,7 @@ Example:
         {
             return new HomeInsurancePolicyApplication(customerName);
         }
-        public PolicyDocument CreateDocument(PolicyApplication application, PolicyQuote quote, PolicyPolicyholder policyholder, PolicyBeneficiary beneficiary)
+        public PolicyDocument CreateDocument(PolicyApplication application)
         {
             return new AutoPolicyDocument(application);
         }
@@ -122,9 +121,10 @@ Example:
     PolicyApplication application = factory.CreateApplication("John Smith", "Home");
     PolicyDocument document = factory.CreateDocument(application);
 
-**Prototype** pattern allows cloning objects, even complex ones, without coupling to their specific classes.
- 
-  - Example:  
+
+**Prototype** 
+Is a pattern that allows cloning objects, even complex ones, without coupling to their specific classes.
+Example:  
   
         interface ICloneable
             {
@@ -177,7 +177,6 @@ Example:
 **BuilderPattern:** 
 The pattern allows you to produce different types and representations of an object using the same construction code.  
 The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.
-
 Example:  
 
     public class Report
