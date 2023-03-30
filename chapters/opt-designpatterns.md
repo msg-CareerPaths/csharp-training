@@ -608,6 +608,7 @@ Example :
 **Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.  
 
 Example:  
+
     // The Subject interface declares common operations for both RealSubject and
     // the Proxy. As long as the client works with RealSubject using this
     // interface, you'll be able to pass it a proxy instead of a real subject.
