@@ -697,7 +697,67 @@ Example:
     client.ClientCode(proxy);
 
 **Behavioral Patterns:**  
-***Memento*** 
+
+**Chain of Responsibility**  lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.  
+It’s mostly relevant when your code operates with chains of objects, such as filters, event chains, hierahical aprroval, etc.  
+
+Example :  
+    
+    /// <summary>
+    /// The 'Handler' abstract class
+    /// </summary>
+    public abstract class Approver 
+    {
+        protected Approver successor;
+        public void SetSuccessor(Approver successor)
+        {
+            this.successor = successor;
+        }
+        public abstract void ProcessRequest(int ammount);
+    }
+
+    public class VicePresident : Approver
+    {
+        public override void ProcessRequest(int ammount)
+        {
+            if (amount < 25000.0)
+            {
+                Console.WriteLine("Approved by VicePresident.");
+            }
+            else if (successor != null)
+            {
+                successor.ProcessRequest(purchase);
+            }
+        }
+    }
+
+    public class President : Approver
+    {
+        public override void ProcessRequest(int ammount)
+        {
+            if (Amount >= 100000)
+            {
+                Console.WriteLine("{0} approved request# {1}");
+            }
+            else
+            {
+                Console.WriteLine("Request requires an executive meeting!");
+            }
+        }
+    }
+
+    //usage
+    Approver sam = new VicePresident();
+    Approver john = new President();
+    sam.SetSuccessor(john);
+
+    sam.ProcessRequest(1000);
+    sam.ProcessRequest(100000);
+    
+
+**Command**
+
+
 
 
 
