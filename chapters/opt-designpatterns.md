@@ -9,6 +9,7 @@ design problem in your code.
  This pattern ensures that a class has just a single instance and provides a global access point to that instance.
  
  Example:  
+ 
     public sealed class Singleton {
        private static volatile Singleton instance;
        private static object syncRoot = new Object();
