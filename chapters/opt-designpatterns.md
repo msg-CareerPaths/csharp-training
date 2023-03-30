@@ -755,12 +755,58 @@ Example :
     sam.ProcessRequest(100000);
     
 
-**Command**
+**Command** turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+You this pattern when you want to :
+ - to parametrize objects with operations.
+ - to queue operations, schedule their execution, or execute them remotely.
+ - to implement reversible operations.
 
+**Iterator** lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+You this pattern:
+- when your collection has a complex data structure under the hood, but you want to hide its complexity from clients
+- to reduce duplication of the traversal code across your app.
+- you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
 
+**Mediator** lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object. 
+When to use:
+ - when it’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
+ - when you can’t reuse a component in a different program because it’s too dependent on other components.
+ - when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
 
+**Memento** lets you save and restore the previous state of an object without revealing the details of its implementation.
+Use this pattern when:
+ - you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
+ - when direct access to the object’s fields/getters/setters violates its encapsulation.
 
+**Observer**(Event-Subscriber, Listener) is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.  
+Use when:
+ - changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
+ - some objects in your app must observe others, but only for a limited time or in specific cases.
 
-**Resources:**
+**State**lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
+Use:
+ - when you have a lot of duplicate code across similar states and transitions of a condition-based state machine.
+ - when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields.
+ - when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently. 
+
+**Strategy** lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+Applicability:
+ -  you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime.
+ -  you have a lot of similar classes that only differ in the way they execute some behavior.
+ - to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
+ - your class has a massive conditional statement that switches between different variants of the same algorithm.
+ 
+ **Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+ Applicability : 
+  - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
+  - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.
+
+**Visitor** lets you separate algorithms from the objects on which they operate.
+Use:
+ - when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
+ - to clean up the business logic of auxiliary behaviors.
+ - when a behavior makes sense only in some classes of a class hierarchy, but not in others.
+ 
+**Resources:** 
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
