@@ -725,96 +725,102 @@ You this pattern when you want to :
  - to implement reversible operations.
 Example:  
     
-    // Receiver class    
-    class InsurancePolicy  
-    {  
-        public string PolicyHolder { get; set; }  
-        public string PolicyNumber { get; set; }  
-        public double CoverageAmount { get; set; }  
+       // Receiver class    
+       class InsurancePolicy
+       {
+           public string PolicyHolder { get; set; }
+           public string PolicyNumber { get; set; }
+           public double CoverageAmount { get; set; }
 
-        public void CreatePolicy()  
-        {
-            Console.WriteLine($"Policy {PolicyNumber} created for {PolicyHolder} with coverage of {CoverageAmount}.");
-        }
+           public void CreatePolicy()
+           {
+               Console.WriteLine($"Policy {PolicyNumber} created for {PolicyHolder} with coverage of {CoverageAmount}.");
+           }
 
-        public void CancelPolicy()  
-        {
-            Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
-        }
-    }  
-    
-    // Command interface  
-    interface IInsuranceCommand  
-    {
-        void Execute();  
-    }    
-    
-    // Concrete command for creating a policy  
-    class CreatePolicyCommand : IInsuranceCommand  
-    {  
-        private readonly InsurancePolicy _policy;  
+           public void CancelPolicy()
+           {
+               Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
+           }
+       }
 
-        public CreatePolicyCommand(InsurancePolicy policy)  
-        {
-            _policy = policy;  
-        }
+       // Command interface  
+       interface IInsuranceCommand
+       {
+           void Execute();
+       }
 
-        public void Execute()
-        {
-            _policy.CreatePolicy();
-        }
-    }  
+       // Concrete command for creating a policy  
+       class CreatePolicyCommand : IInsuranceCommand
+       {
+           private readonly InsurancePolicy _policy;
 
-    // Concrete command for cancelling a policy  
-    class CancelPolicyCommand : IInsuranceCommand
-    {
-        private readonly InsurancePolicy _policy;
+           public CreatePolicyCommand(InsurancePolicy policy)
+           {
+               _policy = policy;
+           }
 
-        public CancelPolicyCommand(InsurancePolicy policy)
-        {
-            _policy = policy;
-        }
+           public void Execute()
+           {
+               _policy.CreatePolicy();
+           }
+       }
 
-        public void Execute()
-        {
-            _policy.CancelPolicy();
-        }
-    }  
+       // Concrete command for cancelling a policy  
+       class CancelPolicyCommand : IInsuranceCommand
+       {
+           private readonly InsurancePolicy _policy;
 
-    // Invoker class  
-    class InsurancePolicyInvoker
-    {
-        private IInsuranceCommand _command;
+           public CancelPolicyCommand(InsurancePolicy policy)
+           {
+               _policy = policy;
+           }
 
-        public void SetCommand(IInsuranceCommand command)
-        {
-            _command = command;
-        }
+           public void Execute()
+           {
+               _policy.CancelPolicy();
+           }
+       }
 
-        public void ExecuteCommand()
-        {
-            _command.Execute();
-        }
-    }  
+       // Invoker class  
+       class InsurancePolicyInvoker
+       {
+           private IInsuranceCommand _command;
 
-    // Client code  
-    policy = new InsurancePolicy
-    {
-        PolicyHolder = "John Doe",
-        PolicyNumber = "12345",
-        CoverageAmount = 100000
-    };
+           public void SetCommand(IInsuranceCommand command)
+           {
+               _command = command;
+           }
 
-    var createCommand = new CreatePolicyCommand(policy);
-    var cancelCommand = new CancelPolicyCommand(policy);
+           public void ExecuteCommand()
+           {
+               _command.Execute();
+           }
+       }
 
-    var invoker = new InsurancePolicyInvoker();
+       // Client code
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               var policy = new InsurancePolicy
+               {
+                   PolicyHolder = "John Doe",
+                   PolicyNumber = "12345",
+                   CoverageAmount = 100000
+               };
 
-    invoker.SetCommand(createCommand);
-    invoker.ExecuteCommand();
+               var createCommand = new CreatePolicyCommand(policy);
+               var cancelCommand = new CancelPolicyCommand(policy);
 
-    invoker.SetCommand(cancelCommand);
-    invoker.ExecuteCommand();  
+               var invoker = new InsurancePolicyInvoker();
+
+               invoker.SetCommand(createCommand);
+               invoker.ExecuteCommand();
+
+               invoker.SetCommand(cancelCommand);
+               invoker.ExecuteCommand();
+           }
+       }
       
 
 
