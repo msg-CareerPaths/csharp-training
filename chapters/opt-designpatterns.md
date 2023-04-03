@@ -1240,11 +1240,74 @@ Use when:
 
  
 
-**State**lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
+**State** lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 Use:
  - when you have a lot of duplicate code across similar states and transitions of a condition-based state machine.
  - when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields.
- - when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently. 
+ - when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently.  
+ Example:  
+ 
+       // Interface for the states of the traffic signal
+       interface ITrafficSignalState
+       {
+           void Handle(TrafficSignal signal);
+       }
+
+       // Concrete implementation of the "Green" state
+       class GreenState : ITrafficSignalState
+       {
+           public void Handle(TrafficSignal signal)
+           {
+               Console.WriteLine("Green light is on. Traffic can pass.");
+               signal.State = new YellowState();
+           }
+       }
+
+       // Concrete implementation of the "Yellow" state
+       class YellowState : ITrafficSignalState
+       {
+           public void Handle(TrafficSignal signal)
+           {
+               Console.WriteLine("Yellow light is on. Traffic should slow down.");
+               signal.State = new RedState();
+           }
+       }
+
+       // Concrete implementation of the "Red" state
+       class RedState : ITrafficSignalState
+       {
+           public void Handle(TrafficSignal signal)
+           {
+               Console.WriteLine("Red light is on. Traffic should stop.");
+               signal.State = new GreenState();
+           }
+       }
+
+       // The context, which is the traffic signal itself
+       class TrafficSignal
+       {
+           public ITrafficSignalState State { get; set; }
+
+           public TrafficSignal(ITrafficSignalState state)
+           {
+               this.State = state;
+           }
+
+           public void Change()
+           {
+               this.State.Handle(this);
+           }
+       }
+
+       // Example usage
+       TrafficSignal signal = new TrafficSignal(new GreenState());
+       signal.Change();  // Output: Green light is on. Traffic can pass.
+       signal.Change();  // Output: Yellow light is on. Traffic should slow down.
+       signal.Change();  // Output: Red light is on. Traffic should stop.
+       signal.Change();  // Output: Green light is on. Traffic can pass.
+    
+   
+ 
 
 **Strategy** lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 Applicability:
