@@ -1390,7 +1390,78 @@ Applicability:
 **Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
  Applicability : 
   - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
-  - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.
+  - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.  
+Example:  
+
+       public abstract class TrainingCourse
+       {
+           public void RunCourse()
+           {
+               // Step 1: Introduce the course
+               Introduction();
+
+               // Step 2: Present the course materials
+               PresentMaterials();
+
+               // Step 3: Provide hands-on training
+               ProvideHandsOnTraining();
+
+               // Step 4: Evaluate the trainees
+               EvaluateTrainees();
+           }
+
+           protected abstract void Introduction();
+           protected abstract void PresentMaterials();
+           protected abstract void ProvideHandsOnTraining();
+           protected abstract void EvaluateTrainees();
+       }
+
+       public class OrientationCourse : TrainingCourse
+       {
+           protected override void Introduction()
+           {
+               Console.WriteLine("Welcome to the orientation course!");
+           }
+
+           protected override void PresentMaterials()
+           {
+               Console.WriteLine("Here is an overview of our company's policies and procedures.");
+           }
+
+           protected override void ProvideHandsOnTraining()
+           {
+               Console.WriteLine("We will now show you how to use our computer systems.");
+           }
+
+           protected override void EvaluateTrainees()
+           {
+               Console.WriteLine("Let's review what you've learned in this course.");
+           }
+       }
+
+       public class SafetyCourse : TrainingCourse
+       {
+           protected override void Introduction()
+           {
+               Console.WriteLine("Welcome to the safety course!");
+           }
+
+           protected override void PresentMaterials()
+           {
+               Console.WriteLine("Here is an overview of our company's safety policies and procedures.");
+           }
+
+           protected override void ProvideHandsOnTraining()
+           {
+               Console.WriteLine("We will now show you how to use safety equipment.");
+           }
+
+           protected override void EvaluateTrainees()
+           {
+               Console.WriteLine("Let's review what you've learned in this course.");
+           }
+       }
+
 
 **Visitor** lets you separate algorithms from the objects on which they operate.
 Use:
