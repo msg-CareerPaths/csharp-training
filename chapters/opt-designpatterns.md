@@ -829,6 +829,115 @@ You this pattern:
 - when your collection has a complex data structure under the hood, but you want to hide its complexity from clients
 - to reduce duplication of the traversal code across your app.
 - you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
+Example :  
+
+        //Define the InsurancePolicy class
+         public class InsurancePolicy
+         {
+             public int PolicyNumber { get; set; }
+             public string PolicyHolderName { get; set; }
+             public double PremiumAmount { get; set; }
+             public string PolicyType { get; set; }
+
+             public InsurancePolicy(int policyNumber, string policyHolderName, double premiumAmount, string policyType)
+             {
+                 PolicyNumber = policyNumber;
+                 PolicyHolderName = policyHolderName;
+                 PremiumAmount = premiumAmount;
+                 PolicyType = policyType;
+             }
+         }
+
+         // Define the InsurancePolicyCollection class to implement the IEnumerable interface
+         public class InsurancePolicyCollection : IEnumerable
+         {
+             private ArrayList _policyList = new ArrayList();
+
+             // Add policies to the collection
+             public void AddPolicy(InsurancePolicy policy)
+             {
+                 _policyList.Add(policy);
+             }
+
+             // Remove policies from the collection
+             public void RemovePolicy(InsurancePolicy policy)
+             {
+                 _policyList.Remove(policy);
+             }
+
+             // GetEnumerator method to return the iterator object
+             public IEnumerator GetEnumerator()
+             {
+                 return new InsurancePolicyIterator(_policyList);
+             }
+         }
+
+         // Define the InsurancePolicyIterator class to implement the IEnumerator interface
+         public class InsurancePolicyIterator : IEnumerator
+         {
+             private ArrayList _policyList;
+             private int _currentIndex = -1;
+
+             public InsurancePolicyIterator(ArrayList policyList)
+             {
+                 _policyList = policyList;
+             }
+
+             // MoveNext method to move to the next policy in the collection
+             public bool MoveNext()
+             {
+                 _currentIndex++;
+                 if (_currentIndex < _policyList.Count)
+                 {
+                     return true;
+                 }
+                 else
+                 {
+                     return false;
+                 }
+             }
+
+             // Reset method to reset the iterator to the beginning of the collection
+             public void Reset()
+             {
+                 _currentIndex = -1;
+             }
+
+             // Current property to return the current policy object
+             public object Current
+             {
+                 get
+                 {
+                     return _policyList[_currentIndex];
+                 }
+             }
+         }
+
+         // Use the InsurancePolicyCollection and InsurancePolicyIterator classes
+         public class Program
+         {
+             static void Main(string[] args)
+             {
+                 InsurancePolicyCollection policyCollection = new InsurancePolicyCollection();
+
+                 policyCollection.AddPolicy(new InsurancePolicy(1001, "John Doe", 5000.00, "Auto"));
+                 policyCollection.AddPolicy(new InsurancePolicy(1002, "Jane Smith", 7500.00, "Home"));
+                 policyCollection.AddPolicy(new InsurancePolicy(1003, "Bob Johnson", 10000.00, "Life"));
+
+                 // Loop through the policies in the collection using the iterator
+                 foreach (InsurancePolicy policy in policyCollection)
+                 {
+                     Console.WriteLine("Policy Number: {0}", policy.PolicyNumber);
+                     Console.WriteLine("Policy Holder Name: {0}", policy.PolicyHolderName);
+                     Console.WriteLine("Premium Amount: {0}", policy.PremiumAmount);
+                     Console.WriteLine("Policy Type: {0}", policy.PolicyType);
+                     Console.WriteLine();
+                 }
+
+                 Console.ReadLine();
+             }
+         }
+
 
 **Mediator** lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object. 
 When to use:
