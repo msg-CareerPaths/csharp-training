@@ -1112,7 +1112,133 @@ Exampple:
 **Observer**(Event-Subscriber, Listener) is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.  
 Use when:
  - changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
- - some objects in your app must observe others, but only for a limited time or in specific cases.
+ - some objects in your app must observe others, but only for a limited time or in specific cases.  
+ Example:  
+ 
+         // Define the Subject interface
+         interface IWeatherData
+         {
+             void RegisterObserver(IObserver observer);
+             void RemoveObserver(IObserver observer);
+             void NotifyObservers();
+         }
+
+         // Define the Observer interface
+         interface IObserver
+         {
+             void Update(float temperature, float humidity, float pressure);
+         }
+
+         // Define the Concrete Subject class
+         class WeatherData : IWeatherData
+         {
+             private float temperature;
+             private float humidity;
+             private float pressure;
+             private List<IObserver> observers;
+
+             public WeatherData()
+             {
+                 observers = new List<IObserver>();
+             }
+
+             public void RegisterObserver(IObserver observer)
+             {
+                 observers.Add(observer);
+             }
+
+             public void RemoveObserver(IObserver observer)
+             {
+                 observers.Remove(observer);
+             }
+
+             public void NotifyObservers()
+             {
+                 foreach (IObserver observer in observers)
+                 {
+                     observer.Update(temperature, humidity, pressure);
+                 }
+             }
+
+             // This method is called whenever new weather data is available
+             public void MeasurementsChanged()
+             {
+                 NotifyObservers();
+             }
+
+             // These methods are called by the sensors to update the weather data
+             public void SetTemperature(float temperature)
+             {
+                 this.temperature = temperature;
+                 MeasurementsChanged();
+             }
+
+             public void SetHumidity(float humidity)
+             {
+                 this.humidity = humidity;
+                 MeasurementsChanged();
+             }
+
+             public void SetPressure(float pressure)
+             {
+                 this.pressure = pressure;
+                 MeasurementsChanged();
+             }
+         }
+
+         // Define the Concrete Observer classes
+         class MobileDisplay : IObserver
+         {
+             public void Update(float temperature, float humidity, float pressure)
+             {
+                 Console.WriteLine("Mobile Display: temperature={0}, humidity={1}, pressure={2}", temperature, humidity, pressure);
+             }
+         }
+
+         class WebDashboard : IObserver
+         {
+             public void Update(float temperature, float humidity, float pressure)
+             {
+                 Console.WriteLine("Web Dashboard: temperature={0}, humidity={1}, pressure={2}", temperature, humidity, pressure);
+             }
+         }
+
+         class PhysicalDisplay : IObserver
+         {
+             public void Update(float temperature, float humidity, float pressure)
+             {
+                 Console.WriteLine("Physical Display: temperature={0}, humidity={1}, pressure={2}", temperature, humidity, pressure);
+             }
+         }
+
+         // client code
+         // Create a WeatherData object
+         WeatherData weatherData = new WeatherData();
+
+         // Create some displays to observe the weather data
+         MobileDisplay mobileDisplay = new MobileDisplay();
+         WebDashboard webDashboard = new WebDashboard();
+         PhysicalDisplay physicalDisplay = new PhysicalDisplay();
+
+         // Register the displays as observers of the weather data
+         weatherData.RegisterObserver(mobileDisplay);
+         weatherData.RegisterObserver(webDashboard);
+         weatherData.RegisterObserver(physicalDisplay);
+
+         // Simulate some weather data updates
+         weatherData.SetTemperature(20.0f);
+         weatherData.SetHumidity(70.0f);
+         weatherData.SetPressure(1013.0f);
+
+         // Remove the mobile display as an observer
+         weatherData.RemoveObserver(mobileDisplay);
+
+         // Simulate some more weather data updates
+         weatherData.SetTemperature(22.0f);
+         weatherData.SetHumidity(65.0f);
+
+
+ 
 
 **State**lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 Use:
