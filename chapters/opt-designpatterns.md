@@ -1318,7 +1318,7 @@ Applicability:
  
  Example:  
  
-       // Define the strategy interface
+        // Define the strategy interface
         public interface IShippingStrategy
         {
             double CalculateRate(double weight, string origin, string destination);
@@ -1391,36 +1391,36 @@ Applicability:
  Applicability : 
   - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
   - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.  
-Example:    
+Example:  
 
-       public abstract class TrainingCourse  
+       public abstract class TrainingCourse
        {
-           public void RunCourse()  
+           public void RunCourse()
            {
-               // Step 1: Introduce the course  
-               Introduction();  
+               // Step 1: Introduce the course
+               Introduction();
 
-               // Step 2: Present the course materials  
-               PresentMaterials();  
+               // Step 2: Present the course materials
+               PresentMaterials();
 
-               // Step 3: Provide hands-on training  
-               ProvideHandsOnTraining();  
+               // Step 3: Provide hands-on training
+               ProvideHandsOnTraining();
 
-               // Step 4: Evaluate the trainees  
-               EvaluateTrainees();  
+               // Step 4: Evaluate the trainees
+               EvaluateTrainees();
            }
 
-           protected abstract void Introduction();  
-           protected abstract void PresentMaterials();  
-           protected abstract void ProvideHandsOnTraining();  
-           protected abstract void EvaluateTrainees();  
+           protected abstract void Introduction();
+           protected abstract void PresentMaterials();
+           protected abstract void ProvideHandsOnTraining();
+           protected abstract void EvaluateTrainees();
        }
 
-       public class OrientationCourse : TrainingCourse  
+       public class OrientationCourse : TrainingCourse
        {
-           protected override void Introduction()  
+           protected override void Introduction()
            {
-               Console.WriteLine("Welcome to the orientation course!");  
+               Console.WriteLine("Welcome to the orientation course!");
            }
 
            protected override void PresentMaterials()
@@ -1439,30 +1439,29 @@ Example:
            }
        }
 
-       public class SafetyCourse : TrainingCourse   
+       public class SafetyCourse : TrainingCourse
        {
            protected override void Introduction()
            {
                Console.WriteLine("Welcome to the safety course!");
            }
 
-           protected override void PresentMaterials()  
+           protected override void PresentMaterials()
            {
                Console.WriteLine("Here is an overview of our company's safety policies and procedures.");
            }
 
-           protected override void ProvideHandsOnTraining()    
+           protected override void ProvideHandsOnTraining()
            {
                Console.WriteLine("We will now show you how to use safety equipment.");
            }
 
-           protected override void EvaluateTrainees()  
+           protected override void EvaluateTrainees()
            {
                Console.WriteLine("Let's review what you've learned in this course.");
            }
        }
-
-
+  
 **Visitor** lets you separate algorithms from the objects on which they operate.
 Use:
  - when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
