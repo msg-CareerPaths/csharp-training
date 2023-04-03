@@ -1314,9 +1314,80 @@ Applicability:
  -  you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime.
  -  you have a lot of similar classes that only differ in the way they execute some behavior.
  - to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
- - your class has a massive conditional statement that switches between different variants of the same algorithm.
+ - your class has a massive conditional statement that switches between different variants of the same algorithm.  
  
- **Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+ Example:  
+ 
+       // Define the strategy interface
+        public interface IShippingStrategy
+        {
+            double CalculateRate(double weight, string origin, string destination);
+        }
+
+        // Implement concrete strategies for each carrier
+        public class FedExShippingStrategy : IShippingStrategy
+        {
+            public double CalculateRate(double weight, string origin, string destination)
+            {
+                // Calculate rate for FedEx based on weight, origin, and destination
+                // ...
+                return rate;
+            }
+        }
+
+        public class UPSShippingStrategy : IShippingStrategy
+        {
+            public double CalculateRate(double weight, string origin, string destination)
+            {
+                // Calculate rate for UPS based on weight, origin, and destination
+                // ...
+                return rate;
+            }
+        }
+
+        public class DHLShippingStrategy : IShippingStrategy
+        {
+            public double CalculateRate(double weight, string origin, string destination)
+            {
+                // Calculate rate for DHL based on weight, origin, and destination
+                // ...
+                return rate;
+            }
+        }
+
+        // Create a context that uses the shipping strategies
+        public class ShippingContext
+        {
+            private IShippingStrategy _shippingStrategy;
+
+            public void SetShippingStrategy(IShippingStrategy shippingStrategy)
+            {
+                _shippingStrategy = shippingStrategy;
+            }
+
+            public double CalculateShippingRate(double weight, string origin, string destination)
+            {
+                return _shippingStrategy.CalculateRate(weight, origin, destination);
+            }
+        }
+
+        //client code 
+        ShippingContext context = new ShippingContext();
+
+        // Set the FedEx shipping strategy
+        context.SetShippingStrategy(new FedExShippingStrategy());
+
+        // Calculate rate using FedEx strategy
+        double rate = context.CalculateShippingRate(10.0, "New York", "Los Angeles");
+
+        // Set the UPS shipping strategy
+        context.SetShippingStrategy(new UPSShippingStrategy());
+
+        // Calculate rate using UPS strategy
+        rate = context.CalculateShippingRate(10.0, "New York", "Los Angeles"); 
+   
+ 
+**Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
  Applicability : 
   - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
   - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.
