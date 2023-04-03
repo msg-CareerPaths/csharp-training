@@ -724,7 +724,7 @@ You this pattern when you want to :
  - to queue operations, schedule their execution, or execute them remotely.
  - to implement reversible operations.
 Example:  
-
+    
     // Receiver class  
     class InsurancePolicy
     {
@@ -742,13 +742,13 @@ Example:
             Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
         }
     }  
-
+    
     // Command interface
     interface IInsuranceCommand
     {
         void Execute();
     }  
-
+    
     // Concrete command for creating a policy
     class CreatePolicyCommand : IInsuranceCommand
     {
@@ -798,30 +798,24 @@ Example:
     }  
 
     // Client code  
-    class Program
+    policy = new InsurancePolicy
     {
-        static void Main(string[] args)
-        {
-            var policy = new InsurancePolicy
-            {
-                PolicyHolder = "John Doe",
-                PolicyNumber = "12345",
-                CoverageAmount = 100000
-            };
+        PolicyHolder = "John Doe",
+        PolicyNumber = "12345",
+        CoverageAmount = 100000
+    };
 
-            var createCommand = new CreatePolicyCommand(policy);
-            var cancelCommand = new CancelPolicyCommand(policy);
+    var createCommand = new CreatePolicyCommand(policy);
+    var cancelCommand = new CancelPolicyCommand(policy);
 
-            var invoker = new InsurancePolicyInvoker();
+    var invoker = new InsurancePolicyInvoker();
 
-            invoker.SetCommand(createCommand);
-            invoker.ExecuteCommand();
+    invoker.SetCommand(createCommand);
+    invoker.ExecuteCommand();
 
-            invoker.SetCommand(cancelCommand);
-            invoker.ExecuteCommand();
-        }
-    }  
-
+    invoker.SetCommand(cancelCommand);
+    invoker.ExecuteCommand();  
+      
 
 
 **Iterator** lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
