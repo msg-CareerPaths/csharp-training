@@ -725,38 +725,38 @@ You this pattern when you want to :
  - to implement reversible operations.
 Example:  
     
-    // Receiver class  
-    class InsurancePolicy
-    {
-        public string PolicyHolder { get; set; }
-        public string PolicyNumber { get; set; }
-        public double CoverageAmount { get; set; }
+    // Receiver class    
+    class InsurancePolicy  
+    {  
+        public string PolicyHolder { get; set; }  
+        public string PolicyNumber { get; set; }  
+        public double CoverageAmount { get; set; }  
 
-        public void CreatePolicy()
+        public void CreatePolicy()  
         {
             Console.WriteLine($"Policy {PolicyNumber} created for {PolicyHolder} with coverage of {CoverageAmount}.");
         }
 
-        public void CancelPolicy()
+        public void CancelPolicy()  
         {
             Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
         }
     }  
     
-    // Command interface
-    interface IInsuranceCommand
+    // Command interface  
+    interface IInsuranceCommand  
     {
-        void Execute();
-    }  
+        void Execute();  
+    }    
     
-    // Concrete command for creating a policy
-    class CreatePolicyCommand : IInsuranceCommand
-    {
-        private readonly InsurancePolicy _policy;
+    // Concrete command for creating a policy  
+    class CreatePolicyCommand : IInsuranceCommand  
+    {  
+        private readonly InsurancePolicy _policy;  
 
-        public CreatePolicyCommand(InsurancePolicy policy)
+        public CreatePolicyCommand(InsurancePolicy policy)  
         {
-            _policy = policy;
+            _policy = policy;  
         }
 
         public void Execute()
