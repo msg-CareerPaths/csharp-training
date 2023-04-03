@@ -945,85 +945,85 @@ When to use:
  - when you can’t reuse a component in a different program because it’s too dependent on other components.
  - when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
  Example :  
- 
-      // Mediator interface
-      public interface IChatRoom
-      {
-          void SendMessage(string message, IUser user);
-      }
 
-      // Concrete mediator class
-      public class ChatRoom : IChatRoom
-      {
-          private readonly List<IUser> _users = new List<IUser>();
+       // Mediator interface
+       public interface IChatRoom
+       {
+           void SendMessage(string message, IUser user);
+       }
 
-          public void SendMessage(string message, IUser user)
-          {
-              foreach (var u in _users)
-              {
-                  if (u != user)
-                  {
-                      u.ReceiveMessage(message);
-                  }
-              }
-          }
+       // Concrete mediator class
+       public class ChatRoom : IChatRoom
+       {
+           private readonly List<IUser> _users = new List<IUser>();
 
-          public void AddUser(IUser user)
-          {
-              _users.Add(user);
-          }
-      }
+           public void SendMessage(string message, IUser user)
+           {
+               foreach (var u in _users)
+               {
+                   if (u != user)
+                   {
+                       u.ReceiveMessage(message);
+                   }
+               }
+           }
 
-      // Colleague interface
-      public interface IUser
-      {
-          void SendMessage(string message);
-          void ReceiveMessage(string message);
-      }
+           public void AddUser(IUser user)
+           {
+               _users.Add(user);
+           }
+       }
 
-      // Concrete colleague class
-      public class User : IUser
-      {
-          private readonly IChatRoom _chatRoom;
-          private readonly string _name;
+       // Colleague interface
+       public interface IUser
+       {
+           void SendMessage(string message);
+           void ReceiveMessage(string message);
+       }
 
-          public User(IChatRoom chatRoom, string name)
-          {
-              _chatRoom = chatRoom;
-              _name = name;
-          }
+       // Concrete colleague class
+       public class User : IUser
+       {
+           private readonly IChatRoom _chatRoom;
+           private readonly string _name;
 
-          public void SendMessage(string message)
-          {
-              _chatRoom.SendMessage(message, this);
-          }
+           public User(IChatRoom chatRoom, string name)
+           {
+               _chatRoom = chatRoom;
+               _name = name;
+           }
 
-          public void ReceiveMessage(string message)
-          {
-              Console.WriteLine($"{_name} received message: {message}");
-          }
-      }
+           public void SendMessage(string message)
+           {
+               _chatRoom.SendMessage(message, this);
+           }
 
-      // Client code
-      public class Program
-      {
-          static void Main(string[] args)
-          {
-              // Client code
-              var chatRoom = new ChatRoom();
-              var user1 = new User(chatRoom, "Alice");
-              var user2 = new User(chatRoom, "Bob");
-              var user3 = new User(chatRoom, "Charlie");
+           public void ReceiveMessage(string message)
+           {
+               Console.WriteLine($"{_name} received message: {message}");
+           }
+       }
 
-              chatRoom.AddUser(user1);
-              chatRoom.AddUser(user2);
-              chatRoom.AddUser(user3);
+       // Client code
+       public class Program
+       {
+           static void Main(string[] args)
+           {
+               // Client code
+               var chatRoom = new ChatRoom();
+               var user1 = new User(chatRoom, "Alice");
+               var user2 = new User(chatRoom, "Bob");
+               var user3 = new User(chatRoom, "Charlie");
 
-              user1.SendMessage("Hi everyone!");
-              user2.SendMessage("Hey Alice!");
-              user3.SendMessage("Nice to meet you all!");
-          }
-      }
+               chatRoom.AddUser(user1);
+               chatRoom.AddUser(user2);
+               chatRoom.AddUser(user3);
+
+               user1.SendMessage("Hi everyone!");
+               user2.SendMessage("Hey Alice!");
+               user3.SendMessage("Nice to meet you all!");
+           }
+       }
 
 **Memento** lets you save and restore the previous state of an object without revealing the details of its implementation.
 Use this pattern when:
