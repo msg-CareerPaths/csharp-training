@@ -1391,7 +1391,7 @@ Applicability:
  Applicability : 
   - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
   - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.  
-Example:  
+Example:    
 
        public abstract class TrainingCourse
        {
