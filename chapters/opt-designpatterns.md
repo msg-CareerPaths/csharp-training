@@ -1028,8 +1028,87 @@ When to use:
 **Memento** lets you save and restore the previous state of an object without revealing the details of its implementation.
 Use this pattern when:
  - you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
- - when direct access to the object’s fields/getters/setters violates its encapsulation.
+ - when direct access to the object’s fields/getters/setters violates its encapsulation.  
+Exampple: 
 
+          // Originator class
+          public class Document
+          {
+              private string _text;
+
+              public string Text
+              {
+                  get => _text;
+                  set
+                  {
+                      _text = value;
+                      Console.WriteLine("Text set to: " + value);
+                  }
+              }
+
+              public DocumentMemento CreateMemento()
+              {
+                  return new DocumentMemento(_text);
+              }
+
+              public void RestoreMemento(DocumentMemento memento)
+              {
+                  _text = memento.Text;
+                  Console.WriteLine("Text restored to: " + _text);
+              }
+          }
+
+          // Memento class
+          public class DocumentMemento
+          {
+              public string Text { get; }
+
+              public DocumentMemento(string text)
+              {
+                  Text = text;
+              }
+          }
+
+          // Caretaker class
+          public class DocumentHistory
+          {
+              private Stack<DocumentMemento> _mementos = new Stack<DocumentMemento>();
+
+              public void Save(Document document)
+              {
+                  _mementos.Push(document.CreateMemento());
+              }
+
+              public void Undo(Document document)
+              {
+                  if (_mementos.Any())
+                  {
+                      var memento = _mementos.Pop();
+                      document.RestoreMemento(memento);
+                  }
+              }
+          }
+
+          // Example usage
+          var document = new Document();
+          document.Text = "Hello";
+          var history = new DocumentHistory();
+          history.Save(document); // save initial state
+
+          document.Text = "Hello World";
+          history.Save(document); // save new state
+
+          document.Text = "Goodbye";
+          history.Undo(document); // restore previous state
+
+          document.Text = "Hello Again";
+          history.Save(document); // save new state
+
+          document.Text = "This is the end";
+          history.Undo(document); // restore previous state
+          history.Undo(document); // restore initial state
+    
+    
 **Observer**(Event-Subscriber, Listener) is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.  
 Use when:
  - changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
