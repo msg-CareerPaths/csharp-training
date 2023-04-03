@@ -723,107 +723,106 @@ You this pattern when you want to :
  - to parametrize objects with operations.
  - to queue operations, schedule their execution, or execute them remotely.
  - to implement reversible operations.
-Example :  
-  
-     // Receiver class
-     class InsurancePolicy
-     {
-         public string PolicyHolder { get; set; }
-         public string PolicyNumber { get; set; }
-         public double CoverageAmount { get; set; }
+Example:  
 
-         public void CreatePolicy()
-         {
-             Console.WriteLine($"Policy {PolicyNumber} created for {PolicyHolder} with coverage of {CoverageAmount}.");
-         }
+    // Receiver class  
+    class InsurancePolicy
+    {
+        public string PolicyHolder { get; set; }
+        public string PolicyNumber { get; set; }
+        public double CoverageAmount { get; set; }
 
-         public void CancelPolicy()
-         {
-             Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
-         }
-     }
+        public void CreatePolicy()
+        {
+            Console.WriteLine($"Policy {PolicyNumber} created for {PolicyHolder} with coverage of {CoverageAmount}.");
+        }
 
-     // Command interface
-     interface IInsuranceCommand
-     {
-         void Execute();
-     }
+        public void CancelPolicy()
+        {
+            Console.WriteLine($"Policy {PolicyNumber} cancelled for {PolicyHolder}.");
+        }
+    }  
 
-     // Concrete command for creating a policy
-     class CreatePolicyCommand : IInsuranceCommand
-     {
-         private readonly InsurancePolicy _policy;
+    // Command interface
+    interface IInsuranceCommand
+    {
+        void Execute();
+    }  
 
-         public CreatePolicyCommand(InsurancePolicy policy)
-         {
-             _policy = policy;
-         }
+    // Concrete command for creating a policy
+    class CreatePolicyCommand : IInsuranceCommand
+    {
+        private readonly InsurancePolicy _policy;
 
-         public void Execute()
-         {
-             _policy.CreatePolicy();
-         }
-     }
+        public CreatePolicyCommand(InsurancePolicy policy)
+        {
+            _policy = policy;
+        }
 
-     // Concrete command for cancelling a policy
-     class CancelPolicyCommand : IInsuranceCommand
-     {
-         private readonly InsurancePolicy _policy;
+        public void Execute()
+        {
+            _policy.CreatePolicy();
+        }
+    }  
 
-         public CancelPolicyCommand(InsurancePolicy policy)
-         {
-             _policy = policy;
-         }
+    // Concrete command for cancelling a policy  
+    class CancelPolicyCommand : IInsuranceCommand
+    {
+        private readonly InsurancePolicy _policy;
 
-         public void Execute()
-         {
-             _policy.CancelPolicy();
-         }
-     }  
+        public CancelPolicyCommand(InsurancePolicy policy)
+        {
+            _policy = policy;
+        }
 
-     // Invoker class  
-     class InsurancePolicyInvoker  
-     {
-         private IInsuranceCommand _command;
+        public void Execute()
+        {
+            _policy.CancelPolicy();
+        }
+    }  
 
-         public void SetCommand(IInsuranceCommand command)
-         {
-             _command = command;
-         }
+    // Invoker class  
+    class InsurancePolicyInvoker
+    {
+        private IInsuranceCommand _command;
 
-         public void ExecuteCommand()
-         {
-             _command.Execute();
-         }
-     }  
+        public void SetCommand(IInsuranceCommand command)
+        {
+            _command = command;
+        }
 
-     // Client code  
-     class Program  
-     {
-         static void Main(string[] args)
-         {
-             var policy = new InsurancePolicy
-             {
-                 PolicyHolder = "John Doe",
-                 PolicyNumber = "12345",
-                 CoverageAmount = 100000
-             };
+        public void ExecuteCommand()
+        {
+            _command.Execute();
+        }
+    }  
 
-             var createCommand = new CreatePolicyCommand(policy);
-             var cancelCommand = new CancelPolicyCommand(policy);
+    // Client code  
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var policy = new InsurancePolicy
+            {
+                PolicyHolder = "John Doe",
+                PolicyNumber = "12345",
+                CoverageAmount = 100000
+            };
 
-             var invoker = new InsurancePolicyInvoker();
+            var createCommand = new CreatePolicyCommand(policy);
+            var cancelCommand = new CancelPolicyCommand(policy);
 
-             invoker.SetCommand(createCommand);
-             invoker.ExecuteCommand();
+            var invoker = new InsurancePolicyInvoker();
 
-             invoker.SetCommand(cancelCommand);
-             invoker.ExecuteCommand();
-         }
-     }
-  
-  
-    
+            invoker.SetCommand(createCommand);
+            invoker.ExecuteCommand();
+
+            invoker.SetCommand(cancelCommand);
+            invoker.ExecuteCommand();
+        }
+    }  
+
+
 
 **Iterator** lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 You this pattern:
