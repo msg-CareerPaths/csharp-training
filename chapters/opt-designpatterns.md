@@ -1466,7 +1466,99 @@ Example:
 Use:
  - when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
  - to clean up the business logic of auxiliary behaviors.
- - when a behavior makes sense only in some classes of a class hierarchy, but not in others.
+ - when a behavior makes sense only in some classes of a class hierarchy, but not in others.  
+Example:  
+
+       public interface IVisitor
+       {
+           void Visit(Book book);
+           void Visit(Electronics electronics);
+           void Visit(Clothing clothing);
+       }
+
+       public abstract class Product
+       {
+           public string Name { get; set; }
+           public decimal Price { get; set; }
+
+           public abstract void Accept(IVisitor visitor);
+       }
+
+       public class Book : Product
+       {
+           public string Author { get; set; }
+           public int Pages { get; set; }
+
+           public override void Accept(IVisitor visitor)
+           {
+               visitor.Visit(this);
+           }
+       }
+
+       public class Electronics : Product
+       {
+           public string Manufacturer { get; set; }
+           public string Model { get; set; }
+
+           public override void Accept(IVisitor visitor)
+           {
+               visitor.Visit(this);
+           }
+       }
+
+       public class Clothing : Product
+       {
+           public string Size { get; set; }
+           public string Color { get; set; }
+
+           public override void Accept(IVisitor visitor)
+           {
+               visitor.Visit(this);
+           }
+       }
+
+       public class PriceCalculatorVisitor : IVisitor
+       {
+           private decimal _totalPrice;
+
+           public void Visit(Book book)
+           {
+               _totalPrice += book.Price;
+           }
+
+           public void Visit(Electronics electronics)
+           {
+               _totalPrice += electronics.Price;
+           }
+
+           public void Visit(Clothing clothing)
+           {
+               _totalPrice += clothing.Price;
+           }
+
+           public decimal GetTotalPrice()
+           {
+               return _totalPrice;
+           }
+       }
+
+       //client code
+       var order = new List<Product>
+       {
+           new Book { Name = "The Hitchhiker's Guide to the Galaxy", Author = "Douglas Adams", Pages = 224, Price = 10.99m },
+           new Electronics { Name = "Apple AirPods", Manufacturer = "Apple", Model = "MMEF2AM/A", Price = 159.99m },
+           new Clothing { Name = "Men's Polo Shirt", Size = "M", Color = "Blue", Price = 24.99m },
+       };
+
+           var priceCalculator = new PriceCalculatorVisitor();
+       foreach (var product in order)
+       {
+           product.Accept(priceCalculator);
+       }
+
+       var totalPrice = priceCalculator.GetTotalPrice();
+       Console.WriteLine($"Total Price: {totalPrice:C}");
+  
  
 **Resources:** 
 
