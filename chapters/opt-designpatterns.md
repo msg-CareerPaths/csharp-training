@@ -510,63 +510,59 @@ Example:
 **Facade** is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.  
 Example:  
 
-    public class InsuranceFacade
+    // Facade class for the e-commerce application
+    public class EcommerceFacade
     {
-        private readonly CustomerRepository _customerRepository;
-        private readonly PolicyRepository _policyRepository;
-        private readonly ClaimRepository _claimRepository;
+        private readonly ProductCatalog _productCatalog;
+        private readonly ShoppingCart _shoppingCart;
+        private readonly PaymentGateway _paymentGateway;
 
-        public InsuranceFacade()
+        public EcommerceFacade()
         {
-            _customerRepository = new CustomerRepository();
-            _policyRepository = new PolicyRepository();
-            _claimRepository = new ClaimRepository();
+            _productCatalog = new ProductCatalog();
+            _shoppingCart = new ShoppingCart();
+            _paymentGateway = new PaymentGateway();
         }
 
-        public void CreateNewCustomer(string name, string address, string phone)
+        // Method for adding a product to the shopping cart
+        public void AddToCart(int productId, int quantity)
         {
-            var customer = new Customer { Name = name, Address = address, Phone = phone };
-            _customerRepository.Save(customer);
+            var product = _productCatalog.GetProductById(productId);
+            _shoppingCart.AddToCart(product, quantity);
         }
 
-        public void CreateNewPolicy(string policyNumber, string policyType, string customerId)
+        // Method for checking out and processing payment
+        public bool Checkout(string creditCardNumber, string expiryDate)
         {
-            var policy = new Policy { PolicyNumber = policyNumber, PolicyType = policyType, CustomerId = customerId };
-            _policyRepository.Save(policy);
-        }
+            var totalAmount = _shoppingCart.GetTotalAmount();
+            var paymentSuccessful = _paymentGateway.ProcessPayment(creditCardNumber, expiryDate, totalAmount);
 
-        public void CreateNewClaim(string claimNumber, string policyNumber, DateTime dateOfLoss, decimal amount)
-        {
-            var claim = new Claim { ClaimNumber = claimNumber, PolicyNumber = policyNumber, DateOfLoss = dateOfLoss, Amount = amount };
-            _claimRepository.Save(claim);
+            if (paymentSuccessful)
+            {
+                _shoppingCart.EmptyCart();
+            }
+
+            return paymentSuccessful;
         }
     }
 
-    public class CustomerService
-    {
-        public void Save(Customer customer)
-        {
-            // Code to save customer to database
-        }
-    }
+    // Example usage of the EcommerceFacade class
+    var ecommerce = new EcommerceFacade();
 
-    public class PolicyService
-    {
-        public void Save(Policy policy)
-        {
-            // Code to save policy to database
-        }
-    }
+    // Add a product to the shopping cart
+    ecommerce.AddToCart(1234, 2);
 
-    public class ClaimService
-    {
-        public void Save(Claim claim)
-        {
-            // Code to save claim to database
-        }
-    }
+    // Checkout and process payment
+    var paymentSuccessful = ecommerce.Checkout("1234-5678-9012-3456", "12/24");
 
-    // to use clients can simply use the InsuranceFacade methods to perform the necessary actions. 
+    if (paymentSuccessful)
+    {
+        Console.WriteLine("Payment successful. Order confirmed!");
+    }
+    else
+    {
+        Console.WriteLine("Payment failed. Please try again.");
+    }
 
 
 **Flyweight** lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
