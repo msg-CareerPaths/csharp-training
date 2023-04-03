@@ -3,127 +3,144 @@
 Design patterns are typical solutions to common problems in software design. Each pattern is like a blueprint that you can customize to solve a particular
 design problem in your code.
 
-**Creational Patterns:**  
+**1. Creational Patterns:**  
 
-**Singleton**  
+**1.1. Singleton**  
  This pattern ensures that a class has just a single instance and provides a global access point to that instance.
- 
+ Usage : 
+   - when a class in your program should have just a single instance available to all clients; for example, a single database object shared by different parts of the program.  
+   - you need stricter control over global variables.  
+
  Example:  
  
-    public sealed class Singleton {
-       private static volatile Singleton instance;
-       private static object syncRoot = new Object();
+        public sealed class Singleton 
+        {
+            private static volatile Singleton instance;
+            private static object syncRoot = new Object();
 
-       private Singleton() { }
+            private Singleton() { }
 
-       public static Singleton Instance {
-           get {
-               if (instance == null) {
-                   lock (syncRoot) {
-                       if (instance == null) {
-                           instance = new Singleton();
-                       }
-                   }
-               }
-               return instance;
-           }
-       }
-   }
- 
- Singleton s1 = Singleton.Instance;
- Singleton s2 = Singleton.Instance;
- Console.WriteLine(s1 == s2); // Output: True
+            public static Singleton Instance {
+                get {
+                    if (instance == null) {
+                        lock (syncRoot) {
+                            if (instance == null) {
+                                instance = new Singleton();
+                            }
+                        }
+                    }
+                    return instance;
+                }
+            }
+        }
 
-**Factory Method**
+        Singleton s1 = Singleton.Instance;
+        Singleton s2 = Singleton.Instance;
+        Console.WriteLine(s1 == s2); // Output: True  
+
+
+**1.2. Factory Method**  
 The Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. It is useful when you need to create an object, but you don't know the exact type of the object until runtime.
- 
+When to use:  
+ - you don’t know beforehand the exact types and dependencies of the objects your code should work with.  
+ - you want to provide users of your library or framework with a way to extend its internal components.
+ - you want to save system resources by reusing existing objects instead of rebuilding them each time.
+
 Example:
 
-    public interface IInsurancePolicy {
-        void CalculatePremium();
-    }
-
-    public class CarInsurancePolicy : IInsurancePolicy {
-        public void CalculatePremium() {
-            Console.WriteLine("Calculating premium for car insurance policy...");
+        public interface IInsurancePolicy {
+            void CalculatePremium();
         }
-    }
 
-    public class HomeInsurancePolicy : IInsurancePolicy {
-        public void CalculatePremium() {
-            Console.WriteLine("Calculating premium for home insurance policy...");
+        public class CarInsurancePolicy : IInsurancePolicy {
+            public void CalculatePremium() {
+                Console.WriteLine("Calculating premium for car insurance policy...");
+            }
         }
-    }
 
-    public abstract class InsurancePolicyFactory {
-        public abstract IInsurancePolicy CreatePolicy();
-    }
-
-    public class CarInsurancePolicyFactory : InsurancePolicyFactory {
-        public override IInsurancePolicy CreatePolicy() {
-            return new CarInsurancePolicy();
+        public class HomeInsurancePolicy : IInsurancePolicy {
+            public void CalculatePremium() {
+                Console.WriteLine("Calculating premium for home insurance policy...");
+            }
         }
-    }
 
-    public class HomeInsurancePolicyFactory : InsurancePolicyFactory {
-        public override IInsurancePolicy CreatePolicy() {
-            return new HomeInsurancePolicy();
+        public abstract class InsurancePolicyFactory {
+            public abstract IInsurancePolicy CreatePolicy();
         }
-    }
 
-    InsurancePolicyFactory factory = new CarInsurancePolicyFactory();
-    IInsurancePolicy policy = factory.CreatePolicy();
-    policy.CalculatePremium(); // Output: "Calculating premium for car insurance policy..."
+        public class CarInsurancePolicyFactory : InsurancePolicyFactory {
+            public override IInsurancePolicy CreatePolicy() {
+                return new CarInsurancePolicy();
+            }
+        }
 
-    factory = new HomeInsurancePolicyFactory();
-    policy = factory.CreatePolicy();
-    policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
+        public class HomeInsurancePolicyFactory : InsurancePolicyFactory {
+            public override IInsurancePolicy CreatePolicy() {
+                return new HomeInsurancePolicy();
+            }
+        }
 
-**Abtract Factory**   
+        InsurancePolicyFactory factory = new CarInsurancePolicyFactory();
+        IInsurancePolicy policy = factory.CreatePolicy();
+        policy.CalculatePremium(); // Output: "Calculating premium for car insurance policy..."
+
+        factory = new HomeInsurancePolicyFactory();
+        policy = factory.CreatePolicy();
+        policy.CalculatePremium(); // Output: "Calculating premium for home insurance policy..."
+
+**1.3. Abtract Factory**    
 This pattern lets you produce families of related objects without specifying their concrete classes.  
+When to use:  
+ - your code needs to work with various families of related products, but you don’t want it to depend on the concrete classes of those products—they might be unknown beforehand or you simply want to allow for future extensibility.
+ - you have a class with a set of Factory Methods that blur its primary responsibility.  
+
 Example:  
 
-    public interface IInsuranceFactory
-    {
-        PolicyApplication CreateApplication(string customerName, string policyType);
-        PolicyDocument CreateDocument(PolicyApplication application);
-    }
-
-    public class HomeInsuranceFactory : IInsuranceFactory
-    {
-        public PolicyApplication CreateApplication(string customerName, string policyType)
+        public interface IInsuranceFactory
         {
-            return new HomeInsurancePolicyApplication(customerName);
+            PolicyApplication CreateApplication(string customerName, string policyType);
+            PolicyDocument CreateDocument(PolicyApplication application);
         }
-        public PolicyDocument CreateDocument(PolicyApplication application)
+
+        public class HomeInsuranceFactory : IInsuranceFactory
         {
-            return new AutoPolicyDocument(application);
+            public PolicyApplication CreateApplication(string customerName, string policyType)
+            {
+                return new HomeInsurancePolicyApplication(customerName);
+            }
+            public PolicyDocument CreateDocument(PolicyApplication application)
+            {
+                return new AutoPolicyDocument(application);
+            }
         }
-    }
 
-    public class AutoInsuranceFactory : IInsuranceFactory
-    {
-        public PolicyApplication CreateApplication(string customerName, string policyType)
+        public class AutoInsuranceFactory : IInsuranceFactory
         {
-            return new AutoPolicyApplication(customerName);
+            public PolicyApplication CreateApplication(string customerName, string policyType)
+            {
+                return new AutoPolicyApplication(customerName);
+            }
+            public PolicyDocument CreateDocument(PolicyApplication application)
+            {
+                return new AutoPolicyDocument(application);
+            }
         }
-        public PolicyDocument CreateDocument(PolicyApplication application)
-        {
-            return new AutoPolicyDocument(application);
-        }
-    }
 
-    IPolicyFactory factory = new AutoInsuranceFactory();
-    PolicyApplication application = factory.CreateApplication("John Smith", "Auto");
-    PolicyDocument document = factory.CreateDocument(application);
+        IPolicyFactory factory = new AutoInsuranceFactory();
+        PolicyApplication application = factory.CreateApplication("John Smith", "Auto");
+        PolicyDocument document = factory.CreateDocument(application);
 
-    IPolicyFactory factory = new HomeInsuranceFactory();
-    PolicyApplication application = factory.CreateApplication("John Smith", "Home");
-    PolicyDocument document = factory.CreateDocument(application);
+        IPolicyFactory factory = new HomeInsuranceFactory();
+        PolicyApplication application = factory.CreateApplication("John Smith", "Home");
+        PolicyDocument document = factory.CreateDocument(application);
 
 
-**Prototype**  
+**1.4. Prototype**  
 Is a pattern that allows cloning objects, even complex ones, without coupling to their specific classes.  
+When to use: 
+ - your code shouldn’t depend on the concrete classes of objects that you need to copy.  
+ - you want to reduce the number of subclasses that only differ in the way they initialize their respective objects.  
+
 Example:  
   
         interface ICloneable
@@ -168,501 +185,531 @@ Example:
                 return new Address(this.Street, this.City, this.Country);
             }
         }
-        
+
         //call example
         var person1 = new Person("John Doe", 30, new Address("123 Main St", "Anytown", "USA"));
         var person2 = person1.Clone() as Person;
 
 
-**BuilderPattern:**  
+**1.5. BuilderPattern:**  
 The pattern allows you to produce different types and representations of an object using the same construction code.    
 The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.  
+When to use:  
+ - to get rid of a “telescoping constructor”.
+ - you want your code to be able to create different representations of some product (for example, stone and wooden houses).  
+ - to construct Composite trees or other complex objects.  
+
 Example:  
 
-    public class Report
-    {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public DateTime Date { get; set; }
-        public List<string> Sections { get; set; }
-
-        public Report()
+        public class Report
         {
-            Sections = new List<string>();
-        }
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public DateTime Date { get; set; }
+            public List<string> Sections { get; set; }
 
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Title: ").AppendLine(Title);
-            sb.Append("Author: ").AppendLine(Author);
-            sb.Append("Date: ").AppendLine(Date.ToString());
-            sb.Append("Sections:").AppendLine();
-            foreach (string section in Sections)
+            public Report()
             {
-                sb.Append("\t- ").AppendLine(section);
+                Sections = new List<string>();
             }
-            return sb.ToString();
+
+            public override string ToString()
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Title: ").AppendLine(Title);
+                sb.Append("Author: ").AppendLine(Author);
+                sb.Append("Date: ").AppendLine(Date.ToString());
+                sb.Append("Sections:").AppendLine();
+                foreach (string section in Sections)
+                {
+                    sb.Append("\t- ").AppendLine(section);
+                }
+                return sb.ToString();
+            }
         }
-    }
 
-    public interface IReportBuilder
-    {
-        IReportBuilder SetTitle(string title);
-        IReportBuilder SetAuthor(string author);
-        IReportBuilder SetDate(DateTime date);
-        IReportBuilder AddSection(string section);
-        Report Build();
-    }
-
-    public class ReportBuilder : IReportBuilder
-    {
-        private Report report;
-
-        public ReportBuilder()
+        public interface IReportBuilder
         {
-            report = new Report();
+            IReportBuilder SetTitle(string title);
+            IReportBuilder SetAuthor(string author);
+            IReportBuilder SetDate(DateTime date);
+            IReportBuilder AddSection(string section);
+            Report Build();
         }
 
-        public IReportBuilder SetTitle(string title)
+        public class ReportBuilder : IReportBuilder
         {
-            report.Title = title;
-            return this;
+            private Report report;
+
+            public ReportBuilder()
+            {
+                report = new Report();
+            }
+
+            public IReportBuilder SetTitle(string title)
+            {
+                report.Title = title;
+                return this;
+            }
+
+            public IReportBuilder SetAuthor(string author)
+            {
+                report.Author = author;
+                return this;
+            }
+
+            public IReportBuilder SetDate(DateTime date)
+            {
+                report.Date = date;
+                return this;
+            }
+
+            public IReportBuilder AddSection(string section)
+            {
+                report.Sections.Add(section);
+                return this;
+            }
+
+            public Report Build()
+            {
+                return report;
+            }
         }
 
-        public IReportBuilder SetAuthor(string author)
-        {
-            report.Author = author;
-            return this;
-        }
+        // Usage example:
+        var reportBuilder = new ReportBuilder();
+        var report = reportBuilder
+            .SetTitle("Sales Report")
+            .SetAuthor("John Doe")
+            .SetDate(DateTime.Now)
+            .AddSection("Summary")
+            .AddSection("Sales by Region")
+            .Build();
 
-        public IReportBuilder SetDate(DateTime date)
-        {
-            report.Date = date;
-            return this;
-        }
-
-        public IReportBuilder AddSection(string section)
-        {
-            report.Sections.Add(section);
-            return this;
-        }
-
-        public Report Build()
-        {
-            return report;
-        }
-    }
-
-    // Usage example:
-    var reportBuilder = new ReportBuilder();
-    var report = reportBuilder
-        .SetTitle("Sales Report")
-        .SetAuthor("John Doe")
-        .SetDate(DateTime.Now)
-        .AddSection("Summary")
-        .AddSection("Sales by Region")
-        .Build();
-
-**Structural Patterns:**    
+**2. Structural Patterns:**    
 Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.  
 
-**Adapter**  
-Using this pattern you will allow objects with incompatible interfaces to collaborate.  
+**2.1. Adapter**  
+Using this pattern you will allow objects with incompatible interfaces to collaborate.
+When to use : 
+ - you want to use some existing class, but its interface isn’t compatible with the rest of your code.  
+ - you want to reuse several existing subclasses that lack some common functionality that can’t be added to the superclass.  
+
 Example:    
 
-    // Define the Target interface
-    interface IJsonConverter
-    {
-        string ConvertToJson();
-    }
-
-    // Define the Adaptee interface
-    interface IXmlConverter
-    {
-        string ConvertToXml();
-    }
-
-    // Implement the Adaptee interface
-    class XmlConverter : IXmlConverter
-    {
-        public string ConvertToXml()
+        // Define the Target interface
+        interface IJsonConverter
         {
-            // Implementation to convert XML to string
-            return "<root><element>value</element></root>";
-        }
-    }
-
-    // Implement the Adapter interface
-    class XmlToJsonAdapter : IJsonConverter
-    {
-        private readonly IXmlConverter xmlConverter;
-
-        public XmlToJsonAdapter(IXmlConverter xmlConverter)
-        {
-            this.xmlConverter = xmlConverter;
+            string ConvertToJson();
         }
 
-        public string ConvertToJson()
+        // Define the Adaptee interface
+        interface IXmlConverter
         {
-            // Implementation to convert XML to JSON using a third-party library
-            string xmlString = xmlConverter.ConvertToXml();
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(xmlString);
-            string json = JsonConvert.SerializeXmlNode(xmlDoc);
-            return json;
-        }
-    }
-    // Usage example:
-    IXmlConverter xmlConverter = new XmlConverter();
-    IJsonConverter jsonConverter = new XmlToJsonAdapter(xmlConverter);
-    string json = jsonConverter.ConvertToJson();
-    Console.WriteLine(json);
-
-**Bridge**  
-Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.  
-Example :
-
-    // Abstraction
-    public abstract class Vehicle
-    {
-        protected IEngine engine;
-
-        public Vehicle(IEngine engine)
-        {
-            this.engine = engine;
+            string ConvertToXml();
         }
 
-        public abstract void Drive();
-    }
-
-    // Implementor
-    public interface IEngine
-    {
-        void Start();
-    }
-
-    // Concrete Implementor
-    public class GasolineEngine : IEngine
-    {
-        public void Start()
+        // Implement the Adaptee interface
+        class XmlConverter : IXmlConverter
         {
-            Console.WriteLine("Gasoline engine started.");
-        }
-    }
-
-    // Concrete Implementor
-    public class ElectricEngine : IEngine
-    {
-        public void Start()
-        {
-            Console.WriteLine("Electric engine started.");
-        }
-    }
-
-    // Refined Abstraction
-    public class Car : Vehicle
-    {
-        public Car(IEngine engine) : base(engine)
-        {
+            public string ConvertToXml()
+            {
+                // Implementation to convert XML to string
+                return "<root><element>value</element></root>";
+            }
         }
 
-        public override void Drive()
+        // Implement the Adapter interface
+        class XmlToJsonAdapter : IJsonConverter
         {
-            Console.Write("Driving a car... ");
-            engine.Start();
-        }
-    }
+            private readonly IXmlConverter xmlConverter;
 
-    // Refined Abstraction
-    public class Truck : Vehicle
-    {
-        public Truck(IEngine engine) : base(engine)
+            public XmlToJsonAdapter(IXmlConverter xmlConverter)
+            {
+                this.xmlConverter = xmlConverter;
+            }
+
+            public string ConvertToJson()
+            {
+                // Implementation to convert XML to JSON using a third-party library
+                string xmlString = xmlConverter.ConvertToXml();
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.LoadXml(xmlString);
+                string json = JsonConvert.SerializeXmlNode(xmlDoc);
+                return json;
+            }
+        }
+        // Usage example:
+        IXmlConverter xmlConverter = new XmlConverter();
+        IJsonConverter jsonConverter = new XmlToJsonAdapter(xmlConverter);
+        string json = jsonConverter.ConvertToJson();
+        Console.WriteLine(json);
+
+**2.2. Bridge**  
+Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other. 
+Usage:
+ - you want to divide and organize a monolithic class that has several variants of some functionality (for example, if the class can work with various database servers).  
+ - you need to extend a class in several orthogonal (independent) dimensions.  
+ - you need to be able to switch implementations at runtime.  
+
+Example:    
+
+        using System;
+
+        // Implementor interface
+        interface IMessageSender
         {
+            void SendMessage(string subject, string body);
         }
 
-        public override void Drive()
+        // Concrete Implementor 1
+        class EmailSender : IMessageSender
         {
-            Console.Write("Driving a truck... ");
-            engine.Start();
+            public void SendMessage(string subject, string body)
+            {
+                Console.WriteLine($"Sending email:\nSubject: {subject}\nBody: {body}");
+            }
         }
-    }
 
-    // Usage example:
-    // Create a car with a gasoline engine
-    Vehicle car = new Car(new GasolineEngine());
-    car.Drive(); // Driving a car... Gasoline engine started.
+        // Concrete Implementor 2
+        class SMSSender : IMessageSender
+        {
+            public void SendMessage(string subject, string body)
+            {
+                Console.WriteLine($"Sending SMS:\nSubject: {subject}\nBody: {body}");
+            }
+        }
 
-    // Create a truck with an electric engine
-    Vehicle truck = new Truck(new ElectricEngine());
-    truck.Drive(); // Driving a truck... Electric engine started.
+        // Abstraction interface
+        interface IMessage
+        {
+            void Send();
+        }
+
+        // Refined Abstraction
+        class AlertMessage : IMessage
+        {
+            private IMessageSender _messageSender;
+            public string Subject { get; set; }
+            public string Body { get; set; }
+
+            public AlertMessage(IMessageSender messageSender)
+            {
+                _messageSender = messageSender;
+            }
+
+            public void Send()
+            {
+                _messageSender.SendMessage(Subject, Body);
+            }
+        }
+
+        // Client
+        // Create Implementor instances
+        IMessageSender emailSender = new EmailSender();
+        IMessageSender smsSender = new SMSSender();
+
+        // Create Abstraction instances
+        IMessage alertEmail = new AlertMessage(emailSender) { Subject = "Alert", Body = "Something happened!" };
+        IMessage alertSMS = new AlertMessage(smsSender) { Subject = "Alert", Body = "Something happened!" };
+
+        // Send messages using Abstraction instances
+        alertEmail.Send();
+        alertSMS.Send();
+
     
-**Composite** is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.  Example:  
+**2.3. Composite** is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.  
+Applicability:  
+ - you have to implement a tree-like object structure.  
+ - ou want the client code to treat both simple and complex elements uniformly.  
 
-    // Component
-    public abstract class Employee
-    {
-        public string Name { get; set; }
-
-        public Employee(string name)
-        {
-            Name = name;
-        }
-
-        public abstract void Display(int depth);
-    }
-
-    // Leaf
-    public class Developer : Employee
-    {
-        public Developer(string name) : base(name)
-        {
-        }
-
-        public override void Display(int depth)
-        {
-            Console.WriteLine(new string('-', depth) + Name);
-        }
-    }
-
-    // Composite
-    public class Manager : Employee
-    {
-        private List<Employee> _employees = new List<Employee>();
-
-        public Manager(string name) : base(name)
-        {
-        }
-
-        public void AddEmployee(Employee employee)
-        {
-            _employees.Add(employee);
-        }
-
-        public override void Display(int depth)
-        {
-            Console.WriteLine(new string('-', depth) + Name);
-
-            foreach (Employee employee in _employees)
-            {
-                employee.Display(depth + 2);
-            }
-        }
-    }
-
-    // Create leaf employees
-    Developer developer1 = new Developer("John Doe");
-    Developer developer2 = new Developer("Jane Doe");
-
-    // Create composite manager and add leaf employees to it
-    Manager manager = new Manager("Bob Smith");
-    manager.AddEmployee(developer1);
-    manager.AddEmployee(developer2);
-
-    // Display the hierarchy
-    manager.Display(0);
-
-**Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.  
 Example:  
 
-    // The base interface for an insurance policy.
-    public interface IInsurancePolicy
-    {
-        decimal CalculatePremium();
-    }
-
-    // The base implementation of an insurance policy.
-    public class BaseInsurancePolicy : IInsurancePolicy
-    {
-        public decimal CalculatePremium()
+        // Component
+        public abstract class Employee
         {
-            // Calculate the premium for the base policy.
-            decimal premium = /* some calculation */;
-            return premium;
-        }
-    }
+            public string Name { get; set; }
 
-    // A decorator that adds theft coverage to an insurance policy.
-    public class TheftCoverageDecorator : IInsurancePolicy
-    {
-        private readonly IInsurancePolicy _basePolicy;
-
-        public TheftCoverageDecorator(IInsurancePolicy basePolicy)
-        {
-            _basePolicy = basePolicy;
-        }
-
-        public decimal CalculatePremium()
-        {
-            // Calculate the premium for the base policy with theft coverage added.
-            decimal premium = _basePolicy.CalculatePremium() + /* some calculation */;
-            return premium;
-        }
-    }
-
-    // Example usage:
-    IInsurancePolicy basePolicy = new BaseInsurancePolicy();
-    IInsurancePolicy policyWithTheftCoverage = new TheftCoverageDecorator(basePolicy);
-    IInsurancePolicy policyWithFireAndTheftCoverage = new FireCoverageDecorator(policyWithTheftCoverage);
-    decimal premium = policyWithFireAndTheftCoverage.CalculatePremium();
-
-
-**Facade** is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.  
-Example:  
-
-    // Facade class for the e-commerce application
-    public class EcommerceFacade
-    {
-        private readonly ProductCatalog _productCatalog;
-        private readonly ShoppingCart _shoppingCart;
-        private readonly PaymentGateway _paymentGateway;
-
-        public EcommerceFacade()
-        {
-            _productCatalog = new ProductCatalog();
-            _shoppingCart = new ShoppingCart();
-            _paymentGateway = new PaymentGateway();
-        }
-
-        // Method for adding a product to the shopping cart
-        public void AddToCart(int productId, int quantity)
-        {
-            var product = _productCatalog.GetProductById(productId);
-            _shoppingCart.AddToCart(product, quantity);
-        }
-
-        // Method for checking out and processing payment
-        public bool Checkout(string creditCardNumber, string expiryDate)
-        {
-            var totalAmount = _shoppingCart.GetTotalAmount();
-            var paymentSuccessful = _paymentGateway.ProcessPayment(creditCardNumber, expiryDate, totalAmount);
-
-            if (paymentSuccessful)
+            public Employee(string name)
             {
-                _shoppingCart.EmptyCart();
+                Name = name;
             }
 
-            return paymentSuccessful;
+            public abstract void Display(int depth);
         }
-    }
 
-    // Example usage of the EcommerceFacade class
-    var ecommerce = new EcommerceFacade();
+        // Leaf
+        public class Developer : Employee
+        {
+            public Developer(string name) : base(name)
+            {
+            }
 
-    // Add a product to the shopping cart
-    ecommerce.AddToCart(1234, 2);
+            public override void Display(int depth)
+            {
+                Console.WriteLine(new string('-', depth) + Name);
+            }
+        }
 
-    // Checkout and process payment
-    var paymentSuccessful = ecommerce.Checkout("1234-5678-9012-3456", "12/24");
+        // Composite
+        public class Manager : Employee
+        {
+            private List<Employee> _employees = new List<Employee>();
 
-    if (paymentSuccessful)
-    {
-        Console.WriteLine("Payment successful. Order confirmed!");
-    }
-    else
-    {
-        Console.WriteLine("Payment failed. Please try again.");
-    }
+            public Manager(string name) : base(name)
+            {
+            }
+
+            public void AddEmployee(Employee employee)
+            {
+                _employees.Add(employee);
+            }
+
+            public override void Display(int depth)
+            {
+                Console.WriteLine(new string('-', depth) + Name);
+
+                foreach (Employee employee in _employees)
+                {
+                    employee.Display(depth + 2);
+                }
+            }
+        }
+
+        // Create leaf employees
+        Developer developer1 = new Developer("John Doe");
+        Developer developer2 = new Developer("Jane Doe");
+
+        // Create composite manager and add leaf employees to it
+        Manager manager = new Manager("Bob Smith");
+        manager.AddEmployee(developer1);
+        manager.AddEmployee(developer2);
+
+        // Display the hierarchy
+        manager.Display(0);
+
+**2.4. Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.  
+Usage:
+ - you need to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.  
+ - when it’s awkward or not possible to extend an object’s behavior using inheritance. 
+
+Example:  
+
+        // The base interface for an insurance policy.
+        public interface IInsurancePolicy
+        {
+            decimal CalculatePremium();
+        }
+
+        // The base implementation of an insurance policy.
+        public class BaseInsurancePolicy : IInsurancePolicy
+        {
+            public decimal CalculatePremium()
+            {
+                // Calculate the premium for the base policy.
+                decimal premium = /* some calculation */;
+                return premium;
+            }
+        }
+
+        // A decorator that adds theft coverage to an insurance policy.
+        public class TheftCoverageDecorator : IInsurancePolicy
+        {
+            private readonly IInsurancePolicy _basePolicy;
+
+            public TheftCoverageDecorator(IInsurancePolicy basePolicy)
+            {
+                _basePolicy = basePolicy;
+            }
+
+            public decimal CalculatePremium()
+            {
+                // Calculate the premium for the base policy with theft coverage added.
+                decimal premium = _basePolicy.CalculatePremium() + /* some calculation */;
+                return premium;
+            }
+        }
+
+        // Example usage:
+        IInsurancePolicy basePolicy = new BaseInsurancePolicy();
+        IInsurancePolicy policyWithTheftCoverage = new TheftCoverageDecorator(basePolicy);
+        IInsurancePolicy policyWithFireAndTheftCoverage = new FireCoverageDecorator(policyWithTheftCoverage);
+        decimal premium = policyWithFireAndTheftCoverage.CalculatePremium();
 
 
-**Flyweight** lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
+**2.5. Facade** is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.  
+Applicability:  
+ - you need to have a limited but straightforward interface to a complex subsystem.  
+ - you want to structure a subsystem into layers.  
+
+Example:  
+
+        // Facade class for the e-commerce application
+        public class EcommerceFacade
+        {
+            private readonly ProductCatalog _productCatalog;
+            private readonly ShoppingCart _shoppingCart;
+            private readonly PaymentGateway _paymentGateway;
+
+            public EcommerceFacade()
+            {
+                _productCatalog = new ProductCatalog();
+                _shoppingCart = new ShoppingCart();
+                _paymentGateway = new PaymentGateway();
+            }
+
+            // Method for adding a product to the shopping cart
+            public void AddToCart(int productId, int quantity)
+            {
+                var product = _productCatalog.GetProductById(productId);
+                _shoppingCart.AddToCart(product, quantity);
+            }
+
+            // Method for checking out and processing payment
+            public bool Checkout(string creditCardNumber, string expiryDate)
+            {
+                var totalAmount = _shoppingCart.GetTotalAmount();
+                var paymentSuccessful = _paymentGateway.ProcessPayment(creditCardNumber, expiryDate, totalAmount);
+
+                if (paymentSuccessful)
+                {
+                    _shoppingCart.EmptyCart();
+                }
+
+                return paymentSuccessful;
+            }
+        }
+
+        // Example usage of the EcommerceFacade class
+        var ecommerce = new EcommerceFacade();
+
+        // Add a product to the shopping cart
+        ecommerce.AddToCart(1234, 2);
+
+        // Checkout and process payment
+        var paymentSuccessful = ecommerce.Checkout("1234-5678-9012-3456", "12/24");
+
+        if (paymentSuccessful)
+        {
+            Console.WriteLine("Payment successful. Order confirmed!");
+        }
+        else
+        {
+            Console.WriteLine("Payment failed. Please try again.");
+        }
+
+
+**2.6. Flyweight** lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.  
 Here is an example of minimizing memory usage in a application, since we don't need to create a new Policy object for every policy number that is requested. Instead, we can reuse existing objects and only create new ones when necessary.  
+Use only when your program must support a huge number of objects which barely fit into available RAM.
+
 Example :  
 
-    public class PolicyFactory
-    {
-        private readonly Dictionary<string, Policy> _policies = new Dictionary<string, Policy>();
-
-        public Policy GetPolicy(string policyNumber, string policyType)
+        public class PolicyFactory
         {
-            var key = policyNumber + policyType;
-            if (_policies.ContainsKey(key))
+            private readonly Dictionary<string, Policy> _policies = new Dictionary<string, Policy>();
+
+            public Policy GetPolicy(string policyNumber, string policyType)
             {
-                return _policies[key];
-            }
-            else
-            {
-                var policy = new Policy(policyNumber, policyType);
-                _policies.Add(key, policy);
-                return policy;
+                var key = policyNumber + policyType;
+                if (_policies.ContainsKey(key))
+                {
+                    return _policies[key];
+                }
+                else
+                {
+                    var policy = new Policy(policyNumber, policyType);
+                    _policies.Add(key, policy);
+                    return policy;
+                }
             }
         }
-    }
 
-    public class Policy
-    {
-        public string PolicyNumber { get; private set; }
-        public string PolicyType { get; private set; }
-
-        public Policy(string policyNumber, string policyType)
+        public class Policy
         {
-            PolicyNumber = policyNumber;
-            PolicyType = policyType;
+            public string PolicyNumber { get; private set; }
+            public string PolicyType { get; private set; }
+
+            public Policy(string policyNumber, string policyType)
+            {
+                PolicyNumber = policyNumber;
+                PolicyType = policyType;
+            }
         }
-    }
     
 
-**Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.  
+**2.7. Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.  
+Applicability:  
+ - Lazy initialization (virtual proxy). This is when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time.  
+ - Local execution of a remote service (remote proxy). This is when the service object is located on a remote server.  
+ - Local execution of a remote service (remote proxy). This is when the service object is located on a remote server.  
+ - Logging requests (logging proxy). This is when you want to keep a history of requests to the service object.  
+ - Caching request results (caching proxy). This is when you need to cache results of client requests and manage the life cycle of this cache, especially if results are quite large.  
+ - Smart reference. This is when you need to be able to dismiss a heavyweight object once there are no clients that use it.  
 
 Example:  
 
-     // Interface for the MusicStreamingService
-     public interface IMusicStreamingService
-     {
-         void PlaySong(string songName);
-     }
+        // Interface for the MusicStreamingService
+        public interface IMusicStreamingService
+        {
+            void PlaySong(string songName);
+        }
 
-     // Real MusicStreamingService class that implements IMusicStreamingService
-     public class MusicStreamingService : IMusicStreamingService
-     {
-         public void PlaySong(string songName)
-         {
-             Console.WriteLine($"Playing song: {songName}");
-         }
-     }
+        // Real MusicStreamingService class that implements IMusicStreamingService
+        public class MusicStreamingService : IMusicStreamingService
+        {
+            public void PlaySong(string songName)
+            {
+                Console.WriteLine($"Playing song: {songName}");
+            }
+        }
 
-     // Proxy MusicStreamingService class that also implements IMusicStreamingService
-     public class ProxyMusicStreamingService : IMusicStreamingService
-     {
-         private MusicStreamingService musicStreamingService = new MusicStreamingService();
+        // Proxy MusicStreamingService class that also implements IMusicStreamingService
+        public class ProxyMusicStreamingService : IMusicStreamingService
+        {
+            private MusicStreamingService musicStreamingService = new MusicStreamingService();
 
-         public void PlaySong(string songName)
-         {
-             if (IsSongRestricted(songName))
-             {
-                 Console.WriteLine("Song is restricted in your region.");
-                 return;
-             }
+            public void PlaySong(string songName)
+            {
+                if (IsSongRestricted(songName))
+                {
+                    Console.WriteLine("Song is restricted in your region.");
+                    return;
+                }
 
-             musicStreamingService.PlaySong(songName);
-         }
+                musicStreamingService.PlaySong(songName);
+            }
 
-         // Check if a song is restricted based on the user's location
-         private bool IsSongRestricted(string songName)
-         {
-             // Code to check if the song is restricted based on the user's location
-             return false; // for example purposes, always returning false
-         }
-     }
+            // Check if a song is restricted based on the user's location
+            private bool IsSongRestricted(string songName)
+            {
+                // Code to check if the song is restricted based on the user's location
+                return false; // for example purposes, always returning false
+            }
+        }
 
-     // Main class
-     class MainClass
-     {
-         static void Main()
-         {
-             // Create a proxy object of the MusicStreamingService
-             IMusicStreamingService musicStreamingService = new ProxyMusicStreamingService();
+        // Main class
+        class MainClass
+        {
+            static void Main()
+            {
+                // Create a proxy object of the MusicStreamingService
+                IMusicStreamingService musicStreamingService = new ProxyMusicStreamingService();
 
-             // Call the PlaySong method on the proxy object
-             musicStreamingService.PlaySong("Shape of You"); // This song is not restricted
-             musicStreamingService.PlaySong("Hello"); // This song is restricted in some regions
-         }
-     }
+                // Call the PlaySong method on the proxy object
+                musicStreamingService.PlaySong("Shape of You"); // This song is not restricted
+                musicStreamingService.PlaySong("Hello"); // This song is restricted in some regions
+            }
+        }
     
-**Behavioral Patterns:**  
+**3. Behavioral Patterns:**  
 
-**Chain of Responsibility**  lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.  
+**3.1. Chain of Responsibility**  lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.  
 It’s mostly relevant when your code operates with chains of objects, such as filters, event chains, hierahical aprroval, etc.  
+Usage:  
+ - when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.  
+ -  it’s essential to execute several handlers in a particular order.
+ -  when the set of handlers and their order are supposed to change at runtime.  
 
 Example :  
     
@@ -718,11 +765,12 @@ Example :
     sam.ProcessRequest(100000);
     
 
-**Command** turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
-You this pattern when you want to :
- - to parametrize objects with operations.
- - to queue operations, schedule their execution, or execute them remotely.
- - to implement reversible operations.
+**3.2. Command** turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+You this pattern when you want to :  
+ - to parametrize objects with operations.  
+ - to queue operations, schedule their execution, or execute them remotely.  
+ - to implement reversible operations.  
+
 Example:  
     
        // Receiver class    
@@ -824,11 +872,12 @@ Example:
       
 
 
-**Iterator** lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
-You this pattern:
-- when your collection has a complex data structure under the hood, but you want to hide its complexity from clients
-- to reduce duplication of the traversal code across your app.
-- you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
+**3.3. Iterator** lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+You this pattern:  
+- when your collection has a complex data structure under the hood, but you want to hide its complexity from clients  
+- to reduce duplication of the traversal code across your app.  
+- you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.  
+
 Example :  
 
         //Define the InsurancePolicy class
@@ -939,11 +988,12 @@ Example :
          }
 
 
-**Mediator** lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object. 
+**3.4. Mediator** lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object. 
 When to use:
  - when it’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
  - when you can’t reuse a component in a different program because it’s too dependent on other components.
- - when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
+ - when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.  
+
  Example :  
 
        // Mediator interface
@@ -1025,97 +1075,98 @@ When to use:
            }
        }
 
-**Memento** lets you save and restore the previous state of an object without revealing the details of its implementation.
+**3.5. Memento** lets you save and restore the previous state of an object without revealing the details of its implementation.
 Use this pattern when:
  - you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
  - when direct access to the object’s fields/getters/setters violates its encapsulation.  
 Exampple: 
 
-          // Originator class
-          public class Document
-          {
-              private string _text;
+        // Originator class
+        public class Document
+        {
+            private string _text;
 
-              public string Text
-              {
-                  get => _text;
-                  set
-                  {
-                      _text = value;
-                      Console.WriteLine("Text set to: " + value);
-                  }
-              }
+            public string Text
+            {
+                get => _text;
+                set
+                {
+                    _text = value;
+                    Console.WriteLine("Text set to: " + value);
+                }
+            }
 
-              public DocumentMemento CreateMemento()
-              {
-                  return new DocumentMemento(_text);
-              }
+            public DocumentMemento CreateMemento()
+            {
+                return new DocumentMemento(_text);
+            }
 
-              public void RestoreMemento(DocumentMemento memento)
-              {
-                  _text = memento.Text;
-                  Console.WriteLine("Text restored to: " + _text);
-              }
-          }
+            public void RestoreMemento(DocumentMemento memento)
+            {
+                _text = memento.Text;
+                Console.WriteLine("Text restored to: " + _text);
+            }
+        }
 
-          // Memento class
-          public class DocumentMemento
-          {
-              public string Text { get; }
+        // Memento class
+        public class DocumentMemento
+        {
+            public string Text { get; }
 
-              public DocumentMemento(string text)
-              {
-                  Text = text;
-              }
-          }
+            public DocumentMemento(string text)
+            {
+                Text = text;
+            }
+        }
 
-          // Caretaker class
-          public class DocumentHistory
-          {
-              private Stack<DocumentMemento> _mementos = new Stack<DocumentMemento>();
+        // Caretaker class
+        public class DocumentHistory
+        {
+            private Stack<DocumentMemento> _mementos = new Stack<DocumentMemento>();
 
-              public void Save(Document document)
-              {
-                  _mementos.Push(document.CreateMemento());
-              }
+            public void Save(Document document)
+            {
+                _mementos.Push(document.CreateMemento());
+            }
 
-              public void Undo(Document document)
-              {
-                  if (_mementos.Any())
-                  {
-                      var memento = _mementos.Pop();
-                      document.RestoreMemento(memento);
-                  }
-              }
-          }
+            public void Undo(Document document)
+            {
+                if (_mementos.Any())
+                {
+                    var memento = _mementos.Pop();
+                    document.RestoreMemento(memento);
+                }
+            }
+        }
 
-          // Example usage
-          var document = new Document();
-          document.Text = "Hello";
-          var history = new DocumentHistory();
-          history.Save(document); // save initial state
+        // Example usage
+        var document = new Document();
+        document.Text = "Hello";
+        var history = new DocumentHistory();
+        history.Save(document); // save initial state
 
-          document.Text = "Hello World";
-          history.Save(document); // save new state
+        document.Text = "Hello World";
+        history.Save(document); // save new state
 
-          document.Text = "Goodbye";
-          history.Undo(document); // restore previous state
+        document.Text = "Goodbye";
+        history.Undo(document); // restore previous state
 
-          document.Text = "Hello Again";
-          history.Save(document); // save new state
+        document.Text = "Hello Again";
+        history.Save(document); // save new state
 
-          document.Text = "This is the end";
-          history.Undo(document); // restore previous state
-          history.Undo(document); // restore initial state
+        document.Text = "This is the end";
+        history.Undo(document); // restore previous state
+        history.Undo(document); // restore initial state
     
     
-**Observer**(Event-Subscriber, Listener) is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.  
-Use when:
- - changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
- - some objects in your app must observe others, but only for a limited time or in specific cases.  
+**3.6. Observer**(Event-Subscriber, Listener) is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.  
+Use when:  
+ - changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.  
+ - some objects in your app must observe others, but only for a limited time or in specific cases.    
+
  Example:  
  
-         // Define the Subject interface
+        // Define the Subject interface
          interface IWeatherData
          {
              void RegisterObserver(IObserver observer);
@@ -1240,12 +1291,13 @@ Use when:
 
  
 
-**State** lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
-Use:
- - when you have a lot of duplicate code across similar states and transitions of a condition-based state machine.
- - when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields.
+**3.7. State** lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
+Use:  
+ - when you have a lot of duplicate code across similar states and transitions of a condition-based state machine.  
+ - when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields.  
  - when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently.  
- Example:  
+
+ Example:   
  
        // Interface for the states of the traffic signal
        interface ITrafficSignalState
@@ -1306,14 +1358,13 @@ Use:
        signal.Change();  // Output: Red light is on. Traffic should stop.
        signal.Change();  // Output: Green light is on. Traffic can pass.
     
-   
- 
 
-**Strategy** lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
-Applicability:
- -  you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime.
- -  you have a lot of similar classes that only differ in the way they execute some behavior.
- - to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
+
+**3.8. Strategy** lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.  
+Applicability:  
+ -  you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime.  
+ -  you have a lot of similar classes that only differ in the way they execute some behavior.  
+ - to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.  
  - your class has a massive conditional statement that switches between different variants of the same algorithm.  
  
  Example:  
@@ -1387,10 +1438,11 @@ Applicability:
         rate = context.CalculateShippingRate(10.0, "New York", "Los Angeles"); 
    
  
-**Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+**3.9. Template Method** defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
  Applicability : 
   - you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
   - you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.  
+
 Example:  
 
        public abstract class TrainingCourse
@@ -1462,11 +1514,12 @@ Example:
            }
        }
   
-**Visitor** lets you separate algorithms from the objects on which they operate.
-Use:
- - when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
- - to clean up the business logic of auxiliary behaviors.
- - when a behavior makes sense only in some classes of a class hierarchy, but not in others.  
+**3.10. Visitor** lets you separate algorithms from the objects on which they operate.
+Use:  
+ - when you need to perform an operation on all elements of a complex object structure (for example, an object tree).  
+ - to clean up the business logic of auxiliary behaviors.  
+ - when a behavior makes sense only in some classes of a class hierarchy, but not in others.    
+
 Example:  
 
        public interface IVisitor
@@ -1563,3 +1616,4 @@ Example:
 **Resources:** 
 
  - [Design Patterns](https://refactoring.guru/design-patterns)
+ - [c# Design patterns](https://dotnettutorials.net/course/dot-net-design-patterns/)  
