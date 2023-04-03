@@ -606,92 +606,59 @@ Example :
 
 Example:  
 
-    // The Subject interface declares common operations for both RealSubject and
-    // the Proxy. As long as the client works with RealSubject using this
-    // interface, you'll be able to pass it a proxy instead of a real subject.
-    public interface ISubject
-    {
-        void Request();
-    }
+     // Interface for the MusicStreamingService
+     public interface IMusicStreamingService
+     {
+         void PlaySong(string songName);
+     }
 
-    // The RealSubject contains some core business logic. Usually, RealSubjects
-    // are capable of doing some useful work which may also be very slow or
-    // sensitive - e.g. correcting input data. A Proxy can solve these issues
-    // without any changes to the RealSubject's code.
-    class RealSubject : ISubject
-    {
-        public void Request()
-        {
-            Console.WriteLine("RealSubject: Handling Request.");
-        }
-    }
+     // Real MusicStreamingService class that implements IMusicStreamingService
+     public class MusicStreamingService : IMusicStreamingService
+     {
+         public void PlaySong(string songName)
+         {
+             Console.WriteLine($"Playing song: {songName}");
+         }
+     }
 
-    // The Proxy has an interface identical to the RealSubject.
-    class Proxy : ISubject
-    {
-        private RealSubject _realSubject;
+     // Proxy MusicStreamingService class that also implements IMusicStreamingService
+     public class ProxyMusicStreamingService : IMusicStreamingService
+     {
+         private MusicStreamingService musicStreamingService = new MusicStreamingService();
 
-        public Proxy(RealSubject realSubject)
-        {
-            this._realSubject = realSubject;
-        }
+         public void PlaySong(string songName)
+         {
+             if (IsSongRestricted(songName))
+             {
+                 Console.WriteLine("Song is restricted in your region.");
+                 return;
+             }
 
-        // The most common applications of the Proxy pattern are lazy loading,
-        // caching, controlling the access, logging, etc. A Proxy can perform
-        // one of these things and then, depending on the result, pass the
-        // execution to the same method in a linked RealSubject object.
-        public void Request()
-        {
-            if (this.CheckAccess())
-            {
-                this._realSubject.Request();
+             musicStreamingService.PlaySong(songName);
+         }
 
-                this.LogAccess();
-            }
-        }
+         // Check if a song is restricted based on the user's location
+         private bool IsSongRestricted(string songName)
+         {
+             // Code to check if the song is restricted based on the user's location
+             return false; // for example purposes, always returning false
+         }
+     }
 
-        public bool CheckAccess()
-        {
-            // Some real checks should go here.
-            Console.WriteLine("Proxy: Checking access prior to firing a real request.");
+     // Main class
+     class MainClass
+     {
+         static void Main()
+         {
+             // Create a proxy object of the MusicStreamingService
+             IMusicStreamingService musicStreamingService = new ProxyMusicStreamingService();
 
-            return true;
-        }
-
-        public void LogAccess()
-        {
-            Console.WriteLine("Proxy: Logging the time of request.");
-        }
-    }
-
-    public class Client
-    {
-        // The client code is supposed to work with all objects (both subjects
-        // and proxies) via the Subject interface in order to support both real
-        // subjects and proxies. In real life, however, clients mostly work with
-        // their real subjects directly. In this case, to implement the pattern
-        // more easily, you can extend your proxy from the real subject's class.
-        public void ClientCode(ISubject subject)
-        {
-            // ...            
-            subject.Request();
-            // ...
-        }
-    }
-
-    //how to use 
-    Client client = new Client();
-
-    Console.WriteLine("Client: Executing the client code with a real subject:");
-    RealSubject realSubject = new RealSubject();
-    client.ClientCode(realSubject);
-
-    Console.WriteLine();
-
-    Console.WriteLine("Client: Executing the same client code with a proxy:");
-    Proxy proxy = new Proxy(realSubject);
-    client.ClientCode(proxy);
-
+             // Call the PlaySong method on the proxy object
+             musicStreamingService.PlaySong("Shape of You"); // This song is not restricted
+             musicStreamingService.PlaySong("Hello"); // This song is restricted in some regions
+         }
+     }
+    
 **Behavioral Patterns:**  
 
 **Chain of Responsibility**  lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.  
