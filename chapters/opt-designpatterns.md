@@ -10,10 +10,8 @@ design problem in your code.
  Usage : 
    - when a class in your program should have just a single instance available to all clients; for example, a single database object shared by different parts of the program.  
    - you need stricter control over global variables.  
-
  Example:  
- 
-        public sealed class Singleton 
+         public sealed class Singleton 
         {
             private static volatile Singleton instance;
             private static object syncRoot = new Object();
