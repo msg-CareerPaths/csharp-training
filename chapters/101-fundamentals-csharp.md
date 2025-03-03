@@ -12,8 +12,9 @@ Some of the key features of C# include:
  - Garbage collection: C# includes a garbage collector that automatically manages memory allocation and deallocation, making it easier for developers to write applications without worrying about memory management.  
  - Type safety: C# is a strongly typed language, which means that all variables must be declared with a specific data type. This helps prevent common programming errors and makes code easier to read and maintain.  
  - Cross-platform development: With the release of .NET Core, C# can now be used to build applications that run on multiple platforms, including Windows, Linux, and macOS.  
- - Integrated development environment (IDE): Microsoft provides a free IDE called Visual Studio for C# development, which includes a wide range of features for debugging, testing, and deploying applications.  
-Overall, C# is a versatile and powerful programming language that is widely used in the software development industry. Other ids's can be used like Visual Studio Code or Rider. 
+ - Integrated development environment (IDE): Microsoft provides a free IDE called Visual Studio for C# development, which includes a wide range of features for debugging, testing, and deploying applications.
+   Other IDE's can be used like JetBrains Rider or Visual Studio Code.
+Overall, C# is a versatile and powerful programming language that is widely used in the software development industry. 
 
 Following, there are some articles for you to read to get familiar with C# :  
 
