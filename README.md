@@ -23,7 +23,7 @@
     - [4.3. Non-relational database](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/403-nonrelationaldb-mongodb.md)  
   - [5. Testing](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/500-unit-tests.md)
   - [6. GUI](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/600-gui.md)  
-    - [6.1. Angular vs. React vs. Vue](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/601-using-angular-vs-react-vs-vue.md)
+    - [6.1. MAUI](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/601-maui.md)
     - [6.2. Windows Forms vs. WPF](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/602-using-windows-forms-vs-wpf.md)
     - [6.3. Razor vs. Blazor](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/603-using-razor-vs-blazor.md)
   - [7. Security](https://github.com/msg-CareerPaths/csharp-training/blob/main/chapters/700-security.md)
