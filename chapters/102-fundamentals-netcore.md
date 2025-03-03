@@ -5,7 +5,7 @@
 **Required Reading**
 
 In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new implementation of .NET kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.  
-You can find [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) the c# language version related to the each .Net framework.  
+You can find [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-versioning#c-language-version-reference) the c# language version related to the each .Net framework.  
 
 Developers can use the runtime, libraries, and tools provided by .NET Core to develop a vast range of applications, from web applications, microservices, desktop applications, gaming applications, to IoT applications.  
 
