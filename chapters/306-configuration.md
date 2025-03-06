@@ -18,7 +18,7 @@ Application configuration in ASP.NET Core is performed using one or more configu
 
 **Exercise:**
 
-For this exercise you will load settings from the appsettings.json file.  
+For this exercise you will load settings from the appsettings.json file using the options pattern.
 Update the appsettings.json by adding a new section called SqlSettings with 2 properties ConnectionString and ProductTableName, which you will be used later in the next chapters to connect to an sql server.  
 Create the coresponding SqlSettings class were you will load the settings from the appsettings.json file.  
 Update the Program.cs to load the SqlSettings from appsettings.json file, and log this information in log file.
