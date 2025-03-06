@@ -1,17 +1,27 @@
 ## 3.WEB API
 
-**Goal:** Understand basic concepts about API , CRUD and REST.
+**Goal:** Understand basic concepts about Web API , CRUD and REST.
 
 **Required Reading:**
 
-An application programming interface (API) is code that enables two software programs to communicate. An API defines how a developer should request services from an operating system (OS) or other application, and expose data within different contexts and across multiple channels.  
+**Web API (Application Programming Interface)**
+A Web API allows applications to communicate over the internet using HTTP. It provides a way to expose functionality and data from a server to clients (e.g., web apps, mobile apps, or other servers).
+A Web API in .NET is built using ASP.NET Core Web API, which allows applications to expose data and functionality over HTTP. It is commonly used to connect frontend applications with backend services.
+[APIs explained](https://www.youtube.com/watch?v=ZveW4_ZJtVY)
 
-Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most.  
+**CRUD**
+Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most.
+ - Create → Adding new data (HTTP POST).
+ - Read → Retrieving data (HTTP GET).
+ - Update → Modifying existing data (HTTP PUT/PATCH).
+ - Delete → Removing data (HTTP DELETE).
+[What is CRUD ? ](https://www.codecademy.com/article/what-is-crud)    
 
-REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.  
+**REST**
+REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.
+[What is REST ? ](https://www.codecademy.com/article/what-is-rest) 
 
  - [What is Web API?](https://www.tutorialsteacher.com/webapi/what-is-web-api)  
- - [What is CRUD](https://www.codecademy.com/article/what-is-crud)    
- - [What is REST](https://www.codecademy.com/article/what-is-rest)   
+  
      
 **Exercise:** *nothing to do*.
