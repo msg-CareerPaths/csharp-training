@@ -14,9 +14,9 @@ NET Core's modular architecture is a prominent feature that enables developers t
 Furthermore, .NET Core offers support for containerization, cloud deployment, and seamless integration with widely used development tools and platforms such as Visual Studio and Azure. In essence, .NET Core presents developers with a versatile and robust platform that empowers them to develop modern applications capable of running across multiple operating systems and platforms.  
 
 Check the following links to learn about .net core:  
- - [ASP.NET Core fundamentals overview](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-7.0&tabs=linux)
- - [App startup in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-7.0)
- - [Dependency injection](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0)
+ - [ASP.NET Core fundamentals overview](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-8.0&tabs=linux)
+ - [App startup in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-8.0)
+ - [Dependency injection](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-8.0)
 
 **Exercise:** *nothing to do*.
 
