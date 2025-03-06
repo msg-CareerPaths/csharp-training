@@ -15,7 +15,7 @@ To create the application open Visual Studio, choose Create a New Project, selec
 
    ![WEBAPI2](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi2.png)
    
- 3.Specify additional information :  
+ 3.Specify additional information(Use the latest .Net Framework) :
  
    ![WEBAPI3](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi3.png)
    
@@ -39,9 +39,9 @@ Check the WeatherForecastController from the Controllers folders.
 Open the Program.cs file to see how then application is created and started.  
 At the end, run, debug and  insert a breakpoint to test the application. 
 Test you app using swagger and then use postman to do the same tests.  
-You can also use [Curl](https://curl.se/docs/), for testing a REST API.
+You can also use [Curl](https://curl.se/docs/), Insomnia or other tool for testing the REST API.
 
-Use the following links and check how to compile, run, test and debug your application:  
+You can use the following links and check how to compile, run, test and debug your application:  
 - [How to build your applicantion](https://learn.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2022)   
 - [How to run you application](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#run-the-app)  
 - [How to debug code](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp#debug-the-app)  
@@ -50,4 +50,4 @@ Use the following links and check how to compile, run, test and debug your appli
 
 **Further Resources:**
 
- - [Create a web API with ASP.NET Core controllers in VSCode](https://learn.microsoft.com/ro-ro/training/modules/build-web-api-aspnet-core/?WT.mc_id=dotnet-35129-website)
+ - [Create a web API with ASP.NET Core controllers in Visual Studio](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio)
