@@ -22,4 +22,4 @@ Check the following links to learn about .net core:
 
  **Further Resources:**
 
- - [Check the ASP.NET Core Best Practices](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/best-practices?view=aspnetcore-7.0)
+ - [Check the ASP.NET Core Best Practices](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/best-practices?view=aspnetcore-8.0)
