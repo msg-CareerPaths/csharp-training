@@ -28,8 +28,9 @@ Here are 2 ways to install the SQL Server :
  - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
    or
  - [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
+   
 [Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.  
-Add and adapt to your project all models from the video guide.    
+Add and adapt to your currnt project dpecification all models from the video guide.    
 You should watch the video until minute 11:05 to create models,context and add\update migrations.  
 Next,check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller) article's "Scaffold a controller" paragraph.   
 At this point, you will now have a new product controller whick calls the product context for all CRUD operations.  
