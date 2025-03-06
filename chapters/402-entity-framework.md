@@ -24,10 +24,10 @@ Here are 2 ways to install the SQL Server :
  - If you prefer docker desktop you can use [this](https://www.youtube.com/watch?v=fFpDf5si_Hw) approach.  
 
   For Sql Server management you can use :
- - The [SQL Server Data Tools] (https://learn.microsoft.com/en-us/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects?view=sql-server-ver16) from Visual Studio
+ - The [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects?view=sql-server-ver16) from Visual Studio
  - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
    or
- - Azure Data Studio(https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
+ - [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
 [Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.  
 Add and adapt to your project all models from the video guide.    
 You should watch the video until minute 11:05 to create models,context and add\update migrations.  
