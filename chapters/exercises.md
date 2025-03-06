@@ -8,7 +8,6 @@ At the end, ideally, you should have a solution with 2 projects:
    - ProductInMemoryController - operations for saving products in memory.  
    - ProductCategoriesInMemoryController - operations for saving products categories in memory.  
    - ProductFileController - operations for saving products in files.  
-   - ProductADOSqlController -  operations for the products to be saved in a Sql Database using ADO.Net .
    - ProductsEFController - operations for the products to be saved in a Sql Database using Entity Framework core.  
    - ProductCategoryMongoController - operations for the product categories which will be stored in MongoDb.  
 
