@@ -5,23 +5,24 @@
 **Required Reading:**
 
 **Web API (Application Programming Interface)**
+
 A Web API allows applications to communicate over the internet using HTTP. It provides a way to expose functionality and data from a server to clients (e.g., web apps, mobile apps, or other servers).
 A Web API in .NET is built using ASP.NET Core Web API, which allows applications to expose data and functionality over HTTP. It is commonly used to connect frontend applications with backend services.
 [APIs explained](https://www.youtube.com/watch?v=ZveW4_ZJtVY)
 
 **CRUD**
+
 Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most.
  - Create → Adding new data (HTTP POST).
  - Read → Retrieving data (HTTP GET).
  - Update → Modifying existing data (HTTP PUT/PATCH).
  - Delete → Removing data (HTTP DELETE).
+
 [What is CRUD ? ](https://www.codecademy.com/article/what-is-crud)    
 
 **REST**
+
 REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.
 [What is REST ? ](https://www.codecademy.com/article/what-is-rest) 
-
- - [What is Web API?](https://www.tutorialsteacher.com/webapi/what-is-web-api)  
   
-     
 **Exercise:** *nothing to do*.
