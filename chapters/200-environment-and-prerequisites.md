@@ -26,7 +26,7 @@ Check this links to install prerequisites and learn some basics.
    - [Quick wins with Git](https://git-scm.com/video/quick-wins)  
  
  - Postman :
-   - [Install Postman](https://www.postman.com/downloads/])  
+   - [Install Postman](https://www.postman.com/downloads/)  
    - [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
  
  - [Visual Code - optional](https://code.visualstudio.com/) 
