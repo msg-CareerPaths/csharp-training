@@ -19,12 +19,12 @@ Create, Read, Update, and Delete (CRUD) are the four basic functions that models
  - Update → Modifying existing data (HTTP PUT/PATCH).
  - Delete → Removing data (HTTP DELETE).
 
-[What is CRUD ? ](https://www.codecademy.com/article/what-is-crud)    
+Read [this link](https://www.codecademy.com/article/what-is-crud) to find more about CRUD.
 
 **REST**
 
 REST is an acronym for Representational State Transfer and an architectural style for distributed hypermedia systems.
 
-More details about REST you can find [here](https://www.codecademy.com/article/what-is-rest) 
+Read more details about REST you can find [here](https://www.codecademy.com/article/what-is-rest) .
   
 **Exercise:** *nothing to do*.
