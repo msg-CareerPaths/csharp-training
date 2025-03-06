@@ -7,4 +7,4 @@ When a new version of the API is released, developers can choose to update their
 
 **Resources:**
 
- - [How to use API versioning in ASP.NET Core Web API and integrate it with Swagger using .NET 6](https://blog.christian-schou.dk/how-to-use-api-versioning-in-net-core-web-api/)
+ - [How to use API versioning in ASP.NET Core Web API and integrate it with Swagger using .NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-8.0)
