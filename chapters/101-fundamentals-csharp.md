@@ -19,9 +19,7 @@ Overall, C# is a versatile and powerful programming language that is widely used
 
 Following, there are some articles for you to read to get familiar with C# :  
 
-- [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)  
-
-- [Program building blocks](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks)  
+- [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/) 
 
 - [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)  
 
