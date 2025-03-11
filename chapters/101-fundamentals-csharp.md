@@ -26,8 +26,6 @@ Following, there are some articles for you to read to get familiar with C# :
   - [Value Types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)
   - [Reference Types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)
 
-- [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)  
-
 - [Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)  
 
 - [Types and variables](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/#types-and-variables)  
