@@ -18,14 +18,13 @@ Entity Framework consists of several components:
 
 **Exercise:**
 > Create an web api for exposing the products :
-> 
->  - Start with this link [here](https://www.youtube.com/watch?v=SryQxUeChMc) to get started with the entity framework.Adapt it to your current project specification.    
+>  - Start with this link <a href="https://www.youtube.com/watch?v=SryQxUeChMc" target="_blank">here</a> to get started with the entity framework.Adapt it to your current project specification.    
 > You should watch the video until minute 11:05 to create models,context and add\update migrations.  
 >  - For the sql server connection use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the products db context.
 >  - Add a product DTO(Data transfer object) as we do not want to expose all properties from an database entity(model) to the user.
 >  - Create a service class which calls the product context in order to: create, update, delete, read by ID and read all the product (as model instances).
 >  - Create your own mapper class which maps the model objects to the corresponding DTO objects and vice versa.
->  - Next add a controller.Check this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.
+>  - Next add a controller.Check this article's <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller" target="_blank">Scaffold a controller</a>  paragraph.
 >    - Update the code so that you will call the service from the controller.
 >    - At controller level use the mapper class to map the model objects returned by the service to the corresponding DTO instance.The service will return model instances and the API(Controller) will return DTO instances.
 >  - Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.
