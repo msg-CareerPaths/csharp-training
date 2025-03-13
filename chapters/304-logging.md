@@ -32,4 +32,5 @@ The logging informations are vast so don't go to deep in the articles, just try 
  - [How to use structured logging](https://github.com/nlog/nlog/wiki/How-to-use-structured-logging)
  - [Use NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)
  - [Elastic Stack - Log Management System](https://www.elastic.co/what-is/elk-stack)
+ - [Serilog](https://medium.com/@brucycenteio/adding-serilog-to-asp-net-core-net-7-8-5cba1d0dea2)
  
