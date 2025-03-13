@@ -20,7 +20,7 @@ Read some basics about Githib if neccessary:
 >
 >Add new properties to the Product class (decimal Weight, decimal Price, string Description).  
 >Products  will be stored each in a list, which will be repopulated each time you start the project, so there is no persistance.  
->Update the existing product controller to cover all CRUD operation for the products.    
+>Update the existing product controller and service to cover all CRUD operation for the products.    
 >Don't forget to update the Program.cs and inject the new product category service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
 >
 >After you've tested that everything is working, you should commit your work, so do the followings:
