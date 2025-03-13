@@ -25,7 +25,9 @@ Entity Framework consists of several components:
 >  - Add a product DTO(Data transfer object) as we do not want to expose all properties from an database entity(model) to the user.
 >  - Create a service class which calls the product context in order to: create, update, delete, read by ID and read all the product (as model instances).
 >  - Create your own mapper class which maps the model objects to the corresponding DTO objects and vice versa.
->  - Next add a controller.Check this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.tHe controller will use the service.Use the mapper class at controller level to map the model objects returned by the service to the corresponding DTO instance (the service will return model instances and the API will return DTO instances).
+>  - Next add a controller.Check this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.
+>    - Update the code so that you will call the service from the controller.
+>    - At controller level use the mapper class to map the model objects returned by the service to the corresponding DTO instance.The service will return model instances and the API(Controller) will return DTO instances.
 >  - Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.
 
 **Further Resources:**
