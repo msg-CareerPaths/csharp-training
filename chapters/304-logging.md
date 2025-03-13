@@ -11,7 +11,8 @@ The logging informations are vast so don't go to deep in the articles, just try 
  - [Nlog Configuration file](https://github.com/NLog/NLog/wiki/Configuration-file)
  - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
-**Exercise:**  
+**Exercise:**
+
  > Add nlog to the solution for logging purposes.Use [this](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6#2-create-a-nlogconfig-file) link for guidance:
  >- Add the NLog.Web.AspNetCore package to the solution.
  >- Add a new nlog.config file to the project.
