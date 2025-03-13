@@ -21,10 +21,12 @@ Entity Framework consists of several components:
 > 
 >  - Start with this link [here](https://www.youtube.com/watch?v=SryQxUeChMc) to get started with the entity framework.Adapt it to your current project specification.    
 > You should watch the video until minute 11:05 to create models,context and add\update migrations.  
->  - Next add a product controller.Check this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.   
-> At this point, you will have a new product controller whick calls the product context for all CRUD operations.
-> Use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the product order db context.  
-> Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.  
+>  - For the sql server connection use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the products db context.
+>  - Add a product DTO(Data transfer object) as we do not want to expose all properties from an database entity(model) to the user.
+>  - Create a service class which calls the product context in order to: create, update, delete, read by ID and read all the product (as model instances).
+>  - Create your own mapper class which maps the model objects to the corresponding DTO objects and vice versa.
+>  - Next add a controller.Check this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.tHe controller will use the service.Use the mapper class at controller level to map the model objects returned by the service to the corresponding DTO instance (the service will return model instances and the API will return DTO instances).
+>  - Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.
 
 **Further Resources:**
 
