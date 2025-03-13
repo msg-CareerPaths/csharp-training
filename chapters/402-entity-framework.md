@@ -17,14 +17,14 @@ Entity Framework consists of several components:
 [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) supports multiple database providers, including Microsoft SQL Server, Oracle, MySQL, PostgreSQL, and SQLite, among others. It is a powerful and flexible ORM that can significantly reduce the amount of code needed to work with databases in .NET applications.
 
 **Exercise:**
-
-[Here](https://www.youtube.com/watch?v=SryQxUeChMc) you have an example how to get started with the entity framework core.  
-Add and adapt to your current project specification all models from the video guide.    
-You should watch the video until minute 11:05 to create models,context and add\update migrations.  
-Next,check [this](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller) article's "Scaffold a controller" paragraph.   
-At this point, you will now have a new product controller whick calls the product context for all CRUD operations.  
-Use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the product order db context.  
-Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.  
+> Create an web api for exposing the products :
+> 
+>  - Start with this link [here](https://www.youtube.com/watch?v=SryQxUeChMc) to get started with the entity framework.Adapt it to your current project specification.    
+> You should watch the video until minute 11:05 to create models,context and add\update migrations.  
+>  - Next add a controller.Chechk this article's [Scaffold a controller](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio#scaffold-a-controller)  paragraph.   
+> At this point, you will have a new product controller whick calls the product context for all CRUD operations.
+> Use the SqlSConnectionString property from the SqlSettings class to configure the sql connection in the product order db context.  
+> Build, run and debug the application and test it to see if records are persisted in the product table on the sql server.  
 
 **Further Resources:**
 
