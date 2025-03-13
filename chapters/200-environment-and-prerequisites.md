@@ -28,6 +28,9 @@ Check this links to install prerequisites and learn some basics.
  - Postman :
    - [Install Postman](https://www.postman.com/downloads/)  
    - [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
+
+- [Sql server with Docker](https://www.youtube.com/watch?v=fFpDf5si_Hw) approach.  
+- [Sql Server management with Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
    
 **Further Resources:**
 
