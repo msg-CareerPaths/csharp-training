@@ -1,6 +1,6 @@
 ## 4.2. Microsoft SQL Server connection using Entity Framework
 
-**Goal:** Understanding how to use Entity Framework to connect and make CRUD operation to an SQL Server database.
+**Goal:** Understanding how to use Entity Framework to connect and make CRUD operation and persist data in an SQL Server database.
 
 **Required Reading:** 
 
