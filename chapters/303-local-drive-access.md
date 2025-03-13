@@ -13,15 +13,15 @@
 
 **Exercise:**
 
->- Create a new controller and service to save products in files.    
->- Add methods to create,update,get and delete products as json files from\to disk.  
->- You must take into consideration the followings:  
->   - use System.Text.Json package for serialization and deserialization.   
->   - Products must be stored as json files.  
->   - Every time a product is created a file must be created on disk with the serialized information about the product.     
->   - When a product is modified or deleted, this must be reflected to the files on the disk.   
->   - You will have to come up with an appropiate file and folder name for this task.  
->   - The folder where the files are stored does not exists, must be created from the app.
+ - Create a new controller and service to save products in files.    
+ - Add methods to create,update,get and delete products as json files from\to disk.  
+ - You must take into consideration the followings:  
+    - use System.Text.Json package for serialization and deserialization.   
+    - Products must be stored as json files.  
+    - Every time a product is created a file must be created on disk with the serialized information about the product.     
+    - When a product is modified or deleted, this must be reflected to the files on the disk.   
+    - You will have to come up with an appropiate file and folder name for this task.  
+    - The folder where the files are stored does not exists, must be created from the app.
   
  **Further Resources:**
  
