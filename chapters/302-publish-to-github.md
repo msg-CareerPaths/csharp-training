@@ -18,13 +18,13 @@ Read some basics about Githib if neccessary:
    - [Create a Git repository](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-repository?view=vs-2022).  
    - [Create a new branch ](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-branch?view=vs-2022)  
 
-Add new properties to the Product class (decimal Weight, decimal Price, string Description).  
-Products  will be stored each in a list, which will be repopulated each time you start the project, so there is no persistance.  
-Update the existing product controller and service to cover all CRUD operation for the products.    
-Don't forget to update the Program.cs and inject the new product category service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
+ - Add new properties to the Product class (decimal Weight, decimal Price, string Description).  
+ - Products  will be stored each in a list, which will be repopulated each time you start the project, so there is no persistance.  
+ - Update the existing product controller and service to cover all CRUD operation for the products.    
+ - Don't forget to update the Program.cs and inject the new product category service using [DI](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0).  
 
-After you've tested that everything is working, you should commit your work, so do the followings:
- - [Make a commit](https://learn.microsoft.com/en-us/visualstudio/version-control/git-make-commit?view=vs-2022)  
+- After you've tested that everything is working, you should commit your work, so do the followings:
+  - [Make a commit](https://learn.microsoft.com/en-us/visualstudio/version-control/git-make-commit?view=vs-2022)  
   - [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022),  
   - [Create pull request](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=visual-studio) to merge changes from your branch to main(master) branch.  
  
