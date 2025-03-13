@@ -9,8 +9,8 @@
 
 **Exercise:**
 
-Add try catch exception handling for the product in memory controller and service.  
-Log exceptions using the previously learned logging mechanism(nlog). 
+ > Add try catch exception handling for the product in memory controller and service.  
+ > Log exceptions using the previously learned logging mechanism(nlog). 
 
 **Further Resources:**
 
