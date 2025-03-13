@@ -3,21 +3,22 @@
 **Goal:** Create your first asp net core web api project.
 
 **Exercise:**
-> Create a new Web API using .Net Core.  
->To create the application open Visual Studio, choose Create a New Project, select ASP.NET Core Web API project and follow the steps:
-
+> Create a new Web API using .Net Core.
+> 
+>  To create the application open Visual Studio, choose Create a New Project, select ASP.NET Core Web API project and follow the steps:
+>
 > - Create and select the type of the project from File -> NewProject  
    ![WEBAPI](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi1.png)
-
+>
 > - Configure a project name and location:  
    ![WEBAPI2](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi2.png)
-   
+>
 > - Specify additional information(Use the latest .Net Framework) :
  
    ![WEBAPI3](https://raw.githubusercontent.com/msg-CareerPaths/csharp-training/main/resources/images/webapi3.png)
-   
+>
 > As a default project you will have a weather forecast example.  
-
+>
 > The .net core web api is using [Swagger](https://swagger.io/).Swagger can help you design, document your APIs at scale and will generate a starting test page for your application. 
 > This is a good starting point to do manual testing of your application.
 
