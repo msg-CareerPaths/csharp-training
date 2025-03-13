@@ -12,18 +12,18 @@ The logging informations are vast so don't go to deep in the articles, just try 
  - [Nlog ASP.NET Core 6 Example](https://github.com/NLog/NLog.Web/tree/master/examples/ASP.NET%20Core%206)
 
 **Exercise:**  
- > Add nlog to the solution for logging purposes:
- >- Add the NLog.Web.AspNetCore package to the solution.  
- >- Add a new nlog.config file to the project.  
- >- Update program.cs to add logging.  
- Use [this](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6#2-create-a-nlogconfig-file) link for guidance.  
+ > Add nlog to the solution for logging purposes.Use [this](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6#2-create-a-nlogconfig-file) link for guidance:
+ >- Add the NLog.Web.AspNetCore package to the solution.
+ >- Add a new nlog.config file to the project.
+ >- Update program.cs to add logging.
+
  >- Log some actions from any service(Example:when deleting a product)
  >    - Logging will greatly assist in the support and debug of your application.
  >    - It is your decision how you structure and what information goes into those logs to be as comprehensive as possible.
- >     - You can play a bit and add some more logging where you think it whould be more usefull.
- >- Build and run the application to check the log files.  
- >- Update the nlog.config file with [this](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/nlog.config).  
- >- Compare both versions of the nlog.config files to see the differences.  
+ >    - You can play a bit and add some more logging where you think it whould be more usefull.
+ >- Build and run the application to check the log files.
+ >- Update the nlog.config file with [this](https://github.com/msg-CareerPaths/csharp-training/blob/main/resources/nlog.config).
+ >- Compare both versions of the nlog.config files to see the differences.
  >- Build and run the application to check the new folder/file formats, and compare the new log files with previous ones.
 
 **Further Resources:**
