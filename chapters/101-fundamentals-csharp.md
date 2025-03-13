@@ -19,18 +19,16 @@ Overall, C# is a versatile and powerful programming language that is widely used
 
 Following, there are some articles for you to read to get familiar with C# :  
 
+- [A tour of the C# language](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview)
+  
 - [General Structure of a C# Program](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)
 
 - [The C# Type System](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
   - [Builtin types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types)
   - [Value Types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)
   - [Reference Types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)
-
-- [Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)  
-
-- [Types and variables](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/#types-and-variables)  
-
-- [Major language areas](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/features)  
+   
+- [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
 
 - Object Oriented programming  
   - [Overview of classes, structs, and records in C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/)
@@ -40,30 +38,12 @@ Following, there are some articles for you to read to get familiar with C# :
 
 - [Difference Between Abstract Class And Interface In C#](https://unstop.com/blog/difference-between-abstract-class-and-interface-in-c-sharp)
 
-- [Language Integrated Query (LINQ)](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
-
 - [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
-
-- SOLID Principles in C#
-  - [Single Responsibility Principle](https://www.tutorialsteacher.com/csharp/single-responsibility-principle)
-  - [Open-Closed Principle](https://www.tutorialsteacher.com/csharp/open-closed-principle)
-  - [Liskov Substitution Principle](https://www.tutorialsteacher.com/csharp/liskov-substitution-principle)
-  - [Interface Segregation Principle](https://www.tutorialsteacher.com/csharp/interface-segregation-principle)
-  - [Dependency Inversion](https://www.tutorialsteacher.com/csharp/dependency-inversion-principle)
 
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
   - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
-- [What's new in C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
-
-- [What's new in C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
-
-- [What's new in C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
-
-- [What's new in C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)
-
-- [What's new in C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)
 
  There are some limitations with the .NET Framework. For example, it only runs on the Windows platform. Also, you need to use different .NET APIs for different Windows devices such as Windows Desktop, Windows Store, Windows Phone, and Web applications.  
 So, considering this, Microsoft built .NET Core.
@@ -72,6 +52,18 @@ So, considering this, Microsoft built .NET Core.
 
 **Further Resources:**
 
+- [What's new in C# 9.0](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
+- [What's new in C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
+- [What's new in C# 11](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
+- [What's new in C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)
+- [What's new in C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)
+  
+- SOLID Principles in C#
+  - [Single Responsibility Principle](https://www.tutorialsteacher.com/csharp/single-responsibility-principle)
+  - [Open-Closed Principle](https://www.tutorialsteacher.com/csharp/open-closed-principle)
+  - [Liskov Substitution Principle](https://www.tutorialsteacher.com/csharp/liskov-substitution-principle)
+  - [Interface Segregation Principle](https://www.tutorialsteacher.com/csharp/interface-segregation-principle)
+  - [Dependency Inversion](https://www.tutorialsteacher.com/csharp/dependency-inversion-principle)
  - [Learn C# Programming](https://www.tutorialsteacher.com/csharp)
  - [C# (c sharp)](https://www.tutorialspoint.com/csharp/index.htm)
  - [Microsoft Free courses, tutorials, videos](https://dotnet.microsoft.com/en-us/learn/csharp)
