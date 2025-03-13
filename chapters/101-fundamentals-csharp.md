@@ -30,15 +30,20 @@ Following, there are some articles for you to read to get familiar with C# :
    
 - [Declare namespaces to organize types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
 
-- Object Oriented programming  
+- [Control Flow Statements](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/statements)
+- [Methods and parameters](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+
+- Object Oriented programming
+  - [Introduction to classes](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes)
   - [Overview of classes, structs, and records in C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/)
   - [Objects](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
   - [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
   - [Polymorphism](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism)
-
-- [Difference Between Abstract Class And Interface In C#](https://unstop.com/blog/difference-between-abstract-class-and-interface-in-c-sharp)
+  - [Difference Between Abstract Class And Interface In C#](https://unstop.com/blog/difference-between-abstract-class-and-interface-in-c-sharp)
 
 - [Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+- [Asynchronous programming](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/)
+- [Language Integrated Query (LINQ)](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
 
 - Coding Style
   - [Identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
