@@ -28,9 +28,9 @@ Read some basics about Githib if neccessary:
   - [Push to a remote branch](https://learn.microsoft.com/en-us/visualstudio/version-control/git-push-remote?view=vs-2022),  
   - [Create pull request](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=visual-studio) to merge changes from your branch to main(master) branch.  
  
- You will use these 3 steps each time you finish the exercise from each chapter.
+ - You will use these 3 steps each time you finish the exercise from each chapter.
 
-To keep your local branch synchronized with your remote branch [use git fetch, pull, push and sync for version control](https://learn.microsoft.com/en-us/visualstudio/version-control/git-fetch-pull-sync?view=vs-2022).
+ - To keep your local branch synchronized with your remote branch [use git fetch, pull, push and sync for version control](https://learn.microsoft.com/en-us/visualstudio/version-control/git-fetch-pull-sync?view=vs-2022).
 
 **Further Resources:**
 
